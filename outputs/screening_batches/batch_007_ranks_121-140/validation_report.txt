@@ -1,0 +1,6 @@
+VALIDATION PASSED
+Batch: B007
+Rows: 20
+Include: 10
+Exclude: 10
+Unclear: 0
