@@ -1,0 +1,17 @@
+diff --git a/src/agri_cv_novelty/inventory.py b/src/agri_cv_novelty/inventory.py
+index 5e44099..4db47a8 100644
+--- a/src/agri_cv_novelty/inventory.py
++++ b/src/agri_cv_novelty/inventory.py
+@@ -131,7 +131,11 @@ def main() -> None:
+         if not output_path.is_absolute():
+             output_path = root / output_path
+         write_manifest(output_path, records)
+-        print(f"Wrote manifest: {output_path.relative_to(root)}")
++        try:
++            display_path = output_path.relative_to(root)
++        except ValueError:
++            display_path = output_path
++        print(f"Wrote manifest: {display_path}")
+ 
+ 
+ if __name__ == "__main__":

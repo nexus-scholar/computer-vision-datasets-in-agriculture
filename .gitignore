@@ -1,0 +1,23 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Generated research outputs
+outputs/
+tools/agri_cv_snowball_package/outputs/*
+!tools/agri_cv_snowball_package/outputs/README_EXPECTED_OUTPUTS.md
+tools/agri_cv_snowball_package/cache/
+tools/agri_cv_snowball_package/raw_api_json/
+
+# Local full-text copies are useful for analysis but should not be committed by default.
+datasets-papers-2026-07-03/*.pdf
+data/**/*.pdf
+
+# Workflow overlay additions
+.env
+.env.*
+!.env.example
+.workflow-backup/
+

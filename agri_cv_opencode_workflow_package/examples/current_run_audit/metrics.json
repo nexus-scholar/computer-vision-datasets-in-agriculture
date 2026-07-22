@@ -1,0 +1,28 @@
+{
+  "audit_created_utc": "2026-07-22T13:34:42.658099+00:00",
+  "run_dir": "/mnt/data/agri_cv_opencode_validation_repo/outputs/snowball_full_2026-07-05",
+  "required_files_missing": 0,
+  "seed_provider_rows": 19,
+  "seed_rows_merged_manifest": 13,
+  "unresolved_provider_rows": 7,
+  "edge_rows": 918,
+  "node_rows": 689,
+  "canonical_related_identities_approx": 677,
+  "exact_duplicate_edge_rows": 0,
+  "cross_provider_redundant_edge_rows": 154,
+  "edges_missing_related_title": 41,
+  "edges_missing_related_provider_id": 35,
+  "identity_empty_edges": 41,
+  "duplicate_title_year_node_groups": 8,
+  "quarantined_seed_ids": [
+    "P004"
+  ],
+  "issue_counts": {
+    "critical": 1,
+    "high": 2,
+    "medium": 11,
+    "info": 1,
+    "low": 1
+  },
+  "quality_gate_passed": false
+}

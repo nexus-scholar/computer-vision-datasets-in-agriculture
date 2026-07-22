@@ -1,0 +1,26 @@
+[project]
+name = "agri-cv-novelty"
+version = "0.1.0"
+description = "Research workspace for underutilized agricultural computer vision datasets and novelty snowballing."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+agri-cv-inventory = "agri_cv_novelty.inventory:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
