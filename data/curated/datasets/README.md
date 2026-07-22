@@ -1,5 +1,5 @@
 # Dataset intelligence
 
-Store the dataset registry, method-gap matrix, access/license audit, and opportunity matrix.
+Store the canonical dataset registry, paper-dataset relationships, access/license audit, method-gap matrix, and opportunity scores.
 
-Required metadata: status, reviewer, reviewed date, input evidence snapshot or commit, and unresolved questions.
+Scientific opportunity and execution feasibility must remain separate scores. Citation count is not an underutilization score.

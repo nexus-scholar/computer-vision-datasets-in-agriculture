@@ -2,80 +2,69 @@
 
 ## Mission
 
-Build a defensible, reproducible research program around recent and underutilized agricultural computer-vision datasets, with special attention to segmentation, multimodal/spectral sensing, robustness, calibration, and sensor-aware reliability.
+Build a defensible, reproducible research program around recent and underused agricultural computer-vision datasets, with special attention to segmentation, multimodal/spectral sensing, robustness, calibration, and sensor-aware reliability.
 
 ## Source-of-truth hierarchy
 
-1. `data/curated/` contains human-reviewed evidence and decisions.
-2. Seed manifests and `config/` contain controlled inputs.
-3. `outputs/` contains generated artifacts and is not trusted until audited.
-4. `data/raw/`, local PDFs, API cache, and raw provider JSON are immutable sources.
-5. Narrative documents must point to curated evidence rows or primary papers.
+1. `data/curated/` contains explicit research decisions. Each table must state whether a row is AI-screened, human-confirmed, accepted, superseded, or unresolved.
+2. `config/` and controlled seed manifests contain reviewed inputs and protocols.
+3. Frozen queue/graph snapshots under `outputs/` define the current screening universe.
+4. Other `outputs/` are generated artifacts and remain untrusted until audited.
+5. `data/raw/`, local PDFs, provider-response archives, and source citation exports are immutable evidence.
+6. Narrative documents must point to curated evidence rows or primary papers.
 
 ## Non-negotiable rules
 
-- Never treat `low_confidence`, ambiguous, or provider-disagreeing matches as resolved.
-- Never snowball a seed until identity is accepted.
-- Never overwrite an existing run directory; create a new dated run.
-- Never edit raw PDFs, raw API JSON, or source citation exports.
+- Never treat an ambiguous or low-confidence bibliographic match as resolved.
 - Never infer actual dataset use from citation presence alone.
-- Never write a manuscript claim without a claim-ledger entry and evidence location.
-- Never silently choose one provider when OpenAlex and Semantic Scholar disagree.
-- Never perform destructive Git or filesystem commands without explicit approval.
-- Prefer deterministic scripts for merging, counting, hashing, and deduplication.
-- Use agents only for bounded semantic judgments and writing.
+- Never overwrite a historical run or the frozen screening queue.
+- Never hand-edit `title_abstract_decisions.csv`; update history through a validated batch or correction event.
+- Never edit raw PDFs, provider records, archives, or source citation exports.
+- Never write a manuscript claim without a claim-ledger entry and exact evidence location.
+- Never use citation count alone as evidence of underutilization or dataset quality.
+- Prefer deterministic Python for joins, hashes, IDs, counts, deduplication, state rebuilding, and validation.
+- Use agents only for bounded semantic judgments, evidence extraction, and writing.
 
-## Human-readable output
+## AI-screening policy
 
-Every generated or curated artifact must include:
+The project owner authorizes autonomous AI title/abstract screening. These decisions are provisional. Human confirmation remains mandatory for:
 
-- purpose;
-- input paths;
-- creation date;
-- method/version;
-- status (`generated`, `reviewed`, `accepted`, `quarantined`);
-- unresolved questions;
-- next action.
+- full-text inclusion central to the argument;
+- actual dataset-use claims;
+- access/license conclusions;
+- dataset selection;
+- manuscript claims;
+- the final study protocol.
 
-Use stable IDs (`P001`, canonical paper keys, dataset IDs) in filenames and tables. Use explicit columns rather than encoded notes.
+Use `unknown` or `unclear` when evidence is insufficient. Do not represent AI-only judgments as human-reviewed.
 
-## Working method for free models
+## Free-model discipline
 
-- One task per session.
-- One paper at a time for full-text extraction.
-- At most 10-20 rows per screening batch.
-- Give exact input and output paths.
-- Load only the skills needed for the task.
-- Preview changes before writing.
-- Stop and mark `unknown` when evidence is insufficient.
-- End every session with a durable handoff.
+- One bounded task per session.
+- At most 20 title/abstract rows per batch.
+- One paper per full-text evidence extraction.
+- Read only the prepared batch input, the controlled protocol, and necessary local evidence.
+- Write model output to a staging batch file; let deterministic scripts finalize it.
+- End with validation, durable status, and one exact next action.
 
-## Required checks before synthesis
-
-Read `@docs/workflow/QUALITY_GATES.md` and `@docs/project/CURRENT_STATE.md`.
-
-For repository structure and commands, read `@docs/workflow/WORKFLOW.md` only when relevant.
-
-## Common commands
+## Required screening commands
 
 ```powershell
-python scripts/research/audit_snowball_run.py <run-dir> --out <audit-dir>
-python scripts/research/build_accepted_graph.py --runs <old-run> <repair-run> --seed-audit data/curated/bibliography/seed_resolution_audit.csv --out outputs/accepted_graph_<date>
-python scripts/research/prepare_screening_queue.py <accepted-graph>/accepted_snowball_edges.csv --out outputs/screening_queue_<date>
-python scripts/research/apply_seed_corrections.py --manifest <manifest.csv> --corrections config/seed_corrections.csv
-python scripts/research/check_research_repo.py --repo .
-uv run pytest
+python scripts/research/screening_state.py validate --repo .
+python scripts/research/prepare_screening_batch.py --repo . --ranks 61-80
+python scripts/research/finalize_screening_batch.py outputs/screening_batches/batch_004_ranks_61-80 --repo .
 ```
+
+OpenCode should normally run these through `/screen-paper`.
 
 ## Stop conditions
 
-Stop and ask for human review when:
+Stop and report when:
 
-- a seed match is below the configured threshold;
-- title, DOI, year, or authors conflict materially;
-- downloaded relation counts are below provider-reported counts;
-- a PDF identity does not match its manifest row;
-- an edit would change raw or already-reviewed evidence;
-- an inclusion decision depends on unavailable full text;
-- a claim has no direct evidence location;
-- a proposed experiment lacks a falsifiable primary claim, grouped split, or stop-go rule.
+- identity, DOI, title, authors, or year conflict materially;
+- a curated CSV is malformed or a batch hash fails;
+- an edit would change raw or already-accepted evidence;
+- a candidate already has an active decision without an explicit supersession event;
+- the requested batch exceeds 20 papers;
+- a full-text claim lacks a page, section, table, or figure location;
+- an experiment lacks a falsifiable claim, grouped split, strong simple baseline, and stop/go rule.

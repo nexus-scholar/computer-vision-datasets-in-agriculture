@@ -1,8 +1,0 @@
-# Suggested additions to the repository .gitignore
-.env
-.env.*
-!.env.example
-.workflow-backup/
-
-# Generated API runs can stay ignored, but commit curated evidence and audit summaries.
-# outputs/

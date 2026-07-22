@@ -1,3 +1,10 @@
 # Raw evidence zone
 
-This directory contains immutable source exports, manifests, and source-derived files. Never edit raw bytes in place. Corrections belong in `config/` or `data/curated/` and must preserve lineage to the raw source.
+Raw bytes are immutable.
+
+- `citation_exports/`: report-derived source tables.
+- `seed_papers/`: identity-mapped PDFs plus SHA-256 manifest.
+- `api_archives/`: compressed historical provider-response caches removed from active run directories to reduce clutter.
+- `migration_archives/`: exact pre-cleanup artifacts retained for audit only; never use them as active state.
+
+Corrections belong in `config/` or curated decision tables. Never edit an archived provider response or PDF in place.

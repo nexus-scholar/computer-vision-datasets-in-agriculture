@@ -1,43 +1,41 @@
 # Research workflow
 
-## Data zones
+## Phase A — Bibliographic graph
 
-### Raw
+1. Resolve seed identity.
+2. Collect one-hop provider relations into a new dated run.
+3. Audit identity and relation completeness.
+4. Build a versioned accepted graph.
+5. Build a versioned canonical queue.
+6. Freeze that queue for one screening cycle.
 
-Immutable material: PDFs, source exports, raw API JSON, and API cache. Raw files are never edited in place.
+## Phase B — Title/abstract screening
 
-### Generated
+1. Prepare at most 20 unscreened rows with `prepare_screening_batch.py`.
+2. Let the model fill only the prepared decision template using `config/screening_protocol_v1.md`.
+3. Finalize with `finalize_screening_batch.py`.
+4. The finalizer validates schema, identity, reason codes, tags, hashes, duplicates, history, active state, and status.
+5. Never edit the active decision table manually.
 
-Run-specific API and deterministic analysis output under `outputs/<run-id>/`. Generated output is reproducible but not automatically trusted.
+## Phase C — Full-text evidence
 
-### Curated
+1. Include all title/abstract `include` and `unclear` records.
+2. Process one paper at a time.
+3. Distinguish introduced, trained, evaluated, extended, repackaged, mentioned-only, and unclear dataset relationships.
+4. Record page/section/table/figure locations.
+5. Populate normalized evidence, dataset, method, and limitations tables.
 
-Human-reviewed evidence under `data/curated/`. Curated tables are the only source for synthesis, opportunity scoring, and manuscript claims.
+## Phase D — Synthesis and study choice
 
-## Required run naming
+1. Build actual-use counts, not citation counts.
+2. Audit access, licensing, annotations, splits, leakage, modalities, and data quality.
+3. Build a method-gap matrix.
+4. Rank scientific opportunity separately from execution feasibility.
+5. Select one primary dataset family and at most one secondary validation family.
+6. Freeze a falsifiable protocol before architecture implementation.
 
-Use `outputs/<operation>_YYYY-MM-DD[_HHMM]/`. Each run must contain a manifest with input hashes, command, environment, provider settings, limits, and counts.
+## Current command
 
-## Screening sequence
-
-1. seed identity audit;
-2. human seed/provider acceptance;
-3. accepted graph construction across immutable runs;
-4. canonical deduplication;
-5. title/abstract screening;
-6. full-text screening;
-7. paper evidence extraction;
-8. dataset registry update;
-9. opportunity matrix;
-10. claim ledger;
-11. dataset selection decision;
-12. approved study protocol;
-13. benchmark and method gate.
-
-## Review ownership
-
-Agents may propose. Humans accept or reject. Record the reviewer and date in every curated table.
-
-## Experimental-design rule
-
-Do not begin full architecture work until an approved study protocol records the primary claim, null hypothesis, grouped split, simple and capacity-matched baselines, primary endpoint, statistics, compute budget, and stop-go rules.
+```text
+/screen-paper 61-80
+```

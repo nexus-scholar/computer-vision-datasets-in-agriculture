@@ -1,5 +1,12 @@
-# Source-located paper evidence
+# Full-text evidence
 
-Store one evidence note per included paper plus normalized extraction tables. Every nontrivial statement needs page/section/table/figure evidence.
+Store one source-located evidence record per included paper plus normalized relationship and experiment tables.
 
-Required metadata: status, reviewer, reviewed date, input evidence snapshot or commit, and unresolved questions.
+Every substantive field must distinguish:
+
+- observed fact;
+- author claim;
+- reviewer inference;
+- unknown.
+
+Record page, section, table, figure, or appendix. Title/abstract screening is not sufficient evidence for actual dataset use.

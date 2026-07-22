@@ -1,0 +1,3 @@
+severity,code,seed_row_id,provider,message,evidence,recommended_action
+high,relation_count_shortfall,P001,semantic_scholar,The selected accepted identity has incomplete downloaded citation relations.,"backward: downloaded=0, expected=47, reported=47, cap=0",Rerun the relation fetch with credentials and inspect relation_errors.csv; include only with an explicit incomplete-data decision.
+high,relation_count_shortfall,P007,semantic_scholar,The selected accepted identity has incomplete downloaded citation relations.,"backward: downloaded=0, expected=65, reported=65, cap=0",Rerun the relation fetch with credentials and inspect relation_errors.csv; include only with an explicit incomplete-data decision.

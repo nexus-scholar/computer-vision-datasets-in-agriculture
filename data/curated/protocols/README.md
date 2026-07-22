@@ -1,5 +1,3 @@
 # Experimental protocols
 
-Store approved study protocols, amendments, and experiment decision records. Do not silently revise a protocol after seeing results.
-
-Required metadata: status, reviewer, reviewed date, input evidence snapshot or commit, and unresolved questions.
+Store approved protocols, amendments, and experiment decisions. Do not silently revise a protocol after seeing results. Every protocol must state its primary claim, null hypothesis, split, baselines, endpoint, statistics, compute budget, and stop/go rules.

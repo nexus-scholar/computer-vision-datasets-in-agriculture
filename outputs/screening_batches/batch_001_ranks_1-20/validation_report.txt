@@ -1,0 +1,8 @@
+VALIDATION PASSED
+Batch: B001
+Rows: 20
+Schema fields: 27
+Include: 19
+Exclude: 1
+Unclear: 0
+Provenance: migrated_from_original_snapshot

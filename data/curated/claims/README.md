@@ -1,5 +1,3 @@
 # Claim governance
 
-Store claim-ledger exports, contradiction notes, and evidence-strength decisions.
-
-Required metadata: status, reviewer, reviewed date, input evidence snapshot or commit, and unresolved questions.
+Store manuscript claims, evidence IDs, contradictions, scope, uncertainty, and human approval. No title/abstract-only statement can enter the manuscript claim ledger.

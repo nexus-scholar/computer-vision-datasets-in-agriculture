@@ -1,0 +1,16 @@
+action,original_path,replacement_path,reason,preservation_status
+remove,.agents/,,empty directory,not applicable
+remove,.codex/,,empty directory,not applicable
+remove,agri_cv_opencode_workflow_package/,.opencode/;scripts/research/;docs/,duplicate installed package source,installed functionality retained
+move,datasets-papers-2026-07-03/*.pdf,data/raw/seed_papers/Pxxx_<slug>.pdf,mixed folder replaced by stable identity paths,all 13 PDFs preserved with hashes
+remove,datasets-papers-2026-07-03/*.csv,data/raw/citation_exports/;tools/agri_cv_snowball_package/input/,exact duplicate source tables,canonical copies retained
+archive,outputs/snowball_*/cache/,data/raw/api_archives/snowball_api_caches_2026-07-22.zip,671 generated API cache files cluttered active runs,all bytes retained with entry hashes
+migrate,data/curated/screening/title_abstract_decisions.csv,data/curated/screening/title_abstract_decision_history.csv;data/curated/screening/title_abstract_decisions.csv;data/curated/screening/title_abstract_relevance.csv;data/curated/screening/title_abstract_decisions_enriched.csv,malformed wide file and in-place correction,60 active decisions and 61 history events retained
+reconstruct,outputs/screening_batches/batch_002_ranks_21-40/screened_rows.csv,same path,original file missing,reconstructed from curated snapshot and labeled
+reconstruct,outputs/screening_batches/batch_003_ranks_41-60/screened_rows.csv,same path,original file had no header,reconstructed from active state and queue and labeled
+add,rank-20 original and corrected states,outputs/screening_batches/qa_001_rank_20/;decision history,correction had overwritten original event,explicit supersession restored
+remove,tools/agri_cv_snowball_package/input/seed_papers_original.csv,data/raw/citation_exports/agri_cv_dataset_paper_citations.csv,exact duplicate,canonical copy retained
+remove,tools/agri_cv_snowball_package/input/seed_papers_manifest.csv.bak-20260722T142718Z,,stale timestamped backup,prior state remains in Git and migration archive
+remove,tools/agri_cv_snowball_package/CODEX_PROMPT.md,,obsolete runtime prompt,current OpenCode commands and AGENTS.md retained
+remove,tools/agri_cv_snowball_package/requirements.txt,pyproject.toml;uv.lock,redundant nested environment,root dependency lock retained
+remove,**/__pycache__/;.pytest_cache/,,transient generated files,regenerable

@@ -1,0 +1,8 @@
+VALIDATION PASSED
+Batch: B003
+Rows: 20
+Schema fields: 27
+Include: 18
+Exclude: 2
+Unclear: 0
+Provenance: reconstructed_from_headerless_snapshot

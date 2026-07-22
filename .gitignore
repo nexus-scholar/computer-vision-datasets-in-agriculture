@@ -4,20 +4,34 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 
-# Generated research outputs
-outputs/
-tools/agri_cv_snowball_package/outputs/*
-!tools/agri_cv_snowball_package/outputs/README_EXPECTED_OUTPUTS.md
-tools/agri_cv_snowball_package/cache/
-tools/agri_cv_snowball_package/raw_api_json/
-
-# Local full-text copies are useful for analysis but should not be committed by default.
-datasets-papers-2026-07-03/*.pdf
-data/**/*.pdf
-
-# Workflow overlay additions
+# Secrets and local replacements
 .env
 .env.*
 !.env.example
 .workflow-backup/
 
+# Provider collection runs are local by default. Track the frozen evidence
+# snapshots required to reproduce current screening progress.
+outputs/**
+!outputs/README.md
+!outputs/accepted_graph_2026-07-22/
+!outputs/accepted_graph_2026-07-22/**
+!outputs/screening_queue_2026-07-22/
+!outputs/screening_queue_2026-07-22/**
+!outputs/screening_batches/
+!outputs/screening_batches/**
+!outputs/audits/
+!outputs/audits/**
+!outputs/inventory/
+!outputs/inventory/**
+
+# Local raw evidence is shipped in the replacement package but is not committed by default.
+data/raw/seed_papers/*.pdf
+data/raw/api_archives/*.zip
+data/raw/migration_archives/*.zip
+
+# Collector-local temporary state
+tools/agri_cv_snowball_package/outputs/*
+!tools/agri_cv_snowball_package/outputs/README_EXPECTED_OUTPUTS.md
+tools/agri_cv_snowball_package/cache/
+tools/agri_cv_snowball_package/raw_api_json/

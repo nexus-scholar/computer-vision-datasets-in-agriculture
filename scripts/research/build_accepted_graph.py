@@ -91,7 +91,7 @@ def expected_downloaded(reported: int, cap: int) -> int:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build a graph from human-accepted seed/provider identities.")
     parser.add_argument("--runs", nargs="+", type=Path, required=True, help="Run directories, oldest to newest")
-    parser.add_argument("--seed-audit", type=Path, required=True, help="Human-reviewed seed_resolution_audit.csv")
+    parser.add_argument("--seed-audit", type=Path, required=True, help="Accepted seed/provider identity decisions in seed_resolution_audit.csv")
     parser.add_argument("--out", type=Path, required=True, help="New output directory")
     parser.add_argument(
         "--allow-incomplete-relations",

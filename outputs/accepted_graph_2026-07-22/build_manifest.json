@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-07-22T14:39:01.618935+00:00",
+  "input_runs_oldest_to_newest": [
+    "C:\\Users\\mouadh\\Documents\\Computer Vision Datasets in Agriculture\\outputs\\snowball_full_2026-07-05",
+    "C:\\Users\\mouadh\\Documents\\Computer Vision Datasets in Agriculture\\outputs\\snowball_repair_2026-07-22",
+    "C:\\Users\\mouadh\\Documents\\Computer Vision Datasets in Agriculture\\outputs\\snowball_s2_retry_2026-07-22"
+  ],
+  "seed_audit": "C:\\Users\\mouadh\\Documents\\Computer Vision Datasets in Agriculture\\data\\curated\\bibliography\\seed_resolution_audit.csv",
+  "accepted_audit_pairs": 24,
+  "selected_pairs": 24,
+  "included_pairs": 24,
+  "omitted_pairs": 0,
+  "accepted_edge_rows": 869,
+  "allow_incomplete_relations": true,
+  "critical_or_high_issue_count": 2,
+  "quality_gate_passed": false
+}

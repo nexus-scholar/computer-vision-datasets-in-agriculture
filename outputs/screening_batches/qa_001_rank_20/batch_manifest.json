@@ -1,0 +1,18 @@
+{
+  "batch_id": "QA001",
+  "batch_type": "qa_correction",
+  "ranks": "20",
+  "decision_count": 1,
+  "included": 0,
+  "excluded": 1,
+  "unclear": 0,
+  "protocol_version": "AI_SCREENING_V1",
+  "source_queue": "outputs/screening_queue_2026-07-22/screening_queue.csv",
+  "source_queue_sha256": "feb7c8a80978b97f3bdcffd7291708e8ac5282301ce06c793247227bc43712be",
+  "screened_rows_sha256": "505b96297dfcb62f81ec9e599b54415c3cb96f2ff41834530101a64356a260e9",
+  "provenance_status": "reconstructed_from_original_and_qa_note",
+  "quality_gates_passed": true,
+  "notes": "Restores original rank-20 include event and records the later exclusion as a superseding event.",
+  "status": "finalized",
+  "finalized_utc": "2026-07-22T16:25:00Z"
+}

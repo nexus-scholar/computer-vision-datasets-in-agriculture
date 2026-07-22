@@ -1,53 +1,85 @@
-# Underutilized Agricultural CV Datasets
+# Agricultural Computer-Vision Dataset Research Workspace
 
-This repository is the local research workspace for the project on underutilized computer vision datasets in agriculture and novelty-oriented paper directions.
+This repository supports a citation-guided study of recent and underused computer-vision datasets in agriculture, followed by a rigorously gated methodology study. The active research emphasis is robust segmentation, multimodal and spectral sensing, cross-sensor generalization, calibration, and sensor-aware reliability.
 
-## Current Inputs
+## Current checkpoint
 
-- Deep research report: `references/underutilized-agri-cv-datasets-deep-research-2026-07-03.md`
-- Extracted citation CSVs: `data/raw/citation_exports/`
-- Local full-text PDFs and duplicated citation exports: `datasets-papers-2026-07-03/`
-- Reproducible OpenAlex + Semantic Scholar snowballing package: `tools/agri_cv_snowball_package/`
+- 13 seed dataset papers are locally available and identity-mapped.
+- One-hop OpenAlex and Semantic Scholar snowballing has been collected and repaired.
+- The frozen screening queue contains 560 canonical candidates.
+- Ranks 1–60 have active AI title/abstract decisions under a human-authorized protocol.
+- Current active counts: 55 include, 5 exclude, 0 unclear.
+- The next bounded screening batch is ranks 61–80.
 
-## Setup
+The screening queue is intentionally frozen so existing rank-based progress remains stable. Its accepted graph is conditionally usable for screening but not for citation-coverage claims because Semantic Scholar reference retrieval is incomplete for P001 and P007.
+
+## Start here
 
 ```powershell
 uv sync
-uv run agri-cv-inventory
+uv run pytest
+python scripts/research/screening_state.py validate --repo .
 ```
 
-The inventory command is intentionally local-only. It counts citation rows, seed rows, PDFs, and can write a reproducibility manifest:
+OpenCode:
 
-```powershell
-uv run agri-cv-inventory --write-manifest outputs/inventory/local_file_manifest.csv
+```text
+/status
+/screen-paper 61-80
 ```
 
-## Snowballing
+The `/screen-paper` workflow prepares a bounded batch, asks the model to classify only those records, and then runs deterministic validation and finalization. Do not hand-edit the active screening CSV.
 
-The packaged snowball collector is preserved under `tools/agri_cv_snowball_package/`.
+## Important paths
+
+| Path | Purpose |
+|---|---|
+| `data/raw/seed_papers/` | Immutable local seed PDFs plus identity/hash manifest |
+| `data/raw/citation_exports/` | Citation tables extracted from the original report |
+| `data/raw/api_archives/` | Compressed historical API response caches |
+| `data/curated/bibliography/` | Seed/provider identity decisions |
+| `data/curated/screening/` | Decision history, active decisions, relevance tags, and batch provenance |
+| `outputs/accepted_graph_2026-07-22/` | Frozen accepted provider graph used to create the queue |
+| `outputs/screening_queue_2026-07-22/` | Frozen canonical queue with ranks 1–560 |
+| `outputs/screening_batches/` | Validated per-batch artifacts |
+| `scripts/research/` | Deterministic audit, screening, and graph utilities |
+| `.opencode/` | Bounded agents, skills, and commands |
+| `docs/project/CURRENT_STATE.md` | Current blockers, progress, and exact next action |
+| `docs/project/REPOSITORY_AUDIT_2026-07-22.md` | Defects found, repairs made, retained limitations, and validation |
+
+## Screening state
+
+The screening layer is normalized:
+
+- `title_abstract_decision_history.csv` is append-only and preserves superseded decisions.
+- `title_abstract_decisions.csv` is the active 60-row snapshot.
+- `title_abstract_relevance.csv` is a derived wide tag table.
+- `title_abstract_decisions_enriched.csv` is the human-readable joined view; it is regenerated, never edited.
+- `screening_batches.csv` links each decision batch to an immutable queue hash and screened-row hash.
+
+Validate at any time:
 
 ```powershell
-cd tools/agri_cv_snowball_package
-$env:OPENALEX_MAILTO = "your.email@example.com"
-$env:S2_API_KEY = "your_semantic_scholar_api_key" # optional
-uv run python scripts/collect_openalex_semantic_scholar_snowball.py `
-  --input input/seed_papers_manifest.csv `
-  --out outputs `
+python scripts/research/screening_state.py validate --repo .
+```
+
+## Snowball collection
+
+The collector remains under `tools/agri_cv_snowball_package/`. Use the root `uv` environment and a fresh dated output directory:
+
+```powershell
+$env:OPENALEX_API_KEY = "..."
+$env:OPENALEX_MAILTO = "you@example.com"
+$env:S2_API_KEY = "..."
+
+uv run python tools/agri_cv_snowball_package/scripts/collect_openalex_semantic_scholar_snowball.py `
+  --input tools/agri_cv_snowball_package/input/seed_papers_manifest.csv `
+  --out outputs/snowball_<purpose>_<YYYY-MM-DD> `
   --providers both
 ```
 
-Use a smaller run first when checking API access:
+Never overwrite historical runs or rebuild the active screening queue in place. The frozen accepted graph, queue, batch artifacts, audits, and inventory are intentionally allowed through `.gitignore` so the current screening state can be committed; bulk provider runs remain local by default.
 
-```powershell
-uv run python tools/agri_cv_snowball_package/scripts/collect_openalex_semantic_scholar_snowball.py `
-  --input tools/agri_cv_snowball_package/input/seed_papers_manifest.csv `
-  --out outputs/snowball_smoke `
-  --providers both `
-  --max-forward-citations 10 `
-  --max-backward-references 10
-```
+## Research gate
 
-## Notes
-
-The report marks `P013 TomatoPGT ecosystem` as needing manual verification because the original citation row lacked reliable title/authors. Keep that caveat attached until it is resolved from a primary source.
-
+Title/abstract screening is discovery, not evidence extraction. Dataset ranking and study design should wait until full-text papers have source-located evidence for actual dataset use, available modalities, evaluation splits, robustness tests, limitations, and access/licensing.

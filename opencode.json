@@ -25,7 +25,11 @@
       "git reset --hard*": "deny",
       "git clean*": "deny",
       "rm -rf*": "deny",
-      "Remove-Item * -Recurse*": "deny"
+      "Remove-Item * -Recurse*": "deny",
+      "python scripts/research/screening_state.py*": "allow",
+      "python scripts/research/prepare_screening_batch.py*": "allow",
+      "python scripts/research/finalize_screening_batch.py*": "allow",
+      "python scripts/research/check_research_repo.py*": "allow"
     }
   },
   "compaction": {
@@ -41,8 +45,8 @@
       ".pytest_cache/**",
       "outputs/**/cache/**",
       "outputs/**/raw_seed_records/**",
-      "datasets-papers-2026-07-03/**/*.pdf",
-      "data/raw/papers/**/*.pdf"
+      "data/raw/seed_papers/**/*.pdf",
+      "data/raw/api_archives/**"
     ]
   },
   "agent": {

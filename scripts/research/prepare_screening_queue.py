@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a canonical, human-screenable paper queue from provider-level edges."""
+"""Create a canonical paper-screening queue from provider-level edges."""
 from __future__ import annotations
 
 import argparse

@@ -1,0 +1,8 @@
+VALIDATION PASSED
+Batch: QA001
+Rows: 1
+Schema fields: 27
+Include: 0
+Exclude: 1
+Unclear: 0
+Provenance: reconstructed_from_original_and_qa_note

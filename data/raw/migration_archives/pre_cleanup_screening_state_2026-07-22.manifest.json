@@ -1,0 +1,85 @@
+{
+  "created_utc": "2026-07-22T15:58:42.238405+00:00",
+  "purpose": "Preserve the exact pre-cleanup screening artifacts, including malformed/missing batch outputs, for audit only. Do not use as active state.",
+  "source_archive": "repo.zip uploaded in this conversation",
+  "entry_count": 15,
+  "entries": [
+    {
+      "path": "data/curated/screening/README.md",
+      "size_bytes": 807,
+      "sha256": "c55d1d0b1f1df5b1220dc6d9f452036599d1d5795c3ed374730addb5102d5006"
+    },
+    {
+      "path": "data/curated/screening/screening_batches.csv",
+      "size_bytes": 2380,
+      "sha256": "e1bc536e664d25afff5fd50603d8dabb805d45f228d515827d8ca2d8d1b4bd9e"
+    },
+    {
+      "path": "data/curated/screening/title_abstract_decisions.csv",
+      "size_bytes": 48143,
+      "sha256": "8203fe5ce78646b95a6b7e2b0c22af1fb7614116d4c8275054bd95a6a499e77e"
+    },
+    {
+      "path": "docs/project/SCREENING_STATUS.md",
+      "size_bytes": 1276,
+      "sha256": "76b4fdf217c571de8fe4338dd6574d625dcd11f4f453f499f39ec5c50436be98"
+    },
+    {
+      "path": "outputs/screening_batches/batch_001_ranks_1-20/batch_manifest.json",
+      "size_bytes": 306,
+      "sha256": "369ef83b5cd24eeb667e1ff4595fa5071b9ea89bb2715cd43f71b2e63297fb74"
+    },
+    {
+      "path": "outputs/screening_batches/batch_001_ranks_1-20/batch_report.md",
+      "size_bytes": 2970,
+      "sha256": "3afac3043f69bbd9dfa4486556db1cedd5d66229b89fb05d101fa0dc1a6c099d"
+    },
+    {
+      "path": "outputs/screening_batches/batch_001_ranks_1-20/screened_rows.csv",
+      "size_bytes": 17515,
+      "sha256": "fa898da630efc01ba9963041cdeffbb8647b1d23ae4a908af2202b0ca238ff69"
+    },
+    {
+      "path": "outputs/screening_batches/batch_001_ranks_1-20/validation_report.txt",
+      "size_bytes": 161,
+      "sha256": "cb1a9f6393cf6a5848bef814b8643b674e8227f18d8586fd89e70c27a91c9054"
+    },
+    {
+      "path": "outputs/screening_batches/batch_002_ranks_21-40/batch_manifest.json",
+      "size_bytes": 307,
+      "sha256": "ac6bfdce0687b2d7cb878f20a337b9632bc2469cd244172630209137b59b421c"
+    },
+    {
+      "path": "outputs/screening_batches/batch_002_ranks_21-40/batch_report.md",
+      "size_bytes": 2919,
+      "sha256": "d357db6f39d594bc2457ebc7c82d223d01a3f80f1319812ab81615d1d788f8e7"
+    },
+    {
+      "path": "outputs/screening_batches/batch_002_ranks_21-40/validation_report.txt",
+      "size_bytes": 33,
+      "sha256": "7fa547eb2dfb4eea4e945a1be25e6f6534a6c2ee71c05ae0ab4e3c91a1465c6e"
+    },
+    {
+      "path": "outputs/screening_batches/batch_003_ranks_41-60/batch_manifest.json",
+      "size_bytes": 296,
+      "sha256": "28fec1330f3ed3b946fcf2527dd54f472a38898f33a10d7fd322fad00759f7ca"
+    },
+    {
+      "path": "outputs/screening_batches/batch_003_ranks_41-60/batch_report.md",
+      "size_bytes": 2545,
+      "sha256": "836f97bfbe43971680cd05ade8711e1e5bb18ce73831eb36b667a58933ce56cc"
+    },
+    {
+      "path": "outputs/screening_batches/batch_003_ranks_41-60/screened_rows.csv",
+      "size_bytes": 16957,
+      "sha256": "ffa8a9bfa319dbee2c3b30b1db7ff0ecfa3642204c3a7da5abf5e41eb5360481"
+    },
+    {
+      "path": "outputs/screening_batches/batch_003_ranks_41-60/validation_report.txt",
+      "size_bytes": 154,
+      "sha256": "496bd5cb4be6572c8f2834dc09a552e94b0b449843ee508e6a05b60e33efcea4"
+    }
+  ],
+  "archive_sha256": "c23b943c26fe82e1a4af4fc0d146a393b8ddf09587910bfb1c322eb9af56facb",
+  "archive_size_bytes": 33225
+}

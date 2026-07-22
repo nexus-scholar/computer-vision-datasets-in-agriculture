@@ -110,7 +110,7 @@ def main() -> None:
 
     citation_dir = root / "data" / "raw" / "citation_exports"
     snowball_input_dir = root / "tools" / "agri_cv_snowball_package" / "input"
-    papers_dir = root / "datasets-papers-2026-07-03"
+    papers_dir = root / "data" / "raw" / "seed_papers"
     references_dir = root / "references"
 
     citation_summaries = [summarize_csv(path) for path in sorted(citation_dir.glob("*.csv"))]

@@ -1,49 +1,78 @@
 # Quality gates
 
-## Gate 1 - Seed identity
+## Gate 1 — Seed identity
 
-Required before snowballing:
+Required before using a seed/provider pair:
 
-- stable identifier or manually verified exact title;
-- compatible year and authors;
-- no unresolved provider conflict;
-- explicit human status.
+- exact stable identifier or manually verified title/author/year match;
+- explicit status;
+- provider disagreement documented;
+- provenance source recorded.
 
-## Gate 2 - Run completeness
+Legacy rows without reviewer metadata may support discovery when identifiers are exact, but must be manually verified before manuscript bibliography use.
 
-Required before using relations:
+## Gate 2 — Relation completeness
 
-- no accepted low-confidence seed;
-- no unexplained relation shortfall;
-- manifest and raw records present;
-- provider errors recorded;
+Required before citation-coverage or bibliometric claims:
+
+- no accepted wrong identity;
+- no unexplained provider shortfall;
+- manifest, relation errors, and raw records preserved;
 - quarantined seeds excluded.
 
-## Gate 3 - Canonical corpus
+The current graph does **not** pass this gate because P001 and P007 S2 references are incomplete. It is conditionally usable for screening only.
+
+## Gate 3 — Canonical queue
 
 Required before screening:
 
-- DOI/arXiv/PMID/title-year deduplication;
-- provider provenance preserved;
+- stable canonical paper ID;
+- cross-provider provenance preserved;
 - empty identities quarantined;
-- one canonical paper key per row.
+- queue version frozen after screening starts.
 
-## Gate 4 - Curated evidence
+The 2026-07-22 queue passes this operational gate.
+
+## Gate 4A — AI title/abstract screening
+
+Required for each finalized batch:
+
+- at most 20 records;
+- valid controlled decision and reason code;
+- no low-confidence exclusion;
+- candidate ID and title match the frozen queue;
+- batch and queue hashes recorded;
+- append-only decision history;
+- active state rebuilt and validated.
+
+## Gate 4B — Full-text evidence
 
 Required before synthesis:
 
-- inclusion decision and reason;
-- actual dataset use verified from full text when claimed;
-- evidence location recorded;
+- actual dataset relationship verified from full text;
+- source location recorded;
 - uncertainty explicit;
-- human reviewer/date present.
+- access/license evidence recorded where relevant;
+- human confirmation for central evidence.
 
-## Gate 5 - Research claim
+## Gate 5 — Dataset ranking
 
-Required before manuscript use:
+Required before choosing an experiment:
 
-- claim ledger entry;
-- supporting evidence IDs;
-- contradictory evidence recorded;
-- scope and uncertainty stated;
+- dataset registry deduplicated;
+- actual use separated from mentions;
+- method gaps supported across papers;
+- data quality, leakage, license, and feasibility documented;
+- scientific and execution scores shown separately.
+
+## Gate 6 — Research claim and study protocol
+
+Required before implementation or manuscript use:
+
+- one primary claim and null hypothesis;
+- grouped split and leakage controls;
+- strongest simple and capacity-matched baselines;
+- primary endpoint and statistical unit;
+- calibration/robustness metrics where claimed;
+- compute budget, ablations, and stop/go rules;
 - human approval.

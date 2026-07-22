@@ -1,25 +1,41 @@
-# Project Index
+# Project index
 
-## Research Question
+## Research question
 
-Which recent or underutilized agricultural computer vision datasets offer credible research novelty for a first paper, and which benchmark directions are defensible from the available evidence?
+Which recent or underused agricultural computer-vision datasets provide a credible opportunity for methodological novelty, and which falsifiable benchmark or model study can demonstrate that novelty rigorously?
 
-## Evidence Folders
+## Active thesis
 
-| Path | Purpose |
-|---|---|
-| `references/` | Preserved source report and project reference notes. |
-| `data/raw/citation_exports/` | Citation CSVs extracted from the deep research report. |
-| `datasets-papers-2026-07-03/` | Local PDFs and source files downloaded for the dataset papers. |
-| `tools/agri_cv_snowball_package/` | Reproducible OpenAlex + Semantic Scholar snowballing scripts and seed manifests. |
-| `src/agri_cv_novelty/` | Local Python utilities for inventory, audit, and future extraction workflows. |
-| `outputs/` | Generated manifests, snowball outputs, and analysis tables. Ignored by git. |
+Agricultural datasets increasingly include multiple sensors, spectral channels, locations, seasons, time points, and 3D information, while many methods still assume complete, clean, fixed inputs. The project is testing whether this recurring gap justifies reliability-aware, sensor-aware segmentation rather than another clean-input backbone comparison.
 
-## Immediate Workflow
+## Current phase
 
-1. Run `uv sync`.
-2. Run `uv run agri-cv-inventory --write-manifest outputs/inventory/local_file_manifest.csv`.
-3. Smoke-test the snowball collector with small forward/backward limits.
-4. Resolve the report caveat for `P013 TomatoPGT ecosystem`.
-5. Start a dataset-by-dataset evidence matrix from citation rows plus local PDFs.
+**Title/abstract screening.** The frozen queue has 560 candidates and ranks 1–60 are complete. The next batch is 61–80.
 
+## Sources of truth
+
+| Layer | Path | Status |
+|---|---|---|
+| Seed PDFs | `data/raw/seed_papers/` | Immutable local evidence |
+| Provider runs | `outputs/snowball_*` | Historical generated evidence |
+| Frozen graph | `outputs/accepted_graph_2026-07-22/` | Conditional screening snapshot |
+| Frozen queue | `outputs/screening_queue_2026-07-22/` | Rank-stable screening input |
+| Decision history | `data/curated/screening/title_abstract_decision_history.csv` | Append-only |
+| Active decisions | `data/curated/screening/title_abstract_decisions.csv` | Derived active state |
+| Full-text evidence | `data/curated/evidence/` | Not yet populated |
+| Dataset intelligence | `data/curated/datasets/` | Pending full-text evidence |
+| Claim ledger | `data/curated/claims/` | Pending source-located evidence |
+
+## Immediate workflow
+
+1. Validate repository and screening state.
+2. Run `/screen-paper 61-80`.
+3. Continue in batches of at most 20.
+4. Build a full-text queue from include/unclear decisions.
+5. Extract one paper at a time into normalized evidence tables.
+6. Rank datasets only after actual experimental use and access/licensing are verified.
+7. Freeze one study protocol before implementing SARA-Lite or a full architecture.
+
+## Cleanup audit
+
+The structural migration and preserved-progress details are recorded in `docs/project/REPOSITORY_AUDIT_2026-07-22.md`, `PRESERVED_PROGRESS_2026-07-22.md`, and `CLEANUP_MIGRATION_2026-07-22.md`.

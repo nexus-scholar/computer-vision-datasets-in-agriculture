@@ -1,31 +1,45 @@
 # Current project state
 
-Status: generated from the repository audit; update after each milestone.
+Last reconciled: 2026-07-22
 
-## Available evidence
+## Completed
 
-- 13 local seed PDFs.
-- Deep research report and extracted citation CSVs.
-- OpenAlex + Semantic Scholar one-hop run at `outputs/snowball_full_2026-07-05`.
-- 694 backward provider rows, 224 forward provider rows, 918 provider edges, and 689 provider/canonical-ish nodes.
+- Repository workflow and Git baseline established by the project owner.
+- P004 false OpenAlex match repaired; historical P004 edges remain quarantined from the frozen accepted graph.
+- P013 resolved as the 2026 TomatoPGT Data in Brief paper.
+- OpenAlex/Semantic Scholar one-hop collection, repair run, and S2 retry preserved.
+- Accepted graph snapshot built with 869 provider relations.
+- Canonical screening queue frozen at 560 candidates.
+- Title/abstract screening completed for ranks 1–60.
+- Active decisions: 55 include, 5 exclude, 0 unclear.
+- Rank 20 correction is preserved as a superseding event rather than an in-place overwrite.
+- Screening state migrated to a normalized and deterministically validated schema.
 
-## Known blockers
+## Known limitations
 
-- P004 was falsely resolved to an unrelated 2021 review; all P004 edges in the full run are quarantined.
-- P013 seed identity is obsolete and must be patched to the 2026 TomatoPGT Data in Brief paper.
-- P007 Semantic Scholar references are incomplete: 65 reported, 0 downloaded.
-- Six seeds remain unresolved in Semantic Scholar in the historical run.
-- OpenAlex API-key support is missing from the historical collector.
-- The repository has no usable initial Git commit.
+1. The accepted graph was built with `allow_incomplete_relations=true` and therefore failed its completeness gate.
+2. Semantic Scholar backward references are incomplete for P001 and P007.
+3. Semantic Scholar identities remain unresolved for P003 and P004; OpenAlex identities are accepted and sufficient for the frozen queue.
+4. The legacy seed-resolution table lacks named reviewer and review timestamp metadata.
+5. Title/abstract decisions are AI-screened and provisional; actual dataset use remains unverified until full text.
+6. A high include rate is expected under the recall-first protocol, but it makes disciplined full-text exclusion essential.
 
-## Current objective
+## Frozen-state rule
 
-Produce an accepted seed-resolution table and a canonical, human-screenable paper queue. Do not expand snowball depth until this is complete.
+Do not rebuild or re-rank `outputs/screening_queue_2026-07-22/` during the current title/abstract phase. A later graph refresh must create a new queue version and map existing decisions by `candidate_id`, not by rank.
 
-## Next bounded action
+## Exact next action
 
-Install the workflow package, apply the source patches, audit the historical run, patch P004/P013, and run a repair collection for P001, P003, P004, P005, P007, P012, and P013.
+```text
+/screen-paper 61-80
+```
+
+Before and after the batch:
+
+```powershell
+python scripts/research/screening_state.py validate --repo .
+```
 
 ## Downstream gate
 
-After the accepted screening corpus and dataset opportunity matrix exist, use `/design-study` to freeze one falsifiable benchmark protocol before SARA-Lite or full SARA-Net implementation.
+Do not run dataset opportunity ranking or `/design-study WeedsGalore` until full-text evidence distinguishes dataset introduction, experimental use, descriptive mention, modality usage, split quality, robustness testing, and access/licensing.

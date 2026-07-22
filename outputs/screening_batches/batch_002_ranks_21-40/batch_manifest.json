@@ -1,0 +1,18 @@
+{
+  "batch_id": "B002",
+  "batch_type": "title_abstract",
+  "ranks": "21-40",
+  "decision_count": 20,
+  "included": 19,
+  "excluded": 1,
+  "unclear": 0,
+  "protocol_version": "AI_SCREENING_V1",
+  "source_queue": "outputs/screening_queue_2026-07-22/screening_queue.csv",
+  "source_queue_sha256": "feb7c8a80978b97f3bdcffd7291708e8ac5282301ce06c793247227bc43712be",
+  "screened_rows_sha256": "22fa9df43203bcdd4d5122d6d8f3f7c922328db253db2307f5d11ac00fc7eae2",
+  "provenance_status": "reconstructed_from_curated_snapshot",
+  "quality_gates_passed": true,
+  "notes": "Original batch-002 screened_rows.csv was missing; reconstructed from the curated decisions snapshot.",
+  "status": "finalized",
+  "finalized_utc": "2026-07-22T16:25:00Z"
+}

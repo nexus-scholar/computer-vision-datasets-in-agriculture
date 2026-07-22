@@ -1,13 +1,15 @@
 # Claim ledger
 
-Maintain the machine-readable ledger in `data/curated/claim_ledger.csv`. This document summarizes only accepted claims.
+The machine-readable claim ledger will live under `data/curated/claims/` after full-text evidence extraction begins.
 
 A claim cannot be used in a manuscript until it has:
 
 - a stable claim ID;
-- a precise statement;
+- a precise statement and scope;
 - one or more evidence IDs;
-- a primary-source location;
+- an exact primary-source location;
+- contradictory evidence when present;
 - strength and uncertainty ratings;
-- a review status;
-- a named reviewer/date.
+- human approval and date.
+
+Title/abstract screening decisions are not manuscript evidence.

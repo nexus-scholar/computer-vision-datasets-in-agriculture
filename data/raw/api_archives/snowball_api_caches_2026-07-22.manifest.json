@@ -1,0 +1,3366 @@
+{
+  "created_utc": "2026-07-22T15:47:11.892063+00:00",
+  "purpose": "Immutable archive of historical OpenAlex/Semantic Scholar response caches removed from active run directories.",
+  "source_upload": "repo.zip",
+  "entry_count": 671,
+  "archive_sha256": "39c3a069a32228b12d71e5d8cb08232484f466c2ee404d55d5ea7f79a626f056",
+  "archive_size_bytes": 4479670,
+  "restore_target": "repository root",
+  "entries": [
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/0063b955039f80e540aaefdb8dca3fafffa7a79e8abfdea9cc63be3e76bdafe9.json",
+      "size_bytes": 23515,
+      "sha256": "f66ad616c146b8a5f0ebfe2f0a8959f95255d5968f578b1287e0f24742b1ee17"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/006645fbaff9b18fc969ab4f8e9da90d650fb4563857c43f5799524aa69b835d.json",
+      "size_bytes": 137876,
+      "sha256": "3d7c523534502cf5a6a494595b67bde7f7798519c7b4083856351830de66eca5"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/0177d6d3f6f270497745e4bd7426a7ea8b3e6b12474ce013ea03ed9d0f07caff.json",
+      "size_bytes": 27270,
+      "sha256": "29517e68575c8cd69fe2e3f9fabca5595c48b20792244b27db7461db68f1b0a3"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/02a21c46b708c7c19639b6980af507708dfde5ffdba233065b02b3636f629705.json",
+      "size_bytes": 34716,
+      "sha256": "e654cd61ec6021a396d80e5bd129afda4cbee8b343aa13df20b90d09b48ed78a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/03631b896bf4b42d7bddb3482fa2e4a39ae2cee83f9da92be3fcd313c3f8ee28.json",
+      "size_bytes": 26043,
+      "sha256": "9ba55d42a1184b8bddf9460d2452cc0f02bd5c023f610be0384e0bf49e941492"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/039519db92c64fc5aa55d68b0b757ece94a29ede1b193f95132e439e0c7fc520.json",
+      "size_bytes": 33740,
+      "sha256": "1954f02fef28b29727b1085b19ad46b2c74fa782c3fd608d6583706b6c0b8459"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/03a19c733375c9faedea4ee7d5bae8efb10d3913ded33d152352b48a1dc50334.json",
+      "size_bytes": 19946,
+      "sha256": "00a93ebcf087cc06fe8e6f7c67fed368012e1779bcc0f483c64f86b1665822e4"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/03a74c464cab8ce14bb85a7c3b5842a10ce7d9af2efa5168062d99a2756b8d61.json",
+      "size_bytes": 30812,
+      "sha256": "2332c23022439d299016e6e000368451a800bac512ad18d531835e1254f176e9"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/04ce36c24a9469d79cdee1c62211ced1a1d4b50f887b4bc4fff9684d18f63250.json",
+      "size_bytes": 20854,
+      "sha256": "ce5e6f8a5d49b18edf7b3761c475eed8bb4bab4e9e5bba69803a3fd43fe84129"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/05450b070c3a61118de9a99a40f7d57899dab497cefb45e2bdbec687e46364d9.json",
+      "size_bytes": 36478,
+      "sha256": "13c0a6df9d0380304f44ebc2a523ee9cf5eca3de09e150237ab0b5c478b878f0"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/0562ba63dd176459a59fcdf7bf3c0b8cb6dec2752b70803014ea25513c0d696c.json",
+      "size_bytes": 25601,
+      "sha256": "83f6544eddcf32aa3d1f9b3e9c1e688c5ced7c2162b2c79866113c3439d847ac"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/05a492484bc2a7496466866be72a77dbfa0a26a77ca28508613bd4399aefe7c0.json",
+      "size_bytes": 29239,
+      "sha256": "a9d1ed0878b18487d152a0d448f36ce59e9d0eccd945795f84882c7f2bac399b"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/05d9e797e03b3a6e79ed506f437f10b950d08778b483a0ddacd3ebd0b779a6dc.json",
+      "size_bytes": 31247,
+      "sha256": "cee989beacbf79dc0430c4b2069b373e2824a7ef2e41557a00381595d99414a9"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/066f99888ae26382a601c6d26e167604812e2805822071d5a1085afb4ec5fd44.json",
+      "size_bytes": 35678,
+      "sha256": "b2866538224825dd9955ba07869720a5a3a3e48d3ee3bd033fd59056c7439b3d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/073a5231f74f916cfff63b7aa7cc7c9295b092b63279927b2dcc27f8397d0355.json",
+      "size_bytes": 21161,
+      "sha256": "93bcb7e538d9eca8092c6fdec96f6a145603bcb43a4a9e224552dc6506c86518"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/089aff7ca7a6f86fbdb3d2cd6c849bfee812c8ad9e37892cc52152d6a6d4262a.json",
+      "size_bytes": 30870,
+      "sha256": "162030d39b53555775352bfa57e3200ffefd554dbe9535fe2ed55b2c10b97459"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/08d785269209b44102c1dc92eef83d1645f2cc52ca3a2c371875b6a6b38e9785.json",
+      "size_bytes": 20703,
+      "sha256": "6c4817c7b7f9c8444fea95b508eee81fcbc584b6c48f17d01c5d0b892db8edaf"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/0927c63de266bbf544fda203be81f4ad62e75426fa27ad0aef397fcf7cf18d94.json",
+      "size_bytes": 12655,
+      "sha256": "fedc000d63c28e35bbec75bc9f60aca54831be9b2deb2e75393107ddaa590492"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/094b4716216725df9384fb013f88a2a2b5fe0b97637f3a178cf6cf1aaa55b107.json",
+      "size_bytes": 48548,
+      "sha256": "e1b23424e2aa6c39225eb738f242268dd90d5865606a77084a1bb2c2e9fa1a62"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/0af6f7dff00025be8bd2fd78bcf4b711f6deb3783161a02b0481d1bc404cc80b.json",
+      "size_bytes": 38518,
+      "sha256": "32defe3b9a5abd847e2e0c8716c81a288396036996db89a5bee4d96c51583486"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/0c95bc48ae1d279c0811a624770247a6c27f358db7851002b7c6fdd0bbf59505.json",
+      "size_bytes": 26965,
+      "sha256": "5e460ce13921eb3a9e2fbf7644bbedc546d162befddd7700b43e5375d7a4cad1"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/0d414f770985ad12f01e65ebce0b386b3de418cf5e0990fab4d1300cb0a9ca8b.json",
+      "size_bytes": 27419,
+      "sha256": "3894521963c6e8d2075cfba864c2c785b3880d4554bbd882c3a10535ccb3596b"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/0d54bb330eea486f7a9d1b9b3110c6531c1994025b40c71977473c0af3a5da44.json",
+      "size_bytes": 7668,
+      "sha256": "1242b76ea8bff8c822267e1e8be9f24e11915e13aef1813ba698789efb31fd1a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/10152bc085d8804e15a7b9a637e9a0e34e5a42a638d31b74a9fc1ddd2d2d8ac7.json",
+      "size_bytes": 11674,
+      "sha256": "d624aaca57373f0b8d25b7369b9ff51b7cb0e116008dfdd8052bd571df3fe9b1"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/102448577d09fdf907fa4d12f8e28912695845525598d8362e83f7e1c0627352.json",
+      "size_bytes": 22361,
+      "sha256": "8f46cbdcd7a15d2cf01cc0f42c73640ea82092d19e631cf79800ddda39487ab1"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1195456627aefb2571212af7d8e78d0aff35b7f440d829b3e22e31230be0806c.json",
+      "size_bytes": 26614,
+      "sha256": "2e5308669bd0342b28a1a0ea66d804746ef93f7267b8dce2e0063b73e169dbd1"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/119b1f717ce31011cd0ab3ca2f857a735ef0f95fc18b1049bc47b94fa6644c6a.json",
+      "size_bytes": 25120,
+      "sha256": "caa6e17498687ed2e622a9c581c02d0bcd2ba5ef5772909be51ddcd0b3dd4228"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/11e5737e2dcd56394d76091d3d11c43ee283e745d06f03aece2d63e29a11b51b.json",
+      "size_bytes": 32976,
+      "sha256": "c0a18b850948eec8dc176c51021f4a485878fbc20cfcc9cdc184fb4cc90b440e"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/124bd2339086bba05cc56456125c665d6fa1691f1b0bb5ab08a0a58a6e5eea22.json",
+      "size_bytes": 109783,
+      "sha256": "2c85a8ad54875f5fbc4c0b616b58415990832cb5805fef9cd0502f15ec2c27cf"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/13191fe5e2ed806feab3b52eb30b0827a738cf0d526a4179eedcb788013dbcbe.json",
+      "size_bytes": 24281,
+      "sha256": "dccc03405d0bc8bb68c6aa48a79fd0538bdc47c78ed9a2d3c4451cebce296ed6"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1322daac5a518a2b080dbcd3e2e8e3268a6922b19481630a8df56551ec6d54b5.json",
+      "size_bytes": 30357,
+      "sha256": "429ec82a727fe29699f401b4e62b0b4ccbecdf0e33672fac79046638f5b500ea"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/13e404502616850a9aca55334f034c42f7c3bc13d993487b1db1d7f963ada943.json",
+      "size_bytes": 25815,
+      "sha256": "2e283e4023f3203165dc47c7bd6f7d4846a0f06ca97d8ff5ed9597a0b80accbe"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/14193174c82fbf92021586e9e54cbbb4386f62925c6a3a0a5cbf6654161f48e4.json",
+      "size_bytes": 27539,
+      "sha256": "851a3680d0d0f9a55573832ec6b167f895317d891c6c749ee25aa7b6dcb45761"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/15282bb9a6a8b8c560347bc3a3043585881ae582cb43c0e8f2c1123cbb0a7b9d.json",
+      "size_bytes": 19694,
+      "sha256": "e88d923d3263a5977bb6cc65aa765da3e31fcdfd7c9dc797873456f3122956c8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1547e186e14865b17df7f142013b4695e60b74964113ed449fbf8ab2e38c42d7.json",
+      "size_bytes": 30192,
+      "sha256": "c8e92746ef0886646e08e9f0d972311de045e558c133d0041de7f62a45b331fc"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/15faa4756cf75fa80d2cd5c20f0cc8634223a98c2659ed4a852bb54739cfd435.json",
+      "size_bytes": 19940,
+      "sha256": "4f920e63e5d6fb9ff1b109d37893e2bc0246d7a160a6806d05a5b937ad29b812"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/16b6261aaa8f40ebba0bf4b2c364bafde7609edd930067696c1c56e9277dea9e.json",
+      "size_bytes": 24300,
+      "sha256": "2b21927b0e011111aaa3a75d9ccb3a87f5493ab34a38caa809f672e4c9a304f2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/16cede622abb2f52bc8be124f189772ea7ab9b02410167f1e716b2bcf7196f1c.json",
+      "size_bytes": 49659,
+      "sha256": "46fd79cf44393ea297c56fc462904dbf0cf676bc15df6198edc16f60893dab4a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/17536670936ab352d1d37d1cebb3c1e78b16746f50918bc030577380e05d5b05.json",
+      "size_bytes": 39665,
+      "sha256": "04c21ef9cfafea89392e119dac68e16c02a590e5f02ff3f233ec5b18251be202"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/17572fbfe13995d8efdefe72160326d674d15934b1a55b73770ffba39253bef5.json",
+      "size_bytes": 14746,
+      "sha256": "401636f2fa9f1b78be1f2b0ffeb880ff53ba872a8bdf3f243b06b32f22de0b10"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1823f39d2aa917fb8cf4103c9f755e12126f7889cd1b2c1c3f1dc3915846d60c.json",
+      "size_bytes": 30810,
+      "sha256": "638756d89275b38936613f0f7d19d86512df48a518ba8efbbe2f211d7e81963b"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/182e39f112c5c5b82641d6c378dc5eabbbb73bbeb9e9e2eeff012a0f96489ea8.json",
+      "size_bytes": 40543,
+      "sha256": "dd661c967fa12ff5ab189736e167b02bbd7674e413fee1a94b6982280373db27"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/183977ad75a988639c0532c2be16d2d7811b465672cc602b047ecfa4b5df942e.json",
+      "size_bytes": 13685,
+      "sha256": "1039deda723987a24ac65316d1ec1bd1aad23fa27e0cb0d2705230d8116963ec"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1911cf89c1c8f2dc2f98abed32b9495a0ff2187e83e182ec39dc371f38553941.json",
+      "size_bytes": 36964,
+      "sha256": "0330512496596a41176c2c5b9aef0507925574f049c76158e75a2408ab862c1d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1a7b6c44724c7d69354ab30eb899ea67814dadd04e6ca25e3e19889f49d7f648.json",
+      "size_bytes": 16493,
+      "sha256": "b12d3a942887d412e607faa8586c2106bd6eaba15b182d82cc8ac6b0223c8142"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1af3fcbdb22072dc87795c0c518182cefa5cb383ed4bac3e11574db2395c1945.json",
+      "size_bytes": 16544,
+      "sha256": "3151d64212b970c3337fe243989f33a32625eace591b030e6a787ef599887c5f"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1b37b06a7a215318d2a61d37655689811bb823b84ccf5d1f43fe245342f5daa6.json",
+      "size_bytes": 35324,
+      "sha256": "08f40d5aa3392dfffd79d530e6b917532d7c728c1cfc9cf0c2c368e467a40bcc"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1b89bdb841cb37f4274511611632b2421c10db400d93bafdd71303feaea7feb1.json",
+      "size_bytes": 22120,
+      "sha256": "2dc7bccf18598760bd22cf63adf190d6e672297b4f3f6733ea03fdffe5c8cfff"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1c9dac04c5e9d1e1c1aa94a90b1664afc00d469b745ad4005170666ee08f8062.json",
+      "size_bytes": 35826,
+      "sha256": "9900af331c7fdeeea4c4adfe347224b6e8436ca98edc9e294455cbde67df32d6"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1ce9a2f1b1d83863be07944cd0676477604332f675b146f95da4544eee257dfc.json",
+      "size_bytes": 24479,
+      "sha256": "526bbe64c9bd4cf1ef7b3d7faec260541c0ae837f02d3fff0d176c11832a3905"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1d1761ccc88d0a0967a443a89ef8b4f7192440a7bdb94358e403f9d7aa625730.json",
+      "size_bytes": 16194,
+      "sha256": "090e69b600c1b8624a6c2b6fa48c583e28a5c133138a3c593d70c3ff17efebb0"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1da96da04653a0c4312f56d56190de1c2d8d99fa8f56ea12e245a5dab172b1e4.json",
+      "size_bytes": 948,
+      "sha256": "4af0d0350c6fc4a0fa8a77bbfe0c5c68a18c4c21d703786ea7e5581e0d1110fd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1f21a5dcd5107672694483f37561bd34edeff9a5d7e19ff5ce254560de7f3254.json",
+      "size_bytes": 37009,
+      "sha256": "2d22b4e766d491587e65e5440f3decc219eb9685a3d7ca94328f2e591e3a53a1"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/1fee8d576707ec3feb23f2993ef55cd16caf392ea402548463bf1ff5ba20f439.json",
+      "size_bytes": 65865,
+      "sha256": "8e9ba7384d5d7ef76ca75e0640fa80a8e5cdcd6840b5dd462cb1c0ea10f59918"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/20b35f287636b6148b8d5e950d50bb4e2d63b3a35b215c4819f96579e1a4e975.json",
+      "size_bytes": 32009,
+      "sha256": "5fdb1e52c7d15828cddac618fca05efccd1960a9b95c11c9bf7cb8c23227ebac"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/21a59b363cc7baec6843270df1cad81a63037af1d1a6dc15bd0ec8a26486db2f.json",
+      "size_bytes": 27315,
+      "sha256": "1cc697c68d8dc7f93fd5bf29b764e1aadeaff41e57daf310475332291ee4e1f9"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/22c3935b542fbd61ffa29a1b148fb3a9c39d967ad1edfff773e14a31a1e93864.json",
+      "size_bytes": 29170,
+      "sha256": "bdf0489595d12f397f69e69e1f7b9ebb006b0b74255f3ce83d822bb02cec6a9c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/23a114f676053f3fceb25e17aef1fecdf2ce44308afae0342b2719599395bef8.json",
+      "size_bytes": 638,
+      "sha256": "c9b07d8d74c2eacd8848c8f9c317a17bb2366c27a8b2b08ff08f86d0507e8f9d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/2425fee3f980a5f9640319752b2a6fabbab13850bed35489fe09bf7f4e362d13.json",
+      "size_bytes": 33879,
+      "sha256": "ac1e03f3b52439d506e754c6ef3a5ee1712280c6b4c5aa9e308704385eeb0928"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/244d1caf7c64f87226a4d39d09f1ef86e065f0fdfae9cba132a12c3d8b3dcec2.json",
+      "size_bytes": 41342,
+      "sha256": "5143cad9c1268346e59e12d9649011b7ab9e80fcc2a608ec27be36ff0df0c01c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/2669218bbba36c4843bc5ef585dcaeb31060bec2b7bc24cc4576fb753e0b5fb1.json",
+      "size_bytes": 23366,
+      "sha256": "ed72633474d94fb7e205ea9ecfb77040615f29b79fc92e25dc1b7f94d9fea1d3"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/2683b3bcb43cf920f18f9198b9158c2fa1afaa9d39a6004ff4634b7d0beaca55.json",
+      "size_bytes": 33313,
+      "sha256": "0c955aa3c3d00fc533542e5f09b9bd0e27d8e92ba0b57528c50f2b85a906ea55"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/26f4953177075126f9ad466df5ec054ef8fca4bd3ed4682396694f092a2feafd.json",
+      "size_bytes": 3560,
+      "sha256": "caee91baf1a672b3ff90cb78e786e86f767c8c7ccde65fa164c607e53b08cc04"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/26f5b8757d87fa5ab3549fc377f8985221d502aa5898eb77a1023a81b8d391c4.json",
+      "size_bytes": 26812,
+      "sha256": "324f49a4bf9ea9a298f50a37798d3641e97760fdb793a679f5e1d10d12fe4800"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/2830cc912c611b7587fa48106da34b0bda52940fad7e24adef7ab7caba689106.json",
+      "size_bytes": 3748,
+      "sha256": "1ad9abc293186d816aad44410d8628cfc6373c0f47ff81172f9d82d228794ca3"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/2a55deca8429c144670db271f6cf584e7f2319942154f66fc0b224158b09dd2b.json",
+      "size_bytes": 11550,
+      "sha256": "756ed4710e8a73ad0c8248ee57c84ca1e36e3e9a0ac0a431b41a2fab4cf68a2a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/2ab52f6dd77f4e91d5b9755f741801d2ea0fba44fe23653da7fe77b05c259254.json",
+      "size_bytes": 24376,
+      "sha256": "dff2ae2392f4e3196fe1e242a84663ec2da981e9e0f60293d558e6ab1b07fe66"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/2c5ae3de40123c5903835ae273964e9ad0cf259d2a35dd376b67790bf40cfa18.json",
+      "size_bytes": 28489,
+      "sha256": "11d008eb6dee88641db5888df39404a1849e216c7f273cf32a3d9263a6c544f2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/2cbf6271cf5138db58be6114a55d6db17b144b4cb21c6b449d568a4eac510258.json",
+      "size_bytes": 40915,
+      "sha256": "61b28a7c1443f1b9cd246abd0af38b219229d6e5fd13be6a504d78348e744b08"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/2d644d617c250c9f4148963dacd83dee00360cf0055c8f0c8e21f8417ca2d11b.json",
+      "size_bytes": 18226,
+      "sha256": "7b550f0b50ed6a821f8f62953cdc6a841949a893a23cc8bd686133994999df2d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/2dfe29f71a698c85c78e2c61c0da339e933bc8b9e52ac3247aba9b27f8ab01ed.json",
+      "size_bytes": 31588,
+      "sha256": "75bcb7636edda93518905c95c4a6a7bed1a0edd0785d83c0a703f2e9efe0f9bc"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/2e9211c8ff4b3db4f41837ca5d6ac0e70d6ec0834dc94e2c4dcb9a748aadd032.json",
+      "size_bytes": 38490,
+      "sha256": "17c9eb3a53ac2c5a8ee23491914001adad787aed31a06b30eef1326a632e3f59"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/2fc6a5cc51e376c885f2f6b687c0437cead6a0fb8668ef14981f42c538a1f65c.json",
+      "size_bytes": 20433,
+      "sha256": "98358e37df72dbb256a9e3b1da9d10455e07c92430cb338c64bcee6ac84081d6"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/300e041dbfe9dd6085489ddb4835a0d3bc5ed0fc02cddbe3cbe4f27f4e3f9a8c.json",
+      "size_bytes": 638,
+      "sha256": "516aa95b979e46aef8ad28e968fb07d4209f1861d3007faa7099a84e4e2619c2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/30171ef9415138ec311d2fb071952b20b493057954a70ae48aafca03a77ab2c4.json",
+      "size_bytes": 31173,
+      "sha256": "d5275b8a612ae898734fc5c7193f6ec8296c0ff9f1609f5f31761d32586c64d8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/31cfb0cd853b142ae2d738c5966bfd377db4896a25cd9e92bc1723e7c4c369ce.json",
+      "size_bytes": 29612,
+      "sha256": "16558a782c66186870741bb8ff157d53aad0b8a425dea15438a67011c0c1f0b4"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/320eec51721fcb5fcbe673773f3777f66a63c101f8e8dc49760180f065efda15.json",
+      "size_bytes": 26798,
+      "sha256": "3badb6e06617e5fe5a1aa0f9b4348d3e4b05bc7f5c6eaca6b330347774c463b5"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/321cd800e54af222c590160d9593e9976ad6f5eb8c81497e3884cfa4c9d52cb1.json",
+      "size_bytes": 25593,
+      "sha256": "9b6fdba3bb49cecae5ca69f49816ed3db0b418c2aabdf39ed3f2816c6fa4f570"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/32601c20760950c6b2cbf190a7fef541794062cbfb2d316e461ad41cca53086f.json",
+      "size_bytes": 38148,
+      "sha256": "67f727a9133ec4848f25eb39896eb5a250a1034d567c171e6e5fff837ce5f17a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/32626ef162675a903c4ffe1b3f4ed1a24a95abf5585e379e88a95c1d25fd41d7.json",
+      "size_bytes": 33516,
+      "sha256": "a0be440d4f09ce175320f779eb36df99d31c198ba9d0ae51a9a1e028485905d0"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/32d05e6e6442e11b7c1e199c5ba5fe08ec0e9f8e746b23e8ab85e568d7683466.json",
+      "size_bytes": 23774,
+      "sha256": "f992589b7da3db010ce04bfcfd3120aa02e12346e547668dd682ad58ecbafbf2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/333c951754ad2029644f04de630d080911f52b045e6d8e49829afe3e8bf48242.json",
+      "size_bytes": 16543,
+      "sha256": "f628644575a9b3c196f7b4f36610027cac6c1371047aa6d2ad51a466cfa1e644"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/33e725947f19c07c0e62f09689deb73a520ddd6ae7231fe86072c1b9311d658e.json",
+      "size_bytes": 14751,
+      "sha256": "0beaab0f24da35a5fa97f4ab7f576fda5a5cd8f6c38db53ad1824c98dba57f15"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/354c3cc4b2ca5becc119d65e9cbc211ed16db7d088da359637ac3de29deb8bbd.json",
+      "size_bytes": 30694,
+      "sha256": "15066b3c0b01aac2f0265d7c0382c5abae553c183118a0f99f4b10f018be4e3f"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3630b42cea37d6a60e695d0c1946ddc713832df7d0b91eb92f8fff01d1e53dae.json",
+      "size_bytes": 31968,
+      "sha256": "ceed291457e3de2d77b9efd666befcceae56c92a76538f0069c0206875884ce6"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3631c8626a9500f0c935ad93dd1413119e82a9949f12b521195c4f27a683bdea.json",
+      "size_bytes": 16372,
+      "sha256": "0c7fd53ee2a8b5d7b1f7809e58775c44f9db6710facfcf8530b13e07cbc0a9ca"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/36580b214261049ee2346a18b84e8fc49b224410784643556ca1e4835588e4a3.json",
+      "size_bytes": 39594,
+      "sha256": "867301579be080979a8564034471e69257877c2d0dfa41caabd2cb049798ff14"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/369c6a44fb2b02108e1164b06c5a6d328775fa1ee581fa9709fe9efad95f2a35.json",
+      "size_bytes": 133419,
+      "sha256": "cd59e5fb6bde09e5d103db1e0137b56db2f35075617a35f641ab464d95983240"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/38aeeec6b12cf645e6f088c7bc7ad14461db2d817f0adac2d5d39a132e2622f2.json",
+      "size_bytes": 30037,
+      "sha256": "613eafffab6c4da2bfd516797f155697b42165042772d1b4ab443489e02882cf"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/38ddcfd51e55f5a81ee409db7022c615262a65917b3a9747c30d8a21f21c7c35.json",
+      "size_bytes": 35516,
+      "sha256": "03a4daafdfb3578022b86cabd0c3ed09a5a237d1d004a313887cc21e0f27a225"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/38f7f9eaf634419e7fcb7a1dfad999758a473eb999f8326168fc14bb31c762bc.json",
+      "size_bytes": 20349,
+      "sha256": "7b35a6fd3525928540f5ee1c0ab6b3c79c3fbd66b8684b4ee8ed7ff78c2bc35d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/395d08f9ca1d694c37f10ab0342ed994dd244edd63bfac8406db6c5a30844068.json",
+      "size_bytes": 45363,
+      "sha256": "2a80d6b526f59e60c983eec61386c468fa6523b49ee1f24df765d263d740f9b6"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/397fcf48d65065a9fb0322a0292dbf5eceb75e9bc2dfe9c10ff4659dfb98b5ef.json",
+      "size_bytes": 29798,
+      "sha256": "f9e4afe7b11a867eba5e42f7bf4aaf4fd47973b564099eb6768ab4cd68894f95"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3981e5cc99029628ab65e8de0a4e24b2274fd030436161cb4bd24f0b4412f6b6.json",
+      "size_bytes": 44806,
+      "sha256": "9305141014c778d15c265459d85c9f707ca2059f4bc29d63273455a8944983cd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3a2ac98dc67501b40f0e8b3bb90c39b8459e925a8f7e7c3daec675821d301d4c.json",
+      "size_bytes": 17201,
+      "sha256": "19f9088cf6593e540d109056d718c2fe523552d2b59bb55bcecb44c3f3319e63"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3ab729c9753d93142fecc451ca750ff98c99d1f9b7f3d0f3c758435e6769d3e4.json",
+      "size_bytes": 33438,
+      "sha256": "ef24c44348a2c503a02fcc4adb02eb646da41d317f12bf90194557092aa1e5cd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3ac5de1a68ee0d29b0712e52d3459ea38687328ba07a45217f037b9894049781.json",
+      "size_bytes": 24287,
+      "sha256": "e23e0b6da61a9482a9df34dc4945e1d3207c60a20e75e1107581e5fae61a0924"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3ad0c504fe8b9c8ad1b52d6ba8a41c5822ed4bc8d9a1787ab1e83e3aa0f21961.json",
+      "size_bytes": 34121,
+      "sha256": "966c4e10ae2202c09d43bb5b8c8e388dc2b506a6515076140982149617cd0e60"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3b736ac0e5b959dfb987b26d71399419471f302a21ec7a1e755b89ce1df3711b.json",
+      "size_bytes": 21868,
+      "sha256": "1066305aacfcd79ef915516ad1034c350d64514d5b9b7eeb05f07eb34a8c2e2c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3bbbd0f93c24a07d77578c35fdf763fd27238e93fcbeca6034470838937bd8df.json",
+      "size_bytes": 36115,
+      "sha256": "7d94922a4f2ee233ceef3347927103a5613a20f56b33d65dc9d1b7dd669a5247"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3bcc3215dc0189b13ae613cadd659054a62c38d2885dab48acef6896df5ea398.json",
+      "size_bytes": 21160,
+      "sha256": "352d5c83a938cde09ae1633aa2e9c74b8de3cebbaaad8d505372abd92e4bae03"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3c0c002ad019895909f5111711e298ba3959dceab0cc311d4055b25ed77bdf1c.json",
+      "size_bytes": 25929,
+      "sha256": "32c99887d3a8e4448d18c9dbef1e6c6400e7e46ab118b1b78d5c73f3c6820e55"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3e1175de245ea8f1c9c773ce6c163f91547b783f8af0cd91765cdce07b227075.json",
+      "size_bytes": 24420,
+      "sha256": "44272a5e2c5f96b1e44640b16988ba6acc99b9ec4409e5ebe9bcee944114255a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3e51715de22ccc391abb83902651e0f5cd721f27c5122ce33384907ce9b568f0.json",
+      "size_bytes": 20619,
+      "sha256": "cc7dba62e3895223ada34f569235ba77cdc60992d70ce6d55808b8cb00bcfc8d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3e907ab334df1e72206806c675cd774480181eeac1ae11d7ce230082adac0000.json",
+      "size_bytes": 27375,
+      "sha256": "7f02f3d7f889742a8237e762c2dcdb21ed13ab34f66aa5796de4c3935db65e13"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3ebe554917d546e4ffadf2cf62e8288dd8f5141de10f35613ae43ede11d4d213.json",
+      "size_bytes": 24953,
+      "sha256": "2ebc9f9e0ca496ad3306f639b99ac8b61d2986898be16bd933170db3fe0cc587"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3eebadfcd429f85bda6dab8ef76cd356f782acc0e81129e7d1152c13f53da99a.json",
+      "size_bytes": 14595,
+      "sha256": "a6f501bfd1caf2910c0d0ecb871ed305a66fcb9799e11e3baaca4654d4eba747"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/3fbf55f49ec75519fdc4e8916b71d4f8437144d77b013d3507e5f84adcc9f423.json",
+      "size_bytes": 33692,
+      "sha256": "97f6a75254f0ab582530e8ac4268547cc4f7eb0780e554f5617c3210ad7a8e2d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/4066d9f90b7b0f3b6b3d5ea75f0c170f3f5a9d61ad008a72405268ec66247b7d.json",
+      "size_bytes": 42283,
+      "sha256": "0163f9b23f47a084c8cd53236748833f56734528caf349348f29a695bce64a03"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/42d6b2db81ed082add642cd94314aefc857a5b971edcd920bdacd616a46dfed8.json",
+      "size_bytes": 29693,
+      "sha256": "9f45f015db99ce355e9ee1e72475029160e1c2901d5a33fb460f8e99237ca4c3"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/4310be26f7ea523a7a7165e6556a219b76d7a78a2c50184dce7d82195b1a1515.json",
+      "size_bytes": 25091,
+      "sha256": "ec495b8f7cc8f2bafeac6c3e740eb8345ec4cfb4f4281eaab434d1b14fe17117"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/437b8b1ed0377b188a693aae91320f7fca6743ac5f42fa268c8afb04f7cfe50a.json",
+      "size_bytes": 30735,
+      "sha256": "5f86e5a9d73b3453b1a469dc9b91a7404a334e535f7bd764d233575638f0fb8e"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/43cc5d2d11e989504fa111cf4871cc3e3933a9a9c6eaa76cf70ae164969880d5.json",
+      "size_bytes": 31734,
+      "sha256": "dc55874d90c52cb428df29cc3c434c95fc7d1a2742a3f170f3f8272f3322c0df"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/445273cdd862fcb372bf5932943a6f63526511619db75db65ee6d686659b22e8.json",
+      "size_bytes": 36943,
+      "sha256": "02fcd46aeae39d1b087473c5452e7ca95cfa8fac018159d19a2c4a5bc2d9aef5"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/44f7de5229bc10a46a7bd8fad9d8cc4a92150715372c3d487ac7a28134b5c82d.json",
+      "size_bytes": 32740,
+      "sha256": "81de83248f2db1262cad362abd58b0dc3a477d77eab2002c900c6c1c5def621f"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/450f0afba3bfc053f8daee6e51421e6f4db9a4499db64fb7cb247486157858ad.json",
+      "size_bytes": 434335,
+      "sha256": "8c85627b9cbfc25eb136617e9b4e8b512a4a996e79c6ed6bb68a0bf90043e2b9"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/451c04a463f37df4765fb0bb79284aca28b2e3d5b81626ed184041c337a20c56.json",
+      "size_bytes": 27206,
+      "sha256": "8d8b0ae830d264e87e1e280765db313e617830390bb3da632880093d6a025886"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/464cfb18b1b1b67562231fdbd7268653cf7cd154c2670dfaddc146efa72f574d.json",
+      "size_bytes": 25785,
+      "sha256": "07039005377dd8c176037126fbdfda5845e69beb26f78c9e21a746d8fd422b99"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/469c818b3fd67d2506adccb19c72f503754c70d8e155a998d437a2b464cf5328.json",
+      "size_bytes": 25485,
+      "sha256": "310d76811001c2d298ee315f5a99fb1129ab412b5521a6b36997dd44623220d2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/470cad2da134de73b0f837f32e1626fb591f77009c174b83585a5280b47088d0.json",
+      "size_bytes": 25226,
+      "sha256": "2c1a9a715cc572b5dae7690aa1081173a78aab7f2d38985b60838f18f57b48cf"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/487b733f654ba5623f0ac22697bf5492447e21b6411017efcc49293b16eff179.json",
+      "size_bytes": 20557,
+      "sha256": "6cc4be4bce586b6fd2923171f94ad8a53fe17480830455d240ffdc38958546e0"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/48a5d3645170a478c19e16f916705f95864ec7d8435b92a997fefbd70621400f.json",
+      "size_bytes": 25734,
+      "sha256": "36616eba99cb77395f8bff7ac9580942a45aeef3fdd1c75dfc90da95344b3fff"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/494c5933a2790512de93a1c3226fcc8287d944f008006bef999d963093d2b481.json",
+      "size_bytes": 30434,
+      "sha256": "9570ebb28c07537d7ea4bcf77e51d0b91ad55ba22138c60e142b40aa24ad80c0"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/4a119f137d255697172bcfdda697313d2ce0dce4c64c10dbce4f6e136b85bd69.json",
+      "size_bytes": 18613,
+      "sha256": "3e43ed31692d3d412e90e47c602809dcc975285722492872c9aaccf040979527"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/4a5fb991bac4374d023fb585721bd680508c753896617df41ae0b95367fa12db.json",
+      "size_bytes": 64583,
+      "sha256": "79aa9e409e3d68f08b3f5fe70c7b9799887284354d76507e8751d2e2bd645e08"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/4a60abd3811adf284b8833cf0df82d1b2462cab63fc8371203ee4ae386f9b3a6.json",
+      "size_bytes": 16740,
+      "sha256": "fc58d54afc1654b34660548ef89299dce22fd3285890f0c03db8e6dafaec8f5f"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/4d7442411bdacf64efc63dbce7e32ede2ea718d5c403fecb67c449c6dd8684f0.json",
+      "size_bytes": 26409,
+      "sha256": "616a42d597dbe714fb92b408ae7e083f91c1b3b64e98f65673c3e1732434a7f4"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/4e982c52ba349ae96fbc173d0f93af378684c8b44b006cf18db88a3bb645364a.json",
+      "size_bytes": 18621,
+      "sha256": "0252afe3529623d6b4ed545008705476755d4f3324e8954e3b900c4c647bcecd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/4edff0ccaa6f06cf52f8d3422a52cb6590e0c5fb0658b28df4e0df7096e118cf.json",
+      "size_bytes": 20468,
+      "sha256": "210918403814e94767eff8dbf9ffac21dc99e00c3c95412670166f1ff40984cc"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/4f150dc52480a855b6d6812c01f6448cac6799b98a0b4207c8d8e3720699d25e.json",
+      "size_bytes": 40549,
+      "sha256": "03eb95ece2de508ff0f53b742ebe002aff6f4c1a4b9e5381b07389eec253b1be"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/4f4444f3b22d0722363b6e02e6bc511e87712d9c9459893cb4a96f1f5c02b747.json",
+      "size_bytes": 25638,
+      "sha256": "62c48ae4e72c512b0290624ab7c2f3e357c45fad194dc829c7a90aee5b4fe149"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/4fe2122d57bb5cfcce6b730545f81b7dc789e4c72046041c203abaaa32ebfcf9.json",
+      "size_bytes": 23764,
+      "sha256": "b6226034778cca05d510b9af48e7a865a2e6e0353700a5c9d1b1934067b502fc"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/507a8373d7b90215b9df9d090310711af168d99500c5482221d1102b5d0bdb0a.json",
+      "size_bytes": 31303,
+      "sha256": "141878b6a87cf1380ab2e01b0b6b4fc75f77ecb76d6882d1f8229a74b498b681"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/51fb614fde1467e70cc075632d7089ba6b67c430d9ba6968e80bd3d4379c12bd.json",
+      "size_bytes": 169503,
+      "sha256": "bf90aaf145105ec7bcfe43f6373f7cceb34b927581a848821d340baff70406f4"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/525302a43aea20cce6ca1737268a4986e65b0163433ed73dbe6e6014ef15601a.json",
+      "size_bytes": 17617,
+      "sha256": "77dc7daab7f4fc8fa841e18307fff74eb214736b772c539c814d8742a957700d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/53339d932e34741ee1426d395c9f31b36868555e75ae3e58cee29b97f863d52b.json",
+      "size_bytes": 25531,
+      "sha256": "3804d45c0cc6cc02d323c78aeb9dc6954ec1d175231afe232f80b66e8b5fa2fb"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/53e50ae5f6cbdc161527c70692979d42f3b28519c4594c946094734c1cd6b9e2.json",
+      "size_bytes": 39171,
+      "sha256": "d843b19afb60871ba14553d1d50a5f14a3212e631eb5aa15eed201e61b2a0e4c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/5405de41a7b89a452e8238a9ac377913d9d777bfe61ad682134f0c83d243b12e.json",
+      "size_bytes": 3439,
+      "sha256": "1ada2eb7242c99e42d9428f395aa407a4b4fbfdef342d43867fae6a0f54839cd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/547775f0043828e45a7358ead921611e6a247198eb1b3b9a60dcff51fd9b49bc.json",
+      "size_bytes": 22105,
+      "sha256": "022660e32b6bdb65ce55f6c8c3f2bef4240db65743fc1e203a4170a00ba2394b"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/54fffb11e21bc2c4ee48885e60bb6822c8fb84f9589aa99b767ea0a1062bfb0c.json",
+      "size_bytes": 50896,
+      "sha256": "295c4e1dcfeb4be3324c63ba66aff25840011448e7f58768c669310e634c4c0c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/555689ebdf8076e87cfde2624a9e51233c00c2556bfd7e438f260ba1b258e8e1.json",
+      "size_bytes": 26940,
+      "sha256": "6b2fee83ea6a529abc43dceded61bf7f1827107ad762d29034f5a77ca51bf7e3"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/55b7e0a45fabcc66489ba67b72b8c9be6d6d0535311b038a085f93178e6d5103.json",
+      "size_bytes": 29560,
+      "sha256": "289aeed890d3485fee9ca9a8e40d95178424e8ab0b99cb261b976247ce78f607"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/55f3c4acf30d913a9ecb44d4b477ae2995e69b6b22bcd2a822d4c1297efbe644.json",
+      "size_bytes": 27495,
+      "sha256": "0a0f339feb6958a6ad5507f48a763fc6f18536fb929167a5f43f7f47e7e7d825"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/56a338c72a4e8cd25f6ef7c8167f868b20fc513132341f963bb6dd1eb2203809.json",
+      "size_bytes": 22378,
+      "sha256": "17445b8ebd6bba9f5ea4f7114ba6e23570c07e781d658d33ff84df07cfaea3f2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/5745a5a84a65fcf85d1f5e385837c903e88783098b8d4b23c094e0d4feb9062e.json",
+      "size_bytes": 34553,
+      "sha256": "e8b49a91575ff93dee893edfe47cacb2cc1d1e268db0b93fe95899639d29bf5a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/576ba2f9f901960e7de3b18215a19242a0355ce937ba9ffde7a33ff59e8d4d08.json",
+      "size_bytes": 23458,
+      "sha256": "f2d114b9136032fa07ec60f1296da08ef179a454120cd3adb037704ac7980152"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/581f668ea12a788cbef6de6152e8b387c5518913d74ce7ac1fbee1af0bad79e7.json",
+      "size_bytes": 18437,
+      "sha256": "ae00f5686fe5999ca3b2f241a068c388ae40fbde2346e650f9412b638c6bb870"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/59b38916bf84af54424457858c41bf92901e4f6fdc164f5dc287b90acf2f220e.json",
+      "size_bytes": 19088,
+      "sha256": "6a8de921cbb467c577b24bc7cad51a508fc23f1f38ac6ef3801484a584d847e7"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/5a815c0537668757849a80d21c478c70de5dc4ec8bfb98c819ccb6226dd72ee5.json",
+      "size_bytes": 18335,
+      "sha256": "ae1b9a05caaf80238b76aa49e65deec456899ee730765f268a7375240b3e3acf"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/5a848a97def78de5a00a331fa7850d1abcc09b484e33899898f4f213ebc21f8b.json",
+      "size_bytes": 25318,
+      "sha256": "5dca74370664b9ccb84f17876eb85e1eafa23f645eeb9beca53a686e11c7cca8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/5ab9cb2271365450224218d6fb128ee52945add5d9a889560c3453679bc3e98a.json",
+      "size_bytes": 49594,
+      "sha256": "0aaf360abc700343d5e7ec14430f14a241cb33a12f021f072ac058838e72b8b3"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/5b2cfed030eeccc94a5a0566a1cd1c388801d0768f49d972e02ee88a9b6cf5cc.json",
+      "size_bytes": 22491,
+      "sha256": "61c57895bc969a0a52e6330c03e2fd01837c5b25f1407c255d2b74bc040de40a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/5e8db7c0fd9bb0ed697c49dcfc82ffaf173c14f9a247d26d069864b6bd2b8680.json",
+      "size_bytes": 30031,
+      "sha256": "05447a48b0e08261cf02ffd5d346d613873631fcc96c36a27958bf090b5804d9"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/5ebdfaff6908328780fbbc8fc7fe76dd569059dd89bc1d76e450b2137403f7a3.json",
+      "size_bytes": 20953,
+      "sha256": "b7104831edbfa63a8012e9284654548c06d1c899ffb551e1912caec42a6698b5"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/5ee20bfc0c5d53b20b6e8145e78ec6403b53209a82cadf1a1ceab485899cffbc.json",
+      "size_bytes": 20596,
+      "sha256": "044391da77ca2c512adc01bd2f699f4b83c835215221d24033cbd63e008d683e"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/5f56ea670ec7ef746c72d3b9a367adae5d14393a602c2503dce30aff2bcb70ab.json",
+      "size_bytes": 26400,
+      "sha256": "900b8ea17e78ead13d37f7e7928583883d701cac47794ac9a30c9d8b9706016b"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/5fc2c744b41b4ecd6a01e57c7c6b3b5717df39b83fa47384711e43eeddc8e673.json",
+      "size_bytes": 20974,
+      "sha256": "538bd4bfdd52edd150e4563ca7d5c7addc5e6b7ec4d44b32a192d4b5c9345a1d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/605bdde33e560e3aabf9044b204f0a22f636efbada2ef699440ca8b1e132ed3b.json",
+      "size_bytes": 44525,
+      "sha256": "d172071afed027e70e688b6b827efc3a7d0292ae38ad5af2e02243c18ab3dba2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/6061e30cb7978f27be24b26723867d8e46ed9e2a3c809cf22a178333d176cd27.json",
+      "size_bytes": 30242,
+      "sha256": "64b06d5a2dac38d80389abb8a4f6c728210b91ec0b96e8fbb39f2c840bbe4093"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/61b1b99395955ad0005e8ce8151eff3425b0068c5aed90bcd16422184026ea72.json",
+      "size_bytes": 13275,
+      "sha256": "1ff745e51a6ef8885767ba9cb78b3ed98315b329f5eb367e50e3cf20c2bc31ac"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/630c8e24504da65adf7949ada1b0aac6668ccabcbfac3a47216cd67010ddc763.json",
+      "size_bytes": 25238,
+      "sha256": "0fad4dd986c6d311e9f9a477611c6951b2ef938d8fd32851b4893553b3553aa0"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/6343c133b1cae3b8c183226fe9548f55512628609da2722c26d2a846c506413a.json",
+      "size_bytes": 26501,
+      "sha256": "71c3ff219b1a609ea759faf36942648ee83f058300fbc074841a844154348167"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/63812d0c7a3e6d4dd1fb40d5f3a333ea716dbfcaced602b53f33aade742405c6.json",
+      "size_bytes": 15717,
+      "sha256": "15aaf728eec3678cda2922db2b06ad5d6adbd6d2a654ac8cd52e0af727a619a6"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/63d7d0f5204cc68a175ac324b56e87404de73302494797abdfe2660ff825f114.json",
+      "size_bytes": 35270,
+      "sha256": "777528d6df9836e349ddb96ba6c6bcefe56f9dcac9b589971cf780656a5bfe47"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/63e2318cb171c32e94e9808afb678dc4c3846e7ec465b7e182ab69586428728f.json",
+      "size_bytes": 27751,
+      "sha256": "1a7442d7888caa8af31fe6745bc365713fb745f7d64cf30efc5ca58bbd314631"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/644749a8fdabbe9859916786c3f66a76f06b1450102b8ff4eb210371046d6da7.json",
+      "size_bytes": 35823,
+      "sha256": "a52e69a9672c55b08f40c259009b8acfb76ae8a43910f93a7138ffd057687f72"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/645f49397b98541c28befcb58658136fd5b69782ef5b5b744ba2f9309a6b0492.json",
+      "size_bytes": 31955,
+      "sha256": "17eaca5715e5b70b417645f14235dc8aa6d05a4fc2f0e2e9183c94a22d4c34e1"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/65aa9d745d36861f95f87cd88e179c3be5719aaccba20081b5d684650dfb5855.json",
+      "size_bytes": 23683,
+      "sha256": "01321cf5db966e8f37159b44c4b2b8ae67fda4134cfa866a4afdda494f0f0357"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/66509f63f014b583db73573129fabbb4f13c4f7470d63d54cea9099e6ac88bf4.json",
+      "size_bytes": 46914,
+      "sha256": "51f7dfac6e50f4ed07dc23440e939b04d4da587d9fde12cda2536467f6cf9761"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/6723d0df9bcdeb9c4ba823ce2c09ea4c051bd74c241ace69b9a6d61ba88e3376.json",
+      "size_bytes": 26438,
+      "sha256": "b82330cc6c11fbeedbc6376764a7561478a3eadb19d1f39806186fd98d461ab8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/67cd5c31ed8c35539231958f6b4b8f67f12f27130af09c476d2c2991d6d721c7.json",
+      "size_bytes": 17217,
+      "sha256": "f4b7d674a936a332aaaddf239003b8be98f1f6fb252e8c71f36dab21234dc324"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/67fbc2afac7ac4188d7e8aba948ddff61093982e0342e6a9fb06762d83263416.json",
+      "size_bytes": 38425,
+      "sha256": "97ae248b05a683e09b4f2047d5ce18367d5e09253f694efc47557ea8a9eebd58"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/68659adabfc5f5dc30d8b6683c52fa8269f0ce00b8db2d41cb68cc6adf49b535.json",
+      "size_bytes": 28614,
+      "sha256": "0c1e2d7991bb12c7026597ebacd7b48b6e8951925b484c88a17ea3d2b9aa9ca0"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/6957b0b88ff37f7cb88ecf6306c30ff5b83fc44037fe6c95991eb87d731ab9da.json",
+      "size_bytes": 24545,
+      "sha256": "4e717374f7bc56143bd100cd788b9b8ef82e58e915537bb427df7104d8f460ef"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/6a3044bbb7b1ad041641b239859968ed035cac6408a374f74465419a54978e8e.json",
+      "size_bytes": 30905,
+      "sha256": "b555f68398a2a69c2f46b077b3c2175c9916ad911d21d93ae45a9ef8ba4e3779"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/6b4c39692c7f3d1e96502294959294c08626d72774bf40ebc61f2304816f0561.json",
+      "size_bytes": 16904,
+      "sha256": "7275aec4dce86a7037ee2717f0840c307dd61741f65a7e32594b07667e940216"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/6b828cb1a3eadd099cbf2e551c302e6ea193421918eedf4e0572bc7795b2982d.json",
+      "size_bytes": 25028,
+      "sha256": "65380ef1d1b8f4e01aac5eeebe63c76112cad47bcc20c72fd5ddfde119ad731a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/6ba62a2f39471029a1589ce58ec061dd478f7224cdd7c1bc331369a2203c192c.json",
+      "size_bytes": 17432,
+      "sha256": "b38c9b0f6520d7a135c3f9ad911d8f64a9ac48fb28e3f20eb117ff49ae390468"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/6bc3f789458cf705b0e412c8180f3c90f6d0c758de23697c18be102128e76152.json",
+      "size_bytes": 30463,
+      "sha256": "651c85424999277c4e44a5aaa83367bbbdaed5ec36112df7ce5ecdf7ccb4d9fc"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/6cf0059dcba70a23ad911efb46644d22ba519aa75107536ac3cbe0c3e05d8b7e.json",
+      "size_bytes": 27235,
+      "sha256": "5ff150898b95addaf2b2fa4d8a812154f51937c7f16b6e244093bc1d53ae4cec"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/6df9a7b8e8147677961f4683c7edad94851c70533ed96010db65289f170f8244.json",
+      "size_bytes": 29565,
+      "sha256": "e38c755b86e8d936247be7e735bc07b3a9066416b0cfe51e31bd8ad0c483cc2b"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/6fa121cf6ac868d8c31c15297d7b0aca94a4ba23182f1456330cef9f7fd90539.json",
+      "size_bytes": 12140,
+      "sha256": "7449bf32da1f86682f61b49138c6a20caf40c31a82aa623f9545869a9789fe4a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/7011b6f4a629ff1635a0f67eccd0e4c88b455ae9a28abc2a0f18428b78b077f9.json",
+      "size_bytes": 28721,
+      "sha256": "1862f7aa2ab08e9c78aa7addb174f90e1dbc61b53bb72a8f74fbfbd4cb6cf57c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/702c47f57bb1f7ffda180cf0ea2d71c3c6a75ccb8997b296c582476c96bacc99.json",
+      "size_bytes": 149450,
+      "sha256": "4083c88acfa1d3c6776db9f385b00d3881c0a7eaf4c9ab57e1aa6ab5279f98e5"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/71e51efa70817d7a073c2a092e273025722b51f5162b057ac7316533924c01fb.json",
+      "size_bytes": 46687,
+      "sha256": "e970a2def69f167cc21f7a6d7f836e0ee0f085251cf22ab986223107d0a3b10a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/71e87f8674795172a38e3a82b0bbdcd95fb9ad42a1029deaebd8d76a25d5970e.json",
+      "size_bytes": 30193,
+      "sha256": "54040ce0640885dc5c3c72d494de87ce6dde675b9bbdcf8a9b7230adf050c1ca"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/729f9edf4fdbc2f4f8c2b4d359358541800b927623aaa796af56d18d303c5477.json",
+      "size_bytes": 34512,
+      "sha256": "8c3a996e38358b97bb526c45d7a93b936bf924973ca6273d96933520b576656c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/72ec9809cfc66841a0ceb60d9cc42fb0ad638815c716d8281e2d98f7be6678de.json",
+      "size_bytes": 20383,
+      "sha256": "5ea79cda2eee2ade37c8af4b54b6bab4283d106518368bf3569f9a65654bb694"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/73722c328a2bf39d1683f3bbe2104ffd68dd02d8247c4a7a7ce0cd2993ac5a70.json",
+      "size_bytes": 21845,
+      "sha256": "c0e11eb0c517400403e3e1b56c0d6e1c20e5f2f82886fde2a769726d3cda9bc8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/73c70735a84503e6f5d902f0bc701c6848ea54a9f3c46dac9d2bf251ee7e61e4.json",
+      "size_bytes": 26498,
+      "sha256": "bf381566e5aa852bbf6d3d16359591587421f62ecb70ec4fc3d1bfe5042341e2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/73d069bff64cec40abf9ad82d6fe47585b946523a5c6c6a25effbac65cf99de9.json",
+      "size_bytes": 32965,
+      "sha256": "15d884bc89a6d0f264dc5500c289084e8346769f9a2bfd4cb560ba1792e28591"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/74edfdd2916581d791b9cdd7499a771fcd24a5f0cb83d17371994e2d1886b556.json",
+      "size_bytes": 40227,
+      "sha256": "290f2f263de6303c5918af3b42ceee04255cc02eef649caff561dcae933ed1a7"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/751a1b9d40393006abc8c4f4ac44c297f563fe69cd73a08fce1ffcde13ba943c.json",
+      "size_bytes": 18162,
+      "sha256": "6c0bc7c9e8413cd38bb467ab8735239fa846104fa893cccdb624f3038043e829"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/75ee64b799152c2166c703ef0be0b3802add87dffc33b12e7df6ad79973a2789.json",
+      "size_bytes": 9452,
+      "sha256": "c98a5d89639b93f5d49425ecc9eb9217585d3c3c350f41c14261cc24706991cc"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/785e9c13779a41e4033b1210e7b523fea7302f51d74b810a7c26622997305765.json",
+      "size_bytes": 296342,
+      "sha256": "00d45340d39917bac9502d4ff3b1584bb7e4534fbd85216ed841ac19ed41ab5f"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/79dd2acb803f92494d95c7df5d8db2804b165d5ecaa4777bdd8fab04b3e64242.json",
+      "size_bytes": 44744,
+      "sha256": "7a7b101041168ceafdb3893de5bd421bc254d1651e67c1b99735f4e32ce83132"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/7a00ac9a478cf14d03c8188c65afdda51e229a04bd7192f5738319897b9dd59e.json",
+      "size_bytes": 21566,
+      "sha256": "14cb7cd5ff90d2640599af209bd811476ac11b297d460a23cae1b24c16f0aa30"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/7ad66d7b04aa2785f50ff1a3a82c4f8fc3f2c14901f53474ffaccb04ca600513.json",
+      "size_bytes": 119439,
+      "sha256": "10896e9e2ef6bbba86d337bbde8bff0ba1e744e93cf4b938d81c908011745f59"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/7bad05bb5804643723002a1651e7e3f6e00d37d6db53942ec88e23dc7fa3a35b.json",
+      "size_bytes": 25225,
+      "sha256": "cd8c7c54e58f68ec5617c2b3aa3ce5cd298579e6e26dbb910a54d6a5ab03d7d8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/7bc05cbcbe80f6934f13d229c86410cdf3575e6929cceb2b4f02b993440f5425.json",
+      "size_bytes": 35529,
+      "sha256": "01e62bdd8d2f2627105bdf2d33bd7bdb969196b53d840702abcd23d15e7cff18"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/7ccf21f76e99f73536750ca6cee4c27b3d609dd0dfd532513bacda1c69fe19ca.json",
+      "size_bytes": 21667,
+      "sha256": "a51eb1c8b769ff9f9ad59382d00fce8a86633f82b0bcd9e6b52eaa6adb50f015"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/7d46bc93fa93a691be13f313c460abb9c40ac7e39eb61040ee9b9c5a58c1b5bc.json",
+      "size_bytes": 23769,
+      "sha256": "1a37da3e57149a2b7e3d5a270aed658a2e6b050fba312afe91424ea29f16432c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/7d4df38d9d59a567400719444c2101313c630090c6b7f3b424f1217b96b173b7.json",
+      "size_bytes": 26069,
+      "sha256": "c29c68b29f682f82076508ecee2c7cc21ab599682e54c20851e04426ec7a659a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/7d8210acf5d7c425974088ed22ff230e22d48a2d8c088eb5900d3b0d12a87e41.json",
+      "size_bytes": 24505,
+      "sha256": "2dcd12a6408914cd0b240f5d9e00ee0b42b5c9a3784f4c21ebcfb33840b1bc39"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/7ddaeff6b710e0073c764a7afbbb0becdb7b54399e99cc7f08972e3830f24f74.json",
+      "size_bytes": 20962,
+      "sha256": "edc4080ffbbcb072e0c6834a8eea74529608b7e477adf6a4eaf4f6bb8dab2d1f"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/7e3dbc98927ba53669f17ad7223a44fffb0d17afccce0786a55506edb35ba8b8.json",
+      "size_bytes": 26158,
+      "sha256": "e1ff33b04db885a04efbf0dea70fe519e2914b4c46e64374fb1e74b9c8510cd9"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/7e9081091f5e5e0bb345a848ebbcfcb5ca16cc02a2f1038fd40366fed26fd80d.json",
+      "size_bytes": 419655,
+      "sha256": "e108bd425214043c51ef5e37b6ce72fa0041f4485906289dea506b0eb5cf36ee"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/7f557014e11655aa36878badf0d211a818b85c98e2627560e241ca26ee1c2451.json",
+      "size_bytes": 61958,
+      "sha256": "bb45cc41771c8ad7f11b7152eccc4503aa5ed38298dc8316c4f29166d47b1575"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8094138108d7f09cc6278b07e45220e61c8bfc12446c053e21b12477c21a1dca.json",
+      "size_bytes": 29329,
+      "sha256": "597e308ce3dcfec64fc70ee966e8ba72a3b65779853b2002ce401983a43a3feb"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/80948015d03b686156cd3fe533155bcfd5c0b7f306710309addb069c5bbf0823.json",
+      "size_bytes": 23236,
+      "sha256": "fd8d04438dcd759f69ea9909e7db91691ebfe3542cd16050367de48f8d05ea2b"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/80aa890b9f9805a192c3a9316cd184c02d73c60faee381f47cf03ccd15d5a120.json",
+      "size_bytes": 29154,
+      "sha256": "d9aea5e8b250f8b060bbc602332ad515c3f2391082dc09dfb6d6ee5c2b44677c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8166f6b7b7275d39a6f3ee30a67000c69b42eb9fe558381b70e54a399673898d.json",
+      "size_bytes": 28637,
+      "sha256": "6fbe08055c4ab94b889f5ad518c47d18549016ce2e2b5c74877b2a51fb577d36"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/81c503540b51b6c2806fe36c358caabf29d0739077751fda169147e8f91cb1f4.json",
+      "size_bytes": 30502,
+      "sha256": "40149f2100555fea416d12b6a22da8fad61975713e8954bbc3e872361829f918"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/81fc2650038f46eecfb3bb3dd9b40203613d0753ad11d755f1f776620418007f.json",
+      "size_bytes": 30877,
+      "sha256": "6a166c02515a0ba90d1deba5c80a7b572647656c4e8c3ea38c4eb163270697dc"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/82b3d151000bab1fbbe0da2e61b5cc967d0986c9cd99e2a70903e36c2b507b05.json",
+      "size_bytes": 24874,
+      "sha256": "2cd11957c80b33aa125cf6494123a9d143a4c4fee18d7946d3c5458f05a1ee09"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/847d18106d503aef27ec4446795f668d298b5a016dea3637cbae9f94b0929932.json",
+      "size_bytes": 41164,
+      "sha256": "be6169d6f7d8dd526c8a2e8f83c2248611d9b3ea658f7fc63e3ae7904044ed7a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/84a3f4b64cbd6294b1a387d70965f56cd6dfd9568b18f49c2209ad8226b8556c.json",
+      "size_bytes": 29570,
+      "sha256": "3d5ca344326a7951a3add0af88727cb94266a428347434af64c46cd657d92bd5"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8529b4c96a11680782d7e0b5c486048322701fb9bfede8739c18afad10c180fe.json",
+      "size_bytes": 638,
+      "sha256": "9451d7f069a013310a9837fafd13d2f058a9421a9c722faef590c701d89719ba"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/854d664ef8cc7a04f4249b8d51da1207d97358f972154cdfb2bb19b6b5ea55bd.json",
+      "size_bytes": 34090,
+      "sha256": "da6208e570c0384c038db95b3bc24abf0e31dbc31040dcae39ade56d06528f58"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/857adec935d2fefb0c0baffeb992c632f028818766616abd63c00840cb523a36.json",
+      "size_bytes": 24430,
+      "sha256": "931359749959a9118458488011ed44c3bde464988b262cd1b4b3fb506ab6f907"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/862f95fcb7139fe0908f3dec5ca9eb90b74889fa1555ec89e76f1b4f6d4de2ed.json",
+      "size_bytes": 40127,
+      "sha256": "8fa8796e895680e0eda04ead83cdfb755a5741b84254c22234faf44a892a5490"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/866678575d5b3dd1c722bfd5771a24af3108039e3b6bd466b094397443bc47ea.json",
+      "size_bytes": 23159,
+      "sha256": "0633edc7d231d17657ddcae051b2f24fefe2bd423e884b8c372e9671b558aae8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8684d63550d29d0876a1e6c43323533ebf529c63b68e2ab6d2c71ab5c23ce323.json",
+      "size_bytes": 30296,
+      "sha256": "027c6213a5ef8e34fcf25cc2974afb84fdb6b2b556a762cff67eae5735a1668f"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/88568fa5ef5916bec15845fe03835ac7df1968dd92dd9281377a3d663e53a87c.json",
+      "size_bytes": 25582,
+      "sha256": "067d886637a460f6cea3560f5577248b861fff621180e3327079df3d9989b71c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/88fbd3beab1fa46da93a160f250ab89ad1fde95e68b79c8b9a349704993283d7.json",
+      "size_bytes": 24103,
+      "sha256": "17b03271954d0db3e11f2086469c5869c2f69a0c8562c0fd83cefa09b4925f86"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/892a1a292c302ae1fc2cd6d8f03e2ccfebb64e7629b8f66f490cbfb1f94f353a.json",
+      "size_bytes": 278555,
+      "sha256": "5d82d98450649957a8084222b6ff3ce0bac1e46c837ddadc4c768b72743a8ff9"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/89b114fdceea6dbee5edcc66eeba9f669c663b0ef775bb7e53673ef4a9f8a9d5.json",
+      "size_bytes": 34294,
+      "sha256": "a71861aeae08c8f59f65513d9fa55cd62753e69facf5d82e4fec129b6873e335"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8b01a509c85fae7a130ef21dc98242d51ddffe371591495f57f662ec9464bcc7.json",
+      "size_bytes": 19689,
+      "sha256": "da02bd49365e69837bc499afecf98e35e40e466862e10a4b40cb4e30f2e14a77"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8b2f7ea0d2b3d23f465aa4a6fcaf44551cc5556c07702613c7972407179c824e.json",
+      "size_bytes": 28941,
+      "sha256": "52b78988b026b819172f7e7a3b1810c682e3e6fc0d0ade178228a5550fdcf855"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8b57e9234eea809baeea079bc4c01145aed546d3059f6f1af49cd1fec66d0b00.json",
+      "size_bytes": 31727,
+      "sha256": "64b8396b8486595994acde62605f31add4b52fc8f5db6fb511695e7befd2e97c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8bd35a5c486252a3eaab8ef6b02add9b1174028b26bfa571ef822ceb66789c1f.json",
+      "size_bytes": 27071,
+      "sha256": "205f3247ccd9d7367d53ddd9e495f3eea59e275eb8422c5af78f16263be16755"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8c996130e90ea4bd5dc6f18d71a99f676ec42e61f1639140f26d792fdab2ef55.json",
+      "size_bytes": 35432,
+      "sha256": "1d2ca08032a4ddc3482f3c7c0255f8a793a4da6b6a7c6e9eaa4c08e85c9df37f"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8ce65c087f707d1578197efe2456ed4a4b61adfb6235da48ec2375c941fedd0f.json",
+      "size_bytes": 38424,
+      "sha256": "9b81531f82936d15e5f447953230ce5a2c191d4d8f06a03231c78018077683a7"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8d1cda6f6ef2bfeeccf9df57f641731df71690c6e438445c3ed7a81cebd3d712.json",
+      "size_bytes": 27568,
+      "sha256": "aef24f6f1a656976002d2b114a567fd7a9b352ea3d70a0c98a1dcc2c3ee60b9a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8d7de26070723394c4845b6b98733a3b7a3fcfa3b9aa4278f42d34dcd1414991.json",
+      "size_bytes": 42032,
+      "sha256": "69ef9cd39363f639f206cb8d66551508039833fc34faa4ff912aa16e6540a1bb"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8d947b5b18e65030e41624668c75c815c98e78bc6f50801e6cfbb7fc81710aff.json",
+      "size_bytes": 48188,
+      "sha256": "5d14257a38fe907bef7763e9a2a8c2a4d584c2130f6b0f6e29b17cbf88fb17a8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8dce9b7e5b636766d55680009b0dac0ee084791faceb10a395c18c992166b74f.json",
+      "size_bytes": 24277,
+      "sha256": "ff6b31e192d2e87618028fbbe06dab69a251215e19f0933792f08738798cb494"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8e31d9c6232034ac04319d532d7584dff92175f84048369c56553fc89237b771.json",
+      "size_bytes": 18635,
+      "sha256": "6e441b580488f687aaa2a00f39874b447abb49d1f3b2f298df25712a543ac12d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8e6c45311b811250b53e548928a966839f79d77c875d69bc41dc13c40526bdf2.json",
+      "size_bytes": 39466,
+      "sha256": "674dcb760c8a7f4f28007049a487d81960bcfe22887c9264b9f98766a43dab9e"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/8ffccf82f7c0eaeda5cb4e2f1219694b24c1b0396f4f3a4f25521c868ff9c39a.json",
+      "size_bytes": 28870,
+      "sha256": "8fc2d4ae76b232cd3dbab188a093e22aae68fe27e7269742b8e30f3b62a43147"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9051c3b242808d5ea3bc0fbb9fcf442ed21b1cad002610ba559f21697eefe9c5.json",
+      "size_bytes": 4759,
+      "sha256": "33611dd1dad4b4b6c3209e32f41965292f713e07ba6c5f89ae1d5a4a74130315"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9096a83e2c5c187b44781c7367f11076903c37b9d2a83855ad3819db6ca3447d.json",
+      "size_bytes": 39636,
+      "sha256": "39b6eee8a5cebbb19d91afbac70a1b5fd4243fd1eb9792594d12ab2390d4839b"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/910d09c8fb1d9f9307efb4f2bbb624516ec25b87946555689297c2d9964c4d03.json",
+      "size_bytes": 35883,
+      "sha256": "2c10009eb7a8bd93e72a6d0dfb38cfb1186b25054bdcc08aaaedd747947bc54d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/920a4951793dd693f341b96e4b3f8d74d74b7a3b49693da87ff96d100864b052.json",
+      "size_bytes": 24501,
+      "sha256": "8ce71137c0fd638239be219bc8b3103b95e5135a2b338e7c5e52d16f5fbce017"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9343c80e352683fe459334d43ec4f065f27effa835aabf3a3653f7fe6a846a48.json",
+      "size_bytes": 32947,
+      "sha256": "171bffb9251d892efa94f75dc81ce278c39ba760d63c2458ad31dda9bc26aaa6"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/93c25b971160ba79c69e86f3f7d4ddf7ee45c9366914f4ec315af92fefa7d0ec.json",
+      "size_bytes": 21307,
+      "sha256": "bf4308a80eb6457aa4b08b38c99da3bd56fbfa0b971ecb190350ec885b63afa8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/943f28a991ccaf5135f2b64a0a4ecfcf3222ebff3187788f6ba39bdbc9b1bc9d.json",
+      "size_bytes": 12681,
+      "sha256": "ba2b4ede7373463b646b2192c7a98b7df433d729afd3c5d37796048d0eb817c0"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9451e7942c502ae40f161c6d96a452c089bb18e8d10790984f1c8d17ad2b23a2.json",
+      "size_bytes": 29703,
+      "sha256": "079d827ee7cf9f354fd07a80a0139512fb58da14d0ed6914b1f31df625c49744"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/94e5a1846d1c84c05b317073247c12da29ddf4beb399c4eb97f8f06d93a440d6.json",
+      "size_bytes": 50113,
+      "sha256": "96395a7ee2315054c4fa2948332070d55d83dac51bd19cc8ae1be0be78c56053"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9529cd92e1cb278576a7189ee4915fb6e9ec5fcc857812a5d5530ba80318c1df.json",
+      "size_bytes": 22647,
+      "sha256": "0404b4e4b8e7b116fdc8a907304772052d118bcd4607c78bd83773691572210c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/96de9b3cf773244e871d0aab99a1c0ce4f48f10f1f05e5caad7d12b0c4968db5.json",
+      "size_bytes": 28891,
+      "sha256": "b795397019adbed9838d468b4de48828eb550b9e6027e6bb0e8042e621b15944"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/96ee9988c71795fbead6cf55060bce41b954203d0bec37a1107aad25c8bc670a.json",
+      "size_bytes": 33925,
+      "sha256": "2f2638d468f837ad03fc0ee837088e9dcbeb5c6e8aa99f6e0170ca35b4300a65"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/990b154c2a7f57b61371672a6865450647f907820b4e08cf51f6820c20ec4614.json",
+      "size_bytes": 2171,
+      "sha256": "88ed91a76412767f084b0ec572a61aa62d5e0c68afe9db6b4afb736a2588eaa5"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9919295f19d661323c6a4ccd41413083472836a429a046c85f1362271ef5d360.json",
+      "size_bytes": 14225,
+      "sha256": "7337ad99747954202993d6056e99e02a73d47f6c57508828c991ee58ff16e99e"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9a22f59a9b3c479d6c6b28647f3777c2cd637dce9197a5cd4f92f6da4bee36cd.json",
+      "size_bytes": 27775,
+      "sha256": "f8b6e5c88de1ed207832bc3a6eb620be69670960c28f32a85eb47232946f3e88"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9ad4a63984cd3b912ebee5a7b2c058e5453b5bacdec32a793f7c35eb0d1677f8.json",
+      "size_bytes": 46057,
+      "sha256": "a845c1affee6031207d0e35c85e27036e7ae9ea51811560352edaf34b137cabd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9ae27d0832a0ee0b6206fc7857db1ab73cfa2db21b7d14d830000ab2fb8fdbc6.json",
+      "size_bytes": 35179,
+      "sha256": "ee961fa35ddb9a99aa9f905949a90798eb44dbdecdd7e140f223ac9420f8830e"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9c05ff66a936c145a72d14e1da6801a60e0de9c07fedb4c3877904e534cd2d4a.json",
+      "size_bytes": 46926,
+      "sha256": "0a6ff01943e0d23c9acb2248c2639811ffb986158f40aab73dd06c01fb94d42e"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9c07df7c19cf85ee876edb72385c745284f2f744860eb63cf4e7859f878a50b2.json",
+      "size_bytes": 35201,
+      "sha256": "240843083ff412ee7265fce0f90894cfd030763d5ad0c276e666eb85f3d2c626"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9d03de0c344db922fa41b041cc4453a197534df6b39254d43118f9eed82a98a1.json",
+      "size_bytes": 24664,
+      "sha256": "5e3769bc93a901cbf68f03843d269c9fba857c5cbe4b60cd71ed73fe024f9b3f"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9da029bb60478b5d303eef7f973a1f9e715823c5b32dc4387db717c1282dd96c.json",
+      "size_bytes": 29878,
+      "sha256": "3c086006c1e6fb9e3fb256ac57436556e1571cbb5f6cfd482a72462fdbcff0a9"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9e0185ed47978d55d20aad5102c52e163bb03d20dd6af1bc7394f2c44aaf854a.json",
+      "size_bytes": 36082,
+      "sha256": "9be13eac766f9f84e7e59222197a6d058d8a90715ae2a17138ab28db384bbe95"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9eb64504c6b46179d72e21b638ca22a2be8e11889b0ea8a9c6c0876c8baafd7d.json",
+      "size_bytes": 28994,
+      "sha256": "d441257de8912648102122f125059d64dcea5a462c073203b51378468d4f2ac0"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/9f6989d445502182bfcd7106a916c9a1c9adbbfb35a77eea17ccfd09cb936ca5.json",
+      "size_bytes": 23677,
+      "sha256": "30b3bd5918eb3baec57e211bd25b3bfc00ebf7ef3ac725a3a4b996a109457c80"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a14fe1ef0a58192c78b7dc68710b0f448992c50e353a24fb41806c22d9e11334.json",
+      "size_bytes": 88484,
+      "sha256": "ae616ddecf9cbcfa5950be1494c535c724dd34479d55481a8398bbf8635b80ab"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a188210a39133937e99f36a6eccf5a064766c3213750cebbb76031db2113ec06.json",
+      "size_bytes": 41744,
+      "sha256": "4eb864327dd48aae86eca4160225deeda7fe0b1aff0f332fd50284016b983376"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a1e2a36b376d8672454333986e45d11b5496896aa9174a826a1cde8c82898a51.json",
+      "size_bytes": 32328,
+      "sha256": "b7d7af1a59460514e84ffc8fd1a33bdfead63758443eb38ac8a5a13fd4e57e08"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a2aadad7c3a5d338e140ac638fc8211621704efd49532163816f9517ea489cdd.json",
+      "size_bytes": 38971,
+      "sha256": "fc28652b9b2c855a7736d36eb537aa90fa8e013b99174691b04e7d3a84a57b54"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a2b70381062961fbffd8345c1ef26f9d2f53cc727cc2a6f5d62bffefd1f2ade2.json",
+      "size_bytes": 32144,
+      "sha256": "f556a5de0d290b5e54fcba7b331c4cfc23ad2e876b082fe7c6cc19e18b4551cd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a37e4508a7e47720bc0eb1046299b1f284cea86aeda6862ef41fd5bfba5dd58d.json",
+      "size_bytes": 19586,
+      "sha256": "7dd96070adba9051751654e969d4a68fd0ada7e55a18ad9309fba06c4e84b688"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a42b425fc1b5626753b93ced782a8795ee87991f3958347c4f49f80025cbcf7d.json",
+      "size_bytes": 23227,
+      "sha256": "5abd0cb832874ff8e60833a5efe5119265b4e86d113575de51381b1dcf1ef991"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a5a28ca5641ef3f8816d5795ff198a644ef711708502559dd4f40173e353f416.json",
+      "size_bytes": 21217,
+      "sha256": "23aab695caff82a0f7ad98727a2a7e4122d115c8c6e972c3e6862e23e303f33a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a5f050864f9ef2f025212ed318f2d85a2e7ca84357a2e7ffb1051f25fd908808.json",
+      "size_bytes": 18810,
+      "sha256": "88b93ce4561e4503ab4707dbd122cb558e3b55f7c42972f751b8b2c4d233e6e1"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a6cf9467eb14856d1d04f0c53378560f54fe66f4438cfae1003c6ce3d6b26799.json",
+      "size_bytes": 4610,
+      "sha256": "9e6a81d216afa552e0248729cd05972d84e13ee380be1bd85555d01d1fe114f2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a6d1f5eadfcd3a81403281663297842d825d3ab0ea3c50e6f489d3223c243c43.json",
+      "size_bytes": 27076,
+      "sha256": "72f01e83f20a7e956a351b924cf53ea05b6d4aa54a4ff6d28cedaeab42a96bbb"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a88d49da60c4469b8d60e94edb7dbf5a46933b30b1135695d0f8be7127b14210.json",
+      "size_bytes": 37439,
+      "sha256": "3f8f1f85e75ca638f8b9a1928617a023e8c253daa8175c513c58c08b89355694"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a8b1f40050a9b65146f024b4d91a31a9810f77a57c2a4f678fe37874f2273ad4.json",
+      "size_bytes": 34805,
+      "sha256": "46648f2dad13a54a5b8e1931faba82fcae8e31ecb7bc757e06a030e465718999"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/a98b8a2c52ab9880d1ab5d703aeaed71327e40e55d8ff638c5d935567b973277.json",
+      "size_bytes": 15402,
+      "sha256": "9b20032b73584a36b16071419980f1527816aa93baf19b94786e9da02b560ed1"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/aa994cdde4d04e5e619346ef389b5db8d68919b695e7460f996dafb2301b1064.json",
+      "size_bytes": 33933,
+      "sha256": "cb0b5320f288e2f707dad0b1c6ff5f8b7e852125a1b70aeece5412284d8dc909"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ab1dd7d6e47ffd3b494f755a66a0d28b8be2b89ca6a41a96343a0f4ea733afe7.json",
+      "size_bytes": 32662,
+      "sha256": "1f89da807ba3445002e59c6ff8038f32ba363a99944e967492d6a72738c5edc3"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ab836d3e186927eeaceee38a67b217d5b51557ec9ae45c90bb28843bee31a3f1.json",
+      "size_bytes": 3660,
+      "sha256": "f3391d929de12f43015808be14857cc627d6e69c80a74af590a5459373c88177"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ab8edb3251002fd646e7bd70ea337d4a74fe98e20c5765681124343bb0706f09.json",
+      "size_bytes": 14318,
+      "sha256": "b89db5e74f3377075ce05214bf5b8f3878d5201d8107c17d53202b9690c9ee40"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ac4a1e9911f3e74f205e4273a9e61912b8c226810ce84cd9f217647013b74b94.json",
+      "size_bytes": 49269,
+      "sha256": "06c8fb57a81970e60fbdebf9c4fffba3721c92553f0f055ca984aafd1fd1734d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ac94222182c5c2d4406a1f942d4cd9d81d3f10e2fa14735275f533cff5595c04.json",
+      "size_bytes": 26347,
+      "sha256": "9fc9c6a68639498e11179d43a6138b16250c79ab2f87b5a0c0ef469a2807c796"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/acc50dbd5563e3d1b012e9da483fe2750ca18ae445e7666b31c4cdd8159eba4f.json",
+      "size_bytes": 5171,
+      "sha256": "d2b634275020ef5e9f4553cf786f6c92f32250bc1c6a6e6e8da577c1d0b30604"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ad058ec16b58e2dc05ae3563c0c8796f7019c62afacd9d47a48c2e6aab33accf.json",
+      "size_bytes": 23872,
+      "sha256": "1b9bb31229972ef0424f213d2ca93b282a89f310ed62d48b683de9b88a7d0727"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ad920b2356797f15f637409960c6d1a30c2de26ac1ea356fcfcce609106ad9d8.json",
+      "size_bytes": 27251,
+      "sha256": "a4f5e5eec838fe4da8ba013bb9077ac958853eed37d3712a4924b2fe52762cae"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ae2299f2fa172774b57e07766805f1f4f4f52c803ee134a0804fec5f051b2b1d.json",
+      "size_bytes": 215656,
+      "sha256": "7394683ca9764892c7b997415337250a2d37f7e876909eb5f2359e374ac65dfa"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ae22f0b583e9ea688551b0922a2e8f98e643b50e4c9dc0885dff156dca120768.json",
+      "size_bytes": 34215,
+      "sha256": "3dcbcafad58a48860e7985053095d18045a2691dbb43cb10754b4e33cdd7c1b1"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ae4454f25c5675940b8d049fd6692450f4007db5a4c4e56caf48c78c1f8b4773.json",
+      "size_bytes": 30389,
+      "sha256": "5684937a96cf3804b2f6cfdef9e81986e863fa71a09a6040b803fa58894d3daa"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/b0070009e7ca405a20f2f8025dd6a0fef49ae973612371419193f1df3e3ae04f.json",
+      "size_bytes": 17218,
+      "sha256": "31c6065088be9b8daebf041a867be1d609dbc9538ae476be8714b38235c4e4bd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/b29802a7c0e2a9f49a1eb23e31fa5e738edd531a446cc9606d936da5a31cc3fe.json",
+      "size_bytes": 35602,
+      "sha256": "2d5366624ddc618a0d45afe9731996044556e055bb06af923b0dc4c6f88cb99e"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/b32fb922e30b5bfb518b29f4dbc746d31c615e0a3afb940e3b53c4da23c6437e.json",
+      "size_bytes": 44370,
+      "sha256": "6c64969c8fa73d66f5bc0d182160b4bbc3ba25eadc9924f2a87d44a3bdbec8a8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/b4591e62cb8da2fc0f47a6e7aaf5d882bc0dc77e790a87f4fb57880c38b17d29.json",
+      "size_bytes": 71606,
+      "sha256": "bae31220d38097801c39b96563ec6b1da9f56a935fa1585c882c58b60d45b946"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/b4fec3aad8f302ce7179b4acfe00d2fbceb0890a045e1c661371c3e714f483e4.json",
+      "size_bytes": 23917,
+      "sha256": "92f58bac5c9482505f3bcf12ba08f0a7e849b666b08ff35566867308e65d5e6d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/b6862a749969f7d070a34c35beae4e45707b97a3f4042f82649c1bc7ea3ffeeb.json",
+      "size_bytes": 38422,
+      "sha256": "8f815bb2c92383d1d28484971c2c1e4dd60d984fb9bb40ccbcdd5fe2501efc0c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/b68c3f58fa64f026e5c53c0e3891f048a70a8712ac0485d30e9d655c96cc7803.json",
+      "size_bytes": 30783,
+      "sha256": "32175be4b7f1d8e7720c30e888f5632e05cd37e525df128b9ab95836c7485241"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/b6aa71b58a699aafc971d8e3d47ee4443b1a93e03664fa719d757a5eafce8dff.json",
+      "size_bytes": 13665,
+      "sha256": "cb65125ebc7f8d46a6861ee0fd58a41ffd1dc1d1964ab504ed8b94ebee2b5e0c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/b6c6211cf99fbe2b7a02b0507af73c6fc877ef3c54804b834e9c4b1a819fa7de.json",
+      "size_bytes": 20261,
+      "sha256": "d0e3db64f61065fdf8b47e74a577059ae54130b023e8be75559796c09dd4caca"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/b6f07767d74db309d721fabb6c5e99a5e3b4a647aa43dcfe8afe8d2e38c3694a.json",
+      "size_bytes": 27241,
+      "sha256": "2a452b09464d6209c440fcf18a064dd8d18f27bb9934443b28cdd6cc19fff86c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/b843341fb4dd521b530020c552e994b4ae355ae1f526c29d51a00bee80758bb1.json",
+      "size_bytes": 25704,
+      "sha256": "9a81da7a0d69a17b6ed0f6e91482fc3ed91b5d6aefce78b757180de220973977"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/b979be678427be0d5e0a3a67db486bc1ced3800c1e8894a1e69934a02e41d466.json",
+      "size_bytes": 22820,
+      "sha256": "a4fa750222263dfcd4c8275c0e9f3026a37ca9d398d40ab1437b61af3c35c9e3"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/b9b376aa45e938a0876113b32a6730ef1bd11757afe48901326570640fee40e3.json",
+      "size_bytes": 4157763,
+      "sha256": "0ed36158a55ec50040e0eb5ce72d5460979486c516ef6f2689d76052a88ab65a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/baf76c95fe57a4379f18fe459cfac2c66956f4f1463a392c867e6a35c341f352.json",
+      "size_bytes": 29842,
+      "sha256": "1a83de287723f4bdd0b32e9ef982978466e6664850592b0941d2314ac0e056d4"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/bb14daa4d6ab7a10b43c073fd9c2349a354e2ead818f8bfbaf577ea0d72f87b0.json",
+      "size_bytes": 31186,
+      "sha256": "75b3c6ad0fc3613a12fae9f16dbc69644ed6124a5c7b2eb7bd0b9192cd4655b2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/bb3a0839ea70b52473e27b0b3426b3985e9106f0d2757f5b6af19e886b2b6d94.json",
+      "size_bytes": 22345,
+      "sha256": "3d8925ca2e36878eca581d8545f282f702f867a515b9077e389c32bb27b2f0c6"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/bc016301aa308f5b726ea0ee642cfeebbe6d7d7ba5c7f7ea6515682f20ab7b87.json",
+      "size_bytes": 19369,
+      "sha256": "7148b418303ea0e1a35c37bd7c684950bde81b0c3c08d04b41d3b161f81516a7"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/bd105698db4795da30cde3f242a33ce2f3555cb5f017c00bd103c3fa85da1402.json",
+      "size_bytes": 37414,
+      "sha256": "c273b4412cf64eac77cab75a641bd1b85f44076aa23700e61ab0c4054a69761c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/bf3c3986b8e79f23034a1016d4c958561f397bd27fe8ae59772ee116d13c5cab.json",
+      "size_bytes": 18426,
+      "sha256": "675eb4f66b1c2cfa5f25401fa2117a8919df1e4082fe16b8e69f6f56060f0594"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/bfc93e620e83d6794757d2d618dc325c287f1b80e7bffeaa6d9564090cd3096c.json",
+      "size_bytes": 36718,
+      "sha256": "adb07718a16a9298da3170f85efcb036572dc59e5b0aa2aa671c0402e7de7e80"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c02f34a6026317de813369f4d05427b0010ead3a66fb6470ef606e8f3327f4cc.json",
+      "size_bytes": 37154,
+      "sha256": "1dcc42654a27374f6229c4dbf24fa4a28b4e43f489b617458f86f5f8e884eb1f"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c035270efd72141a34355202e961a5060af4d6bba12c7ac87b5f36ef61d55fa3.json",
+      "size_bytes": 28959,
+      "sha256": "5f09de43de48d698fc238abe089680213c2205a7cf85fd3833e3f8864ebe565d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c0fa80370c43606427ca886d792e52a413327a3140424495a2624dc40ef828d0.json",
+      "size_bytes": 27575,
+      "sha256": "766c5eeac1a62eaba5e1b019f7133c2b11c1e180a27cd8814ae188ae66c5ac34"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c1454c95f7a42c445c4b63b52058513354653b1f6e9926d56790a27c2eefefba.json",
+      "size_bytes": 29209,
+      "sha256": "b811879d90877f9dc39757865dceae3c3234e90fb4abaae0cf4497d116851b75"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c192cb942a77135cdb0e31fd0ada27940cebb521d927a54d581c82ddaf3c2201.json",
+      "size_bytes": 36061,
+      "sha256": "4ba70ddc4462479a38a55721ad131d39a85be50c4e300c73eff504a2a4427ea3"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c1f7f3957b7807b2a1bbd007d67f802af1321873c744d1ed8a36c817f9eb8d54.json",
+      "size_bytes": 17796,
+      "sha256": "1a5c242951f81e961ace29260f7a67dd8bbf17160c6d409590a5ab0c994739f3"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c25ef03c7d1b86d8cd5205365479d0e48677ec62022ac5d6257716c02cb17b87.json",
+      "size_bytes": 35575,
+      "sha256": "20ad62f7cc03b4bc5f312b23ff030d71cb9840f08e3ab057a53d6d011ad441bb"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c35e3b691881607080bca3e1fb20b8f6153e55037003cb723910b690eeac9c84.json",
+      "size_bytes": 18530,
+      "sha256": "8ac5b49debb193534e34b12a6957c34b158310e42bf8c830e699cd19b4b8ea16"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c453b106bc38a45b404e3a4f4910ab93f5938fe0dac1bb5703ff84cbc3291550.json",
+      "size_bytes": 11551,
+      "sha256": "1e7d6a12240d8e5e0b579cabb7982d31e46300e87a50a8273b4ac9af46e7c2e4"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c4ad2ee9907b18435a599b3ff4bed15aeb4fb9d618947cf8e5d024dfb1c5cd84.json",
+      "size_bytes": 20368,
+      "sha256": "38375064ff1abdad952a2aff474b4cce520a7c297bc7e3735f6568c456eb9766"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c64b3dfe59ce77924cdb1c828f1a39a1bceae387dbce1d71522f440cf72de0f2.json",
+      "size_bytes": 23548,
+      "sha256": "9361422de1fde8868e88c7036c065850c682fb4301239b0b8e5f07a936756fdc"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c6d0ea339aeda57aec72af74ef8b18af3392f8f58fb89f9d5021210a25b9d1e1.json",
+      "size_bytes": 16864,
+      "sha256": "986f06009eb44139a9ce8ac02cb85eab6bd2ba16c73481071df1f083b69bd2bd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c71102be0df927ee442ac1ac9004493ced34006a496400e1998c282edce5a603.json",
+      "size_bytes": 4775,
+      "sha256": "3c9dba83d59927d3403d6346803eef4d4d345108e5ae5f3bb29751359c9235cd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c84fa2f96a31934f2a75c68e5b9eff4bc3ab89fc5fa6593c2e469fa3bd358024.json",
+      "size_bytes": 29349,
+      "sha256": "bd7f12521c9063a04e4f280f1b32008ac5a86f87310c62f5f61bf001da91a78a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/c9689695e9e3e5023a2d25a32b29d0c48d33079fb89547c78eec8002db4885ed.json",
+      "size_bytes": 34610,
+      "sha256": "7471a4195ff262f4ae44307747287caca050645f3152f086dd44cc43733bd893"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ca63716391c70a05a8ce63c1c464d51a62860a5e0089ff0bca776e78ec79251c.json",
+      "size_bytes": 27469,
+      "sha256": "e9d172e30cec8b7ec1dde7d71f596e2f0fe0592fd2f73fd2ca8acc631864139c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ca687c6b6e20d979747730e7491992c9146448988e4e1b871c82707ba75ba2a2.json",
+      "size_bytes": 25722,
+      "sha256": "4a760897f3beec0b69610cda704fc00076d8036d2ce34248abde5c833c5d4463"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ca6eecd61f2d58002f67ebf27aad3a1d43ceba2b45e1bac59bacba1d2ac648f2.json",
+      "size_bytes": 44507,
+      "sha256": "30d5afb2c3333d654c2bb6a3210f9e0b8228030452e7d7c8cf8e8630c2c385d7"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ca9ab7ff8ba8422c592e0040a5fa9237271c7c9dc6118ced53dabdf9ff66a7f4.json",
+      "size_bytes": 26376,
+      "sha256": "fe862235eeb601a1336f0bbaceb2d530bc5f744518b89a78fc195ac6392fa849"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/cadf54c550519487c08dcde039e28c1ab185b8965b3297ef479f90895da83ea9.json",
+      "size_bytes": 27044,
+      "sha256": "a947b174fbc22e50f00c669c4d17f4d12c09146911cda987b039237cc66eb067"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/cb27d0d2a4330f0e4c695798789c108a41212514f181aa53fcf4f54a15b53fa7.json",
+      "size_bytes": 29691,
+      "sha256": "0bcf98a111a18824bed954782c943dfc01e7496a4e1ceb06a6441c74ce79f1ad"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/cbceb36a05fd4b94b2d69c2e304d64d2a613be9af0f3429834ebd1be8c9445dc.json",
+      "size_bytes": 34309,
+      "sha256": "b5adad844d2be114e7679014774ba6e686b1f667b7b08b1db4df4a6cc235721a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/cc135835209344f1f82daaf655784fede3194b1a32cb074e4358fe132a643407.json",
+      "size_bytes": 33640,
+      "sha256": "bad654d78ec2e626d5da43840070444f1afd5d7f2e4f7b5bbd185c2d512cce58"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/cc28ae388f1ff3481bd211fc27f28bfeca4d0f70ee34cf5f6746da85806554bc.json",
+      "size_bytes": 15862,
+      "sha256": "7df6777160d6d7e31011f3abf05e21ee431733ac7186b98bb00c7fcc5d058266"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/cc8fe5e3b947f601b54c7db70cea3f85877e28260523a2bac3d7eb3bf73b359d.json",
+      "size_bytes": 34410,
+      "sha256": "0fbe4578e297dc90bb8c3c1a317349911efe866a3e7a39495e205846705989df"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/cda7ef9111684cb767061c2c517526acf59aa1269f9c750cc613f25e39006c30.json",
+      "size_bytes": 157802,
+      "sha256": "8944572d1d1f5f9b53f1b11ee4c6d60731f2050ece2ea45664003d3f135d75fd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ce779578e2d6840a0846d0060b022070a26972e4c9fb3098353d2e616fa23bb8.json",
+      "size_bytes": 27148,
+      "sha256": "68938f962a75a12213fb5568e1c89a5dd0f90f5cc91094bfe7d63c57f3fb0417"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ce7e50b822a6851f3fc2d4cb0d4a09ea7e9e560094611146881a1cba5e734147.json",
+      "size_bytes": 29110,
+      "sha256": "067ee0f093338b5177e81dd79383416ce9a9693dfdf6afaec59cd9d888421631"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/cec79a2290565effa63badaf8d7c74549da038386948a359e2bca3c98d7078b9.json",
+      "size_bytes": 38225,
+      "sha256": "f517be2b0aba27837a42c318adcd6f76bf72af404c0c93d85288887e02d6e0e2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d0315e484666216940783b120e8713545625d7665438bc85eb1e1906ec49ee66.json",
+      "size_bytes": 133089,
+      "sha256": "776659573dc71a1ea733b5251bedcd7cdd60fdde1fccaca6b75bfa75755fd211"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d08188a1cd5aeed77c5b7795a4c326666b31a066df2600e1d6daa8cadddb0a42.json",
+      "size_bytes": 37192,
+      "sha256": "6cdda1c9b918ff7005f062e4f48b403abb6fbf924f8449d4cd47f57f439b6cd1"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d0a6d269338ef5a7e910374ceeec3136b3cc1cda3d768f86b7d0b7a5ffe64609.json",
+      "size_bytes": 72905,
+      "sha256": "480710a118ff034a656e2509ce214c6cdac3026f39b54d5afd9f8e4cfb32b3f2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d0ccd1be52b3fdb224b195b584cbcea0ceca08f9084c7bd7494ae95faf470aa5.json",
+      "size_bytes": 34932,
+      "sha256": "2f4fb474bb085984c62aa4413b8830b246ce19dbae93b0cf575b12848de4c0df"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d14ee042c035993b7695e2c27a9ce7372c2df9efd23e40c3a9ecb5eaadf9d1a6.json",
+      "size_bytes": 34115,
+      "sha256": "3f71c5c1a10ac965f6428b733ccb601fa58e02de5109a09bd88c841769126a78"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d18e454be1d4119639dd98418d485ca76777fb5e3374950a7164fc3a9cd9a7b2.json",
+      "size_bytes": 27149,
+      "sha256": "b43d49aca5dc1a90fa6e2eaed1180164c20f1fb5a8848b9c09b387f2508ba6e1"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d279ae1692bba2031467415cd7b100987aaf5df2bb220fff5749a8aedff91ae6.json",
+      "size_bytes": 44952,
+      "sha256": "649e24cfee44dbd2090d64035e6ed93be9fc227fe0056885e70999b88f389f4b"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d27dd16d8df73a56e49f0e694c939eca168d1bb9f7bcad20303e87e2f71a9bbb.json",
+      "size_bytes": 50204,
+      "sha256": "952d945245fcb2bb1ecfc176e7fda0ef684afaf64c500aafebb1687a3263faf8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d39001889cf28a651174d18833915a62fd9a78b1b0f77f7c961415bb6ab3972f.json",
+      "size_bytes": 32654,
+      "sha256": "56a02169c2c7391146aeaa6eb1228b6b522db8ab6a112351a5f0cbf262898b20"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d3ce8a2ba2126768691c7ec8788d75858dd38cd7276064bfd256d4183c284f80.json",
+      "size_bytes": 28259,
+      "sha256": "50519c1e21525c0fd8be4534bba85d9fc782e2672810153eb214cc15ed6ad271"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d454d5e62530f5fdf71186cd838b015094bf1668aa0f65c8054f91bb21d55b4d.json",
+      "size_bytes": 37888,
+      "sha256": "db9eef7126069576b88fb2bd87d0fa0d11898af4a63c3aa99123fb7951ee0f52"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d4b7568b2bf85fbae1ebcbf6a6bb173e82a974658d3720f5780d8808354c45f9.json",
+      "size_bytes": 25362,
+      "sha256": "eb117d8d963b3b3b5b3e7752b70f3a4bbe4e16d80b180163aa6d72938c781cd3"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d4ced4b8433632c0a6a5098e2f7d43267c431ebfb9215b8ca179ed7264d0d8da.json",
+      "size_bytes": 39388,
+      "sha256": "da1f1641e0a77477967d1ff8cea328af8c27ff45d9ef4933a4cff5737e6d15bf"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d4d36dabfcad1ff63413a4c868a5511b90cafa0d5eb8ae3b02a36e6da6d92029.json",
+      "size_bytes": 31471,
+      "sha256": "bb67efeb76d9413919306201ec9ecbc677cc3c9896cb1ef9c9ab4731171f9ad0"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d6cbdf4306aef88c6453b5dd4cce229204e30dc7b1080f1bf2247c8d9123ec87.json",
+      "size_bytes": 11216,
+      "sha256": "0f1aa15f48a28e852cb22e555ed30d9830dcc5bbb524a6229e4c687ae282d97a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d6da0ea8f3239788f1776fae8e72089e349cc62a067fd079cd18513ceeeac3ef.json",
+      "size_bytes": 23404,
+      "sha256": "a23253fcd97ad7eebb28ed73f956ff3838f1bd8dd2e17312747c5ab74d002637"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d7282ad17cb1de191d45fbeb448b83732b71d1a0ea008f2235cffcf9b62e06f9.json",
+      "size_bytes": 33905,
+      "sha256": "0f44fb1ded42e00e53a97eb6f38b9beb02c456604fb7d38cd638dbda79871900"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d72fde58ba5265a3cc940351096ade187221738161d9ef5d4c01ede99afe2160.json",
+      "size_bytes": 15735,
+      "sha256": "32afcd32675405a736e8d3f19e455e2ba59325c028e15e1a41d761ef5604ae3f"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d77303b288befd5b114cad10691039ae1275e2e4c9c6d9556dae67dbbcccf1a7.json",
+      "size_bytes": 36937,
+      "sha256": "4206bb8ac8d53a32396b9a8f70c82aca908ed7560b65394e43f36da6e8d0e918"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d8dc6ea21175c57a7ec3b8de320c4ca7a7051afb833a2a2951c81514546c20a9.json",
+      "size_bytes": 22774,
+      "sha256": "bf516df8b69f45a4ef8b97092519bad6c8b590aa022713b8baa3f45da40b8242"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d925654fec7211e4f3dbd78918c3dafc6dd6672777ebe8fd4a9180c67cc7e16d.json",
+      "size_bytes": 55710,
+      "sha256": "3c9d9e00d9fc2f2ccf17bb9d619205208aab519b908661415ae6c726a50585a1"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/d9acc164bd7f96713231e99be972c1eac2242479894c02d290d02d152c6cbca6.json",
+      "size_bytes": 16829,
+      "sha256": "d03e21c07081b9b387bc7d51b97265e3daee0e7797bc9bc59ab444877178fa5e"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/dc97408f44a77483ab4d9d16bbcee2bb6ad3cd491d179865d008630f69812388.json",
+      "size_bytes": 37373,
+      "sha256": "25fd56c9fc7e1faac153f4e3f69d25bbcd4499218e56c6c31271776a21891f40"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/dca1bf9113ee00a8f6a50c8f5d0722ca6c2247732d6326e8567e8a3da93589ed.json",
+      "size_bytes": 41528,
+      "sha256": "1c63be958d024622300c13d5f73930c60847cd1a6dea56083a55e7baee471cc9"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/dcc8758e9d8cef6752d71ac79bb967a92e03c3e4497c3c76d2d197b0f04df927.json",
+      "size_bytes": 23962,
+      "sha256": "d95838ee8b53bf28d1b7cbc4366d142d0b430680d60a251033bef689b2e6aa95"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/dd62557d745280b6ab875c974fc639fd9495e762b79e1fbfa8e33eda87ab8f57.json",
+      "size_bytes": 73805,
+      "sha256": "297c889c38bd058a30620560a7503ef3e2b0ed7a3a7e37ddf085ba9ab2d80405"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/dd9208d9762a21e22ae3c998ecebdfd30894c975930f4f7edb8c8b4092fcb40d.json",
+      "size_bytes": 20690,
+      "sha256": "70e5a61871b120e94223c715257baa420ace1a0520fb287a4e3ea0e59e298f07"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/de301b78a76dd8c7822f8c995664a3cb57024e6f28de42a7c83b21a70611c492.json",
+      "size_bytes": 24977,
+      "sha256": "8d6cf91d8bf0af6d29c954ee2987a145a805bd5805f53d6789dfb883c686b736"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/dedadb20b3d096b1b68ae01eedc98969a1018eb8d3c4c893df437559e815bd86.json",
+      "size_bytes": 118970,
+      "sha256": "5cb72e0d88e7decd2cf30de9b6725aaa68e295b5471ce2f5c38302abe78b633b"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/df25265db0b23aca67e6611535f7b702f428d38474adcd4cf4f5c1b90323ebcd.json",
+      "size_bytes": 17167,
+      "sha256": "a4ed03a1a951bc0b45c6820560efbed77c1b116c1ca7fa514c752463d37f0d3f"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/df2ce967267613ab3776d5a371a04e8ba4c662d0cb8bdf1be2532d30a4b747fb.json",
+      "size_bytes": 638,
+      "sha256": "973d8671cc5b56b3787583dceee0dbeacd0f5566f45e6d3c65e4a23feaec9f1b"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e02eeaa807ec043d8cfe14a5d4557b1480814e4ed2fd2de97171fb7d48cd0927.json",
+      "size_bytes": 14744,
+      "sha256": "d3d68e73dd3cd04d76cf18b8e2e1231717f890c9e6050bb7a1370106c036895d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e03e6533465a6467e75a70eaa4e45eeb6e68157086f8765d86595085d1573e03.json",
+      "size_bytes": 16264,
+      "sha256": "cc0e030817d568a6bf0369aab7917be3d85ea52d53e8fc856be9bec1133dbc7e"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e06c29b49d9530b8fc311ddc54c62a2bbf6b55949be059eb4d5136db610e0538.json",
+      "size_bytes": 18841,
+      "sha256": "dc0429293416a353c6687602240db5612c951b10b97df4a8bc406f8f1762f854"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e086aea7bd2bfad896d4a697a1022810f3c05feee7a019663de7a6cfad5adeb0.json",
+      "size_bytes": 24972,
+      "sha256": "bbbd5355acef42ec2094efa7fb1653aceeb85b5a27022c7a904aa617a95dcac2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e09c983c906d544cd2831bb1ba8e2dd0e6b1f8f5c955e05e00cdfcf57db77354.json",
+      "size_bytes": 29267,
+      "sha256": "617c8fd2de4264b765c868d8ef3df3c2b2a6000d3872b6bdb4226e02205a523a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e18a85c25665a7d45545db1900ff989341ebef7112a2784b2816378025378aa4.json",
+      "size_bytes": 13249,
+      "sha256": "c992f808011676dc22d822cae971b7dcc3e950dea54df90a5b10853d2d533c7a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e19605e9c678e76db5c577da0b7a5ddd9df63b1e8becd380a01d01bdd7055004.json",
+      "size_bytes": 20703,
+      "sha256": "92851262c15f949081ff24fd4d7a38285d519ec3b55cde0d89f96c13b81148be"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e2615a351ab5debcb058e442cd4c87a23fc2d07dd5df928b57d2484fabd1a210.json",
+      "size_bytes": 20191,
+      "sha256": "1a96104e5e6c10590647bf8d46696a2d353617ea58b9f9b4e166565a2a45f4f7"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e266a00e23bcd0c49935408dea75bccb9a6c50b294009c9b3f4d305a1c50e0c7.json",
+      "size_bytes": 21475,
+      "sha256": "2923354765c8ee4f85a33c431429cd73037189ece5fb1c89257100e357b1d9c5"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e2cad6de51af1a070ff261979ce2d45397079a083006893ec2c961760fec2acc.json",
+      "size_bytes": 10375,
+      "sha256": "e6770f98b465595ca7f15c131eed5dfa7f6968ee1b0cfba6c6df97c525d7a094"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e4095f7d7d4dcb225d71bf567a7b905c68e7a37bf87e70226c06f962e94d1e4f.json",
+      "size_bytes": 35324,
+      "sha256": "e6354c73687a624a36d1eabfcb71af9e47839c20561a2b43c3b1e2438863d573"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e4460be8604ae89d360f74b81de1573e1e07ec362b8de4962525f6d4215dbb75.json",
+      "size_bytes": 400161,
+      "sha256": "73c394ac348fece5e6b3387894af7046920735dd0abb80dcd121ae5eed84761d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e4e9e015a495e818ade1c5277e22b9121cf68ad0a219059473fbf8765157ccab.json",
+      "size_bytes": 26882,
+      "sha256": "675d044b04354e79f3911ec1e993d40526e531613a4e81a9ad57a5f327714901"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e60e40549e266149dc6949c4514d47675a45e3b6746acd5fefdf8ca70b70d5ef.json",
+      "size_bytes": 21473,
+      "sha256": "6c85edbbedcf9099ebccd493b08c1f20454ef9e0135d3c5350b0d4c1e91d7aa8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e6947d83b51740e39644ea9de3ce73b2e92503b6291fced683bba7bb5bfac6e2.json",
+      "size_bytes": 20803,
+      "sha256": "00453fb32908519c7648e238f1b9b1cab2c08ea1ee86cf7995f65b8a7285bd6a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e698e59b10bf967535365cc5e322bddc021f3a429ef2d5f24c78a904c62ad08d.json",
+      "size_bytes": 24779,
+      "sha256": "5290399fff48af72bbea525cf614189a01cd0be8ccc6bb65374845487402858d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e71e7e5beb5f1d96b6b2c3c10f28073edf75c8a018a7c02850722a02773c8c33.json",
+      "size_bytes": 26283,
+      "sha256": "55039a8b29f49a7e6cd10c6023b5150f4862396928118f16e95880f84c6d6a86"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e723ac42d566c4d1f2efd819506fb9904ccaa43d3bdbdf63e63137549c8a063e.json",
+      "size_bytes": 29421,
+      "sha256": "c4e37d68d4198bccb54b38d5037f2114385369d30e6fa2b9f2638c702703c7de"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e774a7dd318817ad5e75c56db0d2cf5c734808c4edf60f613a0b1de3429b2aa0.json",
+      "size_bytes": 46796,
+      "sha256": "e331ecd2a3d6690707910e53000348ac943239ea1f7ab50c239eccffd8f54bfc"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e7af5b2404aa2f7a853ac53115b089a210b13d661c63521cb3fcb7556c13bb61.json",
+      "size_bytes": 19081,
+      "sha256": "6eac1b24cf010b0c73e8abfdd6ad560ac15d38099f09680e13f204e3b3da6f08"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e84f7c7ae66dd37fb3ba2ab52eb699061b33f924c0a08f5d3129e122fcf4b29c.json",
+      "size_bytes": 29155,
+      "sha256": "ce583e5bcbd4b98083248ed03af618c753e7816fb1538327b28ef8c68e67a6b2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e865aa5eaecfb5b912d8dd4af8b02395527f64e3c466e834852a9d91658ac85a.json",
+      "size_bytes": 29829,
+      "sha256": "ed2d17e952ec4cb4cd8824172ddb80db07303e7a9f5e74c0ee964db5c6560acc"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/e9d061b52732dff71a162968cf2032bf94115cc962e4dd4a60d475fe15833d14.json",
+      "size_bytes": 33523,
+      "sha256": "64e618b91ee9dc22fbbf0c12aff1014864c89d626ae536fa06cb8bed80ed62a8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ea0c8003691963e88b0c82d341b4f7bda84b6b4335dc05f617b74bc8b920fe2b.json",
+      "size_bytes": 26447,
+      "sha256": "0725c193ec2db670c9c9171552f8aedc31980a52587b42d3d0cc0b86e03dbcfc"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/eb570728f100bc9e96b49b28264ae40d269729855dc8ff2e67ccd63ae1d934fc.json",
+      "size_bytes": 43881,
+      "sha256": "4ee742285b1141f34be2089eebe5a4435eb67184450f0fd6b1b5f025b9530cee"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ebcc56021f71f095411352e03757785bc60fb03d2f2b0e4bd3023cd92bd3980e.json",
+      "size_bytes": 26074,
+      "sha256": "2fac2e1f3ed3055f6ceec669cee93fb8a16b6468b4b21a7d205d69e8a380b32d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ebf1f1a6795efc8560715400bf570949db88dfc3bf823c9fc8053f28d6b478c6.json",
+      "size_bytes": 32277,
+      "sha256": "69bf6539f493637413e55ed3c0859326407ae6cb6efdcb7106dae6f88263c13a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ec7d0301b9511ecdd5a1e427673f5bf887907df153f3352d745eb21ad00fc735.json",
+      "size_bytes": 41970,
+      "sha256": "bb39f54f49383ceb3fb43f48aa1ca6fbb5fd4672d2bbc647fd62d005a6b18a91"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ecedc503bd038394037123439e5aa89ba153fc34d88a837ae3cea4520feb5c49.json",
+      "size_bytes": 38076,
+      "sha256": "4cbdc40618f6d0ce2149a19def09ef9b6be8f396ba0e23636ba737b8016264b3"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ed186735dd55336ba97630af4be18c65d949c9dd9559a4ffe4e734fa66410738.json",
+      "size_bytes": 25605,
+      "sha256": "1c212c39cb3beff77518e7be39ca574fb2a1ae7e3dcd160a96707c272988bf1a"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ed2b7ae18737ba2a358b434f6dff2d60203b54e8df9cce716a95fdd7c2f52499.json",
+      "size_bytes": 18385,
+      "sha256": "b92def03059bb96fc6e92f98422b74a7e8cde40465b4af4b7bceec7dbd0311e8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ed4d78e5d69123ec20c517b56529572f31d291bbd74fa0f503965fca7f57e4dc.json",
+      "size_bytes": 28781,
+      "sha256": "f7cf1d8ba8ce6f7dec8a740031e9da71047cdb16d2c8fa747af329e2d8296b88"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ee18702e90ff00a9756e15e89edf470dcd98bd34dd7a076880cb52880abf906e.json",
+      "size_bytes": 30448,
+      "sha256": "2200d67bb8323d9c8e0c5f00349ac7bab6945e33aeeb39838176d9c48c9455bd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ef024bfc190f2186826c3693e8a719431d0080055059193800a34d4bc10292b7.json",
+      "size_bytes": 24434,
+      "sha256": "4bf4ff755990ed6a93c4ee73771e4b73e6ca65a6aa723627da914389115272b6"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ef5777855ea11ee43be1025e4f70eba8a74c34e239479c2a35b07e3eaca68431.json",
+      "size_bytes": 23390,
+      "sha256": "0b3daef0e8371f5771db483fdf74581b7ce7ffa44948c906b3ff9a4922513995"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ef787f808998c5a270f1a4871d5be2b7608306101547157ee5dde431bb3f8b6d.json",
+      "size_bytes": 26748,
+      "sha256": "433624d1b639d4540c6a2b2fc2b8d24402d1a0e92979206ad4aab8dc0f12b3fe"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ef8de09dcba96449b5cd0cb71bd5c1af750b325640e93b965af07616ceb01f0d.json",
+      "size_bytes": 27638,
+      "sha256": "6c467bb756f2f3f6685c07d9759be65bad8d832ddf2cc9511dc30a3be52cd64c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/efd777d8e55ce0a66c0b2f2fcea1edbba803744bb433abdaf56cc3c5a5ce8481.json",
+      "size_bytes": 22531,
+      "sha256": "1142d4a99d5f4655ffd05be9938c84cacfd79058ef1d921d2ff15b7388fe6998"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/f367a279fe75f1028832486efebe03707204d1f27c7f858c68c8e0d50be05522.json",
+      "size_bytes": 29806,
+      "sha256": "41b12a75671d070d0f06d087fa859481a2baec82d1f3d1383839a52409aef8bd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/f39fd9c65d1228e213eb9421e1aef42a09b7884d7e810b6c422c0a8cf2e7d2f7.json",
+      "size_bytes": 20064,
+      "sha256": "ea1dd82e043bbf4a510fd3371a3c853e361d614bef9f6ed40aea6d7498651a98"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/f432eb19df149673697807002bdc106093a4ebd59da7524111fbc061822c9531.json",
+      "size_bytes": 44927,
+      "sha256": "01e7aad6b4352130ee8ff5526ef0e2857558675be27acd95922a388c5b1d5bf8"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/f4fc491914812d5872a000d98f0f39924b2fefba3360a4472ee0881c3f2e7488.json",
+      "size_bytes": 25868,
+      "sha256": "532474f6f3269a43f4ba29fef595216b4913e0ccc9bb8ce34d24cd914b12a63d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/f5ecfdffbb00b4beeb8896420f1632faa8e5894692eefe5c16811933d676aee5.json",
+      "size_bytes": 27007,
+      "sha256": "88b01e25559bc372b30502cca5d6a12ef00380dde8c832ce6212c98e576ca661"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/f7d5b2207dfc8c7363da5c94d7472b061690eaa101c5ed5ce35481bb8a10e7af.json",
+      "size_bytes": 30871,
+      "sha256": "5a6154ca5da4bd5c57993959e9dad587d966e98b0190362ddb2f8297e844623f"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/f81a17d5d0425c44f042bf0a77c142ecf3166156bb7d3618729b51faa43c9aef.json",
+      "size_bytes": 60789,
+      "sha256": "ce96d257af356acf872e1d2ce46d24b62e1a509837a62062e0ccb3b1d2e22fe6"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/f97712fea73dd0fe0f502dd0ecc76550ae29caf1b65c303cc323020656870691.json",
+      "size_bytes": 48289,
+      "sha256": "0823d96c6be383406a9bf9cb7e3ccc84faf3ccea3bba2706a8688fb3a26142cd"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/f9c4cdd1fef04a394c0c9314b8d5e0683b0bbc605f2652b3408143f47bcd46b7.json",
+      "size_bytes": 16194,
+      "sha256": "989aeeb7598b4f29b5dae1c311198440ce31bdff2e782ba88428157ec9088583"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/f9db037f3d2325843db265d026eac604c3909a0c69cc99175b295244fec99d05.json",
+      "size_bytes": 31898,
+      "sha256": "4190d0cdc028fa6277705ec228b927b3172419e4aeb8a8315c71c306f0996119"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/fca504da4969588f228de53fba427ff560bb994f466a8d13aa4d8aee3218b77a.json",
+      "size_bytes": 22847,
+      "sha256": "5455f6c85a7bb394455167ad709e0c54574bc6bc27f16bdd748d2ba2eb95ca43"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/fd6a421163dc21d0248d5e18e3462e8848d987fedc079fee93e1f90ce02d3c2c.json",
+      "size_bytes": 36465,
+      "sha256": "b542c6cab77966fa20b5ff9efc2829cb9244a1b0d1b92e250d6b669f4742afd2"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/fda3955e3aca4990933538ba2323cd1e9326a31b844db9ae24b210d1b831e63a.json",
+      "size_bytes": 31247,
+      "sha256": "51c638b1ee0c1bfddf144abcf6a00b5db4ece9f0cbad574d655d228d05e26f5c"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ff1eb2cfe73ff86e36b489dfbb587e960660feb04bf4b784ad707494c3cda6c2.json",
+      "size_bytes": 31192,
+      "sha256": "278528728c053e9b105d93d39a958a1f7fd0691549ecb39e4abcd36696368f90"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ff4e86514c88189a3c5249760e0ba256d8db38da19a05bb9e56ef1470a36b685.json",
+      "size_bytes": 18703,
+      "sha256": "203d6febbb783295f5c7af047e24d8f50f70df520fbbd7ebf79df208b60ada6d"
+    },
+    {
+      "archive_path": "outputs/snowball_full_2026-07-05/cache/ff69959a3a4e2b44cf60b0c14b5579e47c4db3daee9db2a4d2d3f49935321d7c.json",
+      "size_bytes": 23039,
+      "sha256": "cb637c0fc9e4963713e506a6e05ee323a2518aca876704ddb47b0ccfedf8335d"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/00b6e5e3ac8f882f7217f453c4ab1fdf03819ba802093b7cf0648c270ec0fd99.json",
+      "size_bytes": 9452,
+      "sha256": "f6ee62f1e60ba6cf1be284d1fc88dca676bdc58569911d429b0f8c41f9d34f05"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/03becc6f9127cdb6413f76f2a2849c76414dbc8e1f729a5ede3f03ed475b9698.json",
+      "size_bytes": 35432,
+      "sha256": "9c32e284cb384a7a6b5c9a10e3b8fb6a4ac0842e1a0a1c444c4fd3395df4d56d"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/04e18b97d0cbe9a6a6accde0bc571ecd1362be1650af5f694d3a0e8c3a89ea40.json",
+      "size_bytes": 36567,
+      "sha256": "b0b1520c242ecafc7cc5d1b3c8bc122bc7d7819ccb4c68502f1aefada7badd15"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/0541476fd0784fe0e258a83189ff20af9a18b2ccddb6c39595f44e9c4ef80ec1.json",
+      "size_bytes": 40544,
+      "sha256": "522c446cae040e192ae07660d6dedbbd5305144ec726ca63f4b5ac0288e8ee37"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/083a1109288b5f433d5127d2d34064077ad90a1d09337ace5754afbd1be70bd0.json",
+      "size_bytes": 22497,
+      "sha256": "46266f8df592028065dd92851b7b8c0c363574bb0142ce87ae0fc62033d95300"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/0aa3be6cd47b6684fe1fe93f429d7e8ac0add2609ba612d976d0e46f4d95e060.json",
+      "size_bytes": 28813,
+      "sha256": "43d07ad0d5f499affb7adaefc55265b7ce10f5dd663db5387e347b43ca0e62a5"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/0c369a08e17e3c66a915a7c8b12dacf05253b02492ab06561fdfe77154a9dfb8.json",
+      "size_bytes": 165882,
+      "sha256": "f0264db5a4b15438b0c0a666e2bfbf760f16be7282a352ad82bedcf94f2cd6b7"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/0cde133aee36788764bfb6ae0de1e32eb4e80f32a91b56ebbf44ac1036d3c7e6.json",
+      "size_bytes": 42034,
+      "sha256": "27bf5a921de43fdb59b419e288966be4c3968bc0b2f4b2f6ee7f9ebc5a65e19d"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/0dc7c2861398f1404b790c5204932381d6bd59a65ec4c9c9207c5d33ca7b7033.json",
+      "size_bytes": 30783,
+      "sha256": "cd901ab77d16d2138b95ac3265b982efdd4c7b335f5bf91444074cdd69407e82"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/0ed0e1aea285878c746512c2cf096eefc3a16a3ae350766c713ca99844370409.json",
+      "size_bytes": 27252,
+      "sha256": "6476808a47431d5fe95937275c17dca9a8481f7f270cdb449f056f11c2277548"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/0fac4159211369ca40b975c897e9211343b3e01a05159830be12fbaa4423a78f.json",
+      "size_bytes": 18704,
+      "sha256": "8658a6d31e6d49706b11d78e0df691df18bea102f5e26477903052d0688f9f49"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/1069328fa5e3aadc8cc668dc1083008062e1d07f4ff4a7dd66f7ce358fee2a2b.json",
+      "size_bytes": 39172,
+      "sha256": "4796292b2678b7f3d66392767527b1aeb6ca4c1cdc42789f07a60f867fa9a395"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/13232a180f1c6b760ff9388cf52ebcaac886580d2f457c92553adb85fb5f7e18.json",
+      "size_bytes": 28874,
+      "sha256": "a11a83445a01d1ac38f1ee2ed7e3351603b75724963e5ca374dfa05f97094cdf"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/13e04960045f419a3d89391e2e629f7c77470bd3bc5dd23b367923ee3ef817e7.json",
+      "size_bytes": 32440,
+      "sha256": "d1996bef1429b9553919d5185c543dbcb9072bd0744e0bec913fd5f06acbeb46"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/157001bb8db4c17d31b808157b94359a6c5045eb412649356402dbabb46c93a2.json",
+      "size_bytes": 23546,
+      "sha256": "44a3bb72b57aa2ef162f18fd8c8d2d24e35563226d9c4136bdb6bc5990c0e853"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/1595d48128855ddc985df63b48fd06f382408b2ddd06ddea8cdac348280bf78e.json",
+      "size_bytes": 33878,
+      "sha256": "9bf9bce993bc1708d7be0593c1dc8e0cf85a0139a62c36e6462ab8aff15b1dbd"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/15a2c3116ece02fc86fb84644db594e4df9727541d283222b46fcd48007dbadb.json",
+      "size_bytes": 20496,
+      "sha256": "e9716bf1394a09508e6ce4224c121283ebdc194b1a5ed5d7ec711947a1b2ab0f"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/15acd48164a3454543f07dce910c44bd59641b26877955af9550cc46082d55b9.json",
+      "size_bytes": 44369,
+      "sha256": "17ba9a67e39169ea5ca151e866a4072af1623183938a7cf8b50338119d43ec6d"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/163f2e453eaa0afb788d1cb8f31e81ba17083608717ea82f2bd3120d21a4b117.json",
+      "size_bytes": 26145,
+      "sha256": "b503c9902f9b483df06534e8f57e1b47cdd57a6de575a916d98574bb61ac0c3c"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/16c37ca857d3ed553321f93a6fa65e2d6333e5eb2dd02d4df71d638e66f52511.json",
+      "size_bytes": 30556,
+      "sha256": "8ef4bc3573cef363aa3f8bc30f4da37f0d3d19d39702e2556a0a07c5baf50a66"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/1752e4d3fd77f8ac99e61a64170765de3f4830d3b76b029f7357bdd03ad2b82c.json",
+      "size_bytes": 41342,
+      "sha256": "7ce0d8452c0cd3819a55b6cb9deaf0e44690e5ad6df84de624e260b5135a6486"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/17ffc60094e3b3ab1094c3b0d076c377064232ba7656f4780fd506a5dcb226cd.json",
+      "size_bytes": 494242,
+      "sha256": "9281530797c357c88f07e1bc92eb0705c4988179d04b1cb55d208752fec628e0"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/18da7e0e18bf804ebc88a58de9ba6d3cfa2456533923a66c46f8e77da7959907.json",
+      "size_bytes": 12140,
+      "sha256": "f05b33f20b11c95285c5263e0dd988545fe08ea0a72a2d6f33da729adc4ff01c"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/1d3355e6e054576dc8325421a4a2f92a15434d9c30d66e109e799ad654231e74.json",
+      "size_bytes": 44952,
+      "sha256": "0b8c427d8b2a22f03d9da623652cfb585669915f03b05288b6f7bfa21809d2a6"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/1d550d10b1edbf01ca6208edef400295cfb9fcc447c9963701cd09880f6d8347.json",
+      "size_bytes": 16378,
+      "sha256": "d9073af3a64b77fca77c43388753669fe6a1df22d53c3ec970f1ff2fd99e7ab6"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/1e72e24fb8edc68e2c2ebc61e569bba25ee3570359e46846efce1d12dcc9ab6a.json",
+      "size_bytes": 32976,
+      "sha256": "bee72f945d1c6bbd22ab95e5f8331604db6cb4257fcb647a68573a893d5f07d0"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/1e8f810237a430a5a3b4875abc400ba9ddfce06717750b794757ad372f0fd42e.json",
+      "size_bytes": 18809,
+      "sha256": "fe0a73a0e731be0d67e25d77fbd37a6fe5217c195974fb2a2db6086764363726"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/20a28d645e8b134f0de5f3c08f60a5eb60d58762cfef1786ff5e95e271b13360.json",
+      "size_bytes": 26251,
+      "sha256": "351a9f2c8803bb0c2321b5a221efa713bdf9fae49257de5e0a95abbacfbfb904"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/2119c365af8f0496cc13ddae151c0562059b7d7fba31d3b31097a27eff3c6908.json",
+      "size_bytes": 46794,
+      "sha256": "c078527020835cd821bceab261136a14ad3b258c4d1bf06bb996a9b47663caf8"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/231384eb867de5418b2add92b8c2be9ad669d40552600f373778368563700b94.json",
+      "size_bytes": 31472,
+      "sha256": "916ff8c0510f412b4c7539b733d94ba7f5a017cf81723d03309d9a58e01fb4c4"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/2467678315ecf1dd6181970475b1f5b9ce652f1d89701ddf2077fdce46a70952.json",
+      "size_bytes": 18314,
+      "sha256": "6f66d7841b5be648ac64259e5e473d966fa8236584364246b2c65ac54bfcee77"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/246a06858adeb5d836ebf1900128c27442916a2ba13b87767d36b0ba59cc1442.json",
+      "size_bytes": 36814,
+      "sha256": "f41362f8f7fa65882286474f4ad481f9d468672086e72c7c3b6519ec299a59cc"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/26cff88e121fd0d780e1b20dd319058bd4451c989afec0b8d377728e2534433d.json",
+      "size_bytes": 24831,
+      "sha256": "1689e0e1c200b33155da225e6053811ce7847c8026f8ca6f63bd096cf1009352"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/271582d0fc09b15d3ddc4bb8b00d8c10697d8090a23a62853041b64c9064f1cf.json",
+      "size_bytes": 25610,
+      "sha256": "bf18148fdbedd84bda892021ca8e2fc077ef69cc4a8fa5b130386010148790d6"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/27201cec25b88f4f715b5f60cd28eb5fc42c674c9f6984cf157ca200da45b409.json",
+      "size_bytes": 18031,
+      "sha256": "66b7d866c644206f4cf779771adf64b60616d22bad9557476c5c9b91615d105f"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/284ea05584fe6e3c7f8bb5d9efc8521b8c3f7c42c0c8f7975d20b45e0dcfbc50.json",
+      "size_bytes": 31204,
+      "sha256": "415bde96e8fd7a0ab1b2952fad0d105e0f249bfce7946481ad3cdce699b046d4"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/289e322b5d89bbdd9963dcaa799e2f49be7105cee76f62e14ee6e341fc6d64e8.json",
+      "size_bytes": 23612,
+      "sha256": "80026a73600d4495b8e5835642166e38587539cebacb7d91b2d2306d2f0ab263"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/2929c0f0388b1fd452ca7594158741b245eb39ca4cbc688f1c49175f67242ee6.json",
+      "size_bytes": 37373,
+      "sha256": "eda995b898697d56d803f8f9779b3a7d398fda0d1be03e032950a2eb5739cebb"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/29580b3b7347efcbe12c60d6b4b91422e09484e4c6c845aae862ec8d0f7b6b30.json",
+      "size_bytes": 28292,
+      "sha256": "90994e3949251b9f10ae38ce1328806d7856b7ffbfceacaf7cdb9fde8bc23757"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/295ae1e3d1873592867877904dd9f77b33780dabbff858097ed78c08d38a9ffe.json",
+      "size_bytes": 32653,
+      "sha256": "f6b6183e2b84e08ad61ce5aeccdbac2a421c4a8495d73aa36488963f7ef1f0a9"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/2a5ac01b707608987c5791defb65876a77c65b17063b1e083d0a0caf7f748b4b.json",
+      "size_bytes": 25694,
+      "sha256": "df9a4e14f9cea8a89f670e97dc0c16b0fac59764f0daf7434205317b27cde275"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/2a8024b07d4c8647d1bc967bc2948e68633880147c0ec72a31429aeba4962e17.json",
+      "size_bytes": 34410,
+      "sha256": "d9966399a8b9c710c04c6587bc698debfe9cb60e1524176b2e8a210ff34f6b4c"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/2e157b526b604acc06c0ecaeedd4dfcba0bb36c2c0a6573d8dc57fd9cd34c9bd.json",
+      "size_bytes": 35516,
+      "sha256": "f3572b408804e0bbe29837326e30fd4292972789dda620842576883f076c5ed5"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/2eefc7ce39f964496a257b6c6b1b202ab2b46acac1722487f61ec2f70f2e0de9.json",
+      "size_bytes": 24970,
+      "sha256": "25d8699d1913f6447bc664dd6cebb20e5386d6152552080323e6484601f74e45"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/2ff2f1f87a6ece29cff51abf0624ab6f4fdc4d9c9d95ea0d9ca9b518d297da79.json",
+      "size_bytes": 31164,
+      "sha256": "3e6779eea4e40956989fc06c8f14ec78c84c52b7a1f370670c9b1189627cc503"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/30c79ff6499da59620d0de071fb1151987f77e3e6f0a9e08a33c9295fdbf58e0.json",
+      "size_bytes": 71607,
+      "sha256": "22b51d0a6668dc37fd9ed932c452221da4c598f2a518c0bda79610fb0af635d1"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/30dc71abf46fd3b6bf84627c70ac1db89748277302b9e0a5a71f1ba247b7b3d5.json",
+      "size_bytes": 16066,
+      "sha256": "4a6df565489c51d9aa3d28db204fac89345c38fbe124dec10fd943cede68c759"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/3161a026e3c3e0e628a36ffe96631d0a158a8ac97e51fc92ac7865f9e4786dea.json",
+      "size_bytes": 16801,
+      "sha256": "3dcfff37fe0bea278392b4340b96dff19a692ea4441cf6467485f475b8e3641f"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/31afdadce7c2a1bcd7db35ff8be4188529899be2c298df1bacfa1b86cec94f32.json",
+      "size_bytes": 25593,
+      "sha256": "4194ed9d5d5434342a92dee1990f37bdb45efca96f87826a37245b18aa7ea595"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/31fa3a8b31b48ef1d8e0e7b6a00c0eca98d52edf020d726c75fd1149feb68f75.json",
+      "size_bytes": 31873,
+      "sha256": "c9fca3c73111384e7a94a0c0b39cc128ecf3f41c087b9e646d7ef568e12d44a6"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/3230c496d65190d00e70ef595efdc22457c4f855e9974cb7580e6dcf814c21f4.json",
+      "size_bytes": 27071,
+      "sha256": "5636e09f65febc77659fbd35567e205652bdb0612c9c4b9cc94f6a2cae65645c"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/324c0c2351941ef6cbc5d0a34dc49bd0f80b35cd205fdd4c0be21176f28211fb.json",
+      "size_bytes": 24541,
+      "sha256": "e40de7dbd3a22ed9e39ab7ca7882cb78dff87dcda227973a755f0210ad7ed9e6"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/32c99421a6b1498a6f24dd2ff598a584820030277629b9687933410aed054077.json",
+      "size_bytes": 35196,
+      "sha256": "817941eb77d6b53074ae26ee1f04c7d2da061d05157520302e1b2a042bdfc5b8"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/34a1303cac3813aef64fc2351947d3c8571725e928b66e65cc4a4afc9568ad2c.json",
+      "size_bytes": 25051,
+      "sha256": "3895beaddc573c4050157ed4111b3ce535316789f93b891eb5bd5d1b2bff9c07"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/34eca69ad6f52de71625f8655e1f5434df6c3732caac74598f4b46d216d22fb8.json",
+      "size_bytes": 23236,
+      "sha256": "d07e2e5b4c59b765fe240be93c7b4c6bf54dc9058491bf2988132a83e671857b"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/35cc387acc5b5cb51c4577f8585714e832bfa01be06bac1faa527caa47dc8ad4.json",
+      "size_bytes": 29796,
+      "sha256": "f29022f0ae655d7608cb18f08ac0c13ccd4ff06c66206b539eaa05c7f6d860b6"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/381ec06f87b61f28d28ea7de025b1c7e7d9d5fabd363ca273a4c1934f632b1e8.json",
+      "size_bytes": 21868,
+      "sha256": "cf436ef8bafd45e654eca0bf163aceba4b7f6a70957ce4cae646e8bc5bc72806"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/3924db22a736de69a68fdff91e404843910a95d815fa307a14b55fb4469afc41.json",
+      "size_bytes": 19088,
+      "sha256": "d2ef9d033f54b15617fb4cd8f980dcbe1eec16cad958b3cda82ecb0f3f23d2b1"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/39d4534f38524a88c7cc853b3ef73ca336ce664a84f800dfaa1c8f5950ed0e94.json",
+      "size_bytes": 27419,
+      "sha256": "2fb7543a40711ca86c7138f5bc74427d4a2736e9cee56cbb256ba093eaf5c22c"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/3a9eb98c8cbd00d134c32be082ca581f588066eff6bcea8d8e6329f79fa39bd4.json",
+      "size_bytes": 32945,
+      "sha256": "82a00fea685b085226d0df9571872964250ce7c87919e52ab0f80b5b5a03b9cb"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/3b3d525d98d5ab667c956d7fe6ba01482d901ab413a9041b4b9066d5fad8923a.json",
+      "size_bytes": 48468,
+      "sha256": "28ea91d29c81c216190327ac5112e734e7a652732d68af2e95d25cb9e12f226a"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/3b7838d9cde402dca3492f2b3bffab4949ef9d702a17040e1eb15e1beaec8524.json",
+      "size_bytes": 49270,
+      "sha256": "601392614b9960141b10bb0dfa1d7c0fbaf7efd31c8356b35d9f703edaa62e81"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/3bd3498164517cf064f662eea88ff38d7f7d946ba8f2ef9f16f7cfa79cf4af3e.json",
+      "size_bytes": 49657,
+      "sha256": "1c7e88912bdfcd4914215fe3be41bb19bf90243b4add08efae65b6651c7fb608"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/3c25f44647e788a139b46fc55c80d04d6f73e3be882b5fc005e84bf672b9aa77.json",
+      "size_bytes": 30468,
+      "sha256": "5a3c00ec7ff001626fefe59845a43ab51d897bf6449016b9ff404909fbfd2fd1"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/3d20cc2b34ecf76c279bd5178b92c11488c61d62affba4a360137ea74463dfb2.json",
+      "size_bytes": 36938,
+      "sha256": "63da55ef3fe519afe0c652e9374ccce77613ce60cf88ce94776ccb5f4ddc7372"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/3e55028747a84379e1af5ef3cb4136cb43522c6f2b37dd1d2212e83a0ba93da7.json",
+      "size_bytes": 31726,
+      "sha256": "e4f8760308096c83794794c02ae89495cfad3ddb92db35028f47bea31ddb55cb"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/3f1737393734bb44ccf15c782f6f5adb45de003b6b305f57a357060c7c63a2b5.json",
+      "size_bytes": 23525,
+      "sha256": "7fa6702e3951a999db1c3fcd676df78c066d38d1ee1bcbd74489bf9663d93197"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/3fd5ae54f9f236b495a3f43f167a80fcaae1bfdda7aa8b90b6f5b34b83daa123.json",
+      "size_bytes": 22220,
+      "sha256": "9ebadfa41b9c07eb91f1bae83d607273c71c7831fe5f9211426334c22c4ad890"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/42106266d976df8b24934530751679fbb1f2b0f2024e2191bf272b3046c1837d.json",
+      "size_bytes": 29389,
+      "sha256": "22668f18e495bf53c7acd76034c586b64ac60951d5774b038af6b6b2a49e3b9b"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/44babc21a4dfbb0b0a651611b63b3caab538592805384207a86163c2009f60fd.json",
+      "size_bytes": 637,
+      "sha256": "95fa9eb0817ad100f4148de49bf6813154b27f57376a766a1b0370068ae7f8b4"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/456d3b649d14787b3e88e10458a9fdc812a07c979eeab68d615e5e5ecf5462ae.json",
+      "size_bytes": 24076,
+      "sha256": "85b0e368c9a65574f037e187e12a0037da9a310fa78f2278f3fd4829318fc91d"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/46261779fecf0dcec674815fadb61c73a97b3208b16564bdd2405f42afdc01ce.json",
+      "size_bytes": 24307,
+      "sha256": "f13398d157caa28f0324a51c66863a75d30fe3ccf2dd002ca6cded8e1c698ff2"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/46e523eb08c0d7a6c60866af7dba118f03c0447d7c2739288fc5199944c56677.json",
+      "size_bytes": 26832,
+      "sha256": "962a88c57b93f75bba355037edfb0f6442e61364683c4c4178d72bd352064d1a"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/493c855c15fe4405bc753a846f6957b09f80aafcfdd7292c7b31750ff7f70a74.json",
+      "size_bytes": 638,
+      "sha256": "4e4656ba589d1cd0939bbbd428ab194256d6145e9faf7eb6101799272a33eeab"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/4ac977152c5ddf71cc52755b62372c611d3ae715ac8182fa86285bd864ba86a3.json",
+      "size_bytes": 14756,
+      "sha256": "b52bb15151db4534da5dc5b572aeee0ef285aafae08eb42fc1f1dc97061ddf86"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/4b9c725bb6eec8bd392f31bde1341e066bbdbb548c81c805408fed71acecd536.json",
+      "size_bytes": 30291,
+      "sha256": "6ac6ac04f21177b49d578a3b7c05b172bc63944da5e05f4a8fca0a0e455f8fa7"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/4ca110d468d978e902a9c449915a434cf6a18d3bd9fcb9f35c1e1016d6db2281.json",
+      "size_bytes": 23515,
+      "sha256": "707921e5791e456c72e71b6718ae0c86bf13ef4a409cc590643e8b6eb0ba726b"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/4f0d23d0e078cbd41bc7a75a8aa9aa283ef008f0b763f81f4703c101cca31bbb.json",
+      "size_bytes": 27751,
+      "sha256": "9efcec8fe9ad3ac1dffe2b8bf9e7bc8a91c644fef6b38619a51780bcb01eb5cf"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/4f5b413e97a71fc7fe66110a702a299a408e7865ff724a22a85b61b4fdbd642c.json",
+      "size_bytes": 27128,
+      "sha256": "944538a229d5933e9758b9bfbcede23a039dffee33cdf5c82e06c881869f62ce"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/5041a45b41a1670f2a1a0fda5b6128eb7ae8a977028edaab427390efe52dfed7.json",
+      "size_bytes": 22254,
+      "sha256": "0bf9b7e8630bbedbe4437480192201f33e0165aa626879a0827b73fd6bca25cf"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/511de9014f5ce5ea17789bd82f346df6cd3eef31934fc7f4d32bab38f9da6e23.json",
+      "size_bytes": 33516,
+      "sha256": "774daece0d19dc98081c9ad7368736f07632973d406588c880f94cbaa1de29a9"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/52ac495f74bf006ac634fa41a30cc1bf22163d2ea8cad3574e63456d5464d428.json",
+      "size_bytes": 24696,
+      "sha256": "2b9d924b96e6c84166a6c0ec4494de51e77900364fd62e7e6ae2c94cadee72c6"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/52f6d569b70ab7b1846101f255cd6463ae93f271d0f7a28bdb0f1de4c8b17c1d.json",
+      "size_bytes": 33692,
+      "sha256": "eb752a89da41eacc1a661808a9e1f040ca0e64ff02e50f2f54a04a2f90d34383"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/533fa366b86c38aa2e8181e2ddb54a3de95cb5ba9bf5446a648ad92fc12ae335.json",
+      "size_bytes": 25647,
+      "sha256": "3772c54f1bee69e3d4a5ebdb8ad985311fbee5541a6f3c3f7b352f5843fc5448"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/53a2860652e6df5da798052162ebf892952d2ebcb97f21aba68b5fd60431a087.json",
+      "size_bytes": 31173,
+      "sha256": "bf5d4af87128b68955e76b7f39478232e54e92c6ea4e1580a9edbf4aa625c199"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/5416c8de0b02a95e198458a4f55d6c17a0ab609a2131c2f290e33ab8350dbb75.json",
+      "size_bytes": 24546,
+      "sha256": "b58fcde8149cfbe49a9a210a7c1cfef14fae4884797d8234f6c6e8361dc6ea65"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/5448f0d9cfb83deb08bbd640c220a4ccd9c4ad163495b1afb2b17b0048c9fb4d.json",
+      "size_bytes": 44524,
+      "sha256": "a6e621de0a051cb0943cee0660fc015124a1e5af642a738718269cd01f54057f"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/573971bb39778db2fbf6d4afd62b63831d0f8bc1dc0922db3fb90d3aec2e53f0.json",
+      "size_bytes": 24176,
+      "sha256": "c2d60920c39dc31f8ea927f37f3093aacfae788947c4e5d9687937b0a70c780e"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/58d80d2761da3e385a563c33a832a9d58418dbeda495be385c3458f6fe183d73.json",
+      "size_bytes": 27148,
+      "sha256": "80f8830331b448b61daa2483e71f6633c4b0773511b47dfd25ff2d9c52891191"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/595afeb3fec69d34d3bfede2d64098dc9db5d66c96b9cfc8da1cf00866268f79.json",
+      "size_bytes": 48289,
+      "sha256": "efcd3cc977fdd82cfeabd8d8564ccb9f20a249f578e2757020af7e73b32767ab"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/5b221ee7840775948d3b5c61a5d582a80640e0f0e9e8f82afb49fcc663cb0a57.json",
+      "size_bytes": 34643,
+      "sha256": "4d638c5341030d4fc8810acecb376c149b0f34104048cbb0b5b278b37d6aaefa"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/5fd5b70eb9d7e7a6cfc12807b33bb6e5b78fc42f3a8e93efaaa4349500f7b4b7.json",
+      "size_bytes": 28662,
+      "sha256": "99c9502a0609c3c910fa5f7b16e2ea71d46457b7a307a14fce40d9455fc7f891"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/5fe7eef7a469538a553b5d4dcac216959d959651ca0864dbb001f5340e156a01.json",
+      "size_bytes": 29570,
+      "sha256": "b468bc90e394516ac88487fbb3144563c1ae6ac0cc7ec21eab48b29b97dd5df5"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/602a57b200214bf3c43517683c5a2cfff5a2ca127e3b1fa085ad74a4b12a8ff5.json",
+      "size_bytes": 26158,
+      "sha256": "b216d21e9ac43aaba6af8e3c31529fb01a85f06099ddc3f07330f12336c6e31f"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/605e796a9d79e0283dd27189bbc6960828da7b49286eda230599195f67fbceeb.json",
+      "size_bytes": 64808,
+      "sha256": "2aa929e0b4d7f4a6385f8b892e2b8ec9f4d871c780924a1d9f3beef6034c4758"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/62ab746cd197105301659479a609ca8e86811079aaf7f102c8e7f91ca1229da3.json",
+      "size_bytes": 29693,
+      "sha256": "7b4908107fb932cf2a76b29faf024abc9bc3d91007ca62fe79892a3b02619fb1"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/657d3b2215192d6cb8ce3905fbf3ab99fd72fd9903b85059c641b491c18cacf1.json",
+      "size_bytes": 35196,
+      "sha256": "817941eb77d6b53074ae26ee1f04c7d2da061d05157520302e1b2a042bdfc5b8"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/658b4e8ee86109f58e66615e29088d04ee317014409dcc503dd98328336febc2.json",
+      "size_bytes": 37010,
+      "sha256": "f599882e75e8c38f9d9bceae7fc427642a0b1c84088bbd97572794087b65734c"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/65bb320613c20c704cc33a34d0760e9973ff546a8dfc44a92360838c68f70e00.json",
+      "size_bytes": 29610,
+      "sha256": "31abb503f7208e4d6eb1451883b585631a4c7050621acbf72119524ba2704838"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/65efd958844076e6fca48bda94418e24551b9293e47da0e3f1ec9a5749fc2d51.json",
+      "size_bytes": 33590,
+      "sha256": "bd271b824b2aa8d8408b78c1f9b98e77fa3017c87d09ebf38bdbade3383b6e5e"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/68101e6d3edd89cabdeb4b7b58525ce687123101547b724adac08fe35bcac897.json",
+      "size_bytes": 32144,
+      "sha256": "5f7a6bef09cb3dd0fc3ec98d8f901b440c3269fce97f926e69235d02fe51f870"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/68cb52446d6cbb7c79142911b16ee8f434af31d4c2d5de29dcc5637c401152f6.json",
+      "size_bytes": 30323,
+      "sha256": "1d92c0724dc95f19b14f45f6bafd1e8e9b4314eb20fcb2a5bb3ffa546f8ff758"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/6ba0589edaa52223286e5f378675afd41486a0d8c1aae3040b4e33908b581871.json",
+      "size_bytes": 31651,
+      "sha256": "725cec5ef49ed36b503aa9929032f2004cc1935472ba4b951972e4efc61ba944"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/6ddd5d662d791e3d1bdd456166a589365366aae70a6364061e38899b09240484.json",
+      "size_bytes": 29908,
+      "sha256": "41fc0b952e5b7d3c8a42d8f6cff4e4d2f1e7c71da6cd2a8fd28d3887e9fb54d6"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/6f94b926386f9cb598e1f7f53eebdca8ffd2085228a938953d357d2e85ae3aef.json",
+      "size_bytes": 18620,
+      "sha256": "136fa4843ac0ec956d92b511cebec530d818de53a2f3a1f1d1fa722b1b2bc9a6"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/708b64a3386133f2df420d52fe7ecbafd7b0d9e5ce5a25396febe481a47cc00c.json",
+      "size_bytes": 24904,
+      "sha256": "0bd8d01ffc9d9f4cf2982c004db071e7b844b92ae85975ce3dfd023717d3e840"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/70f704582bab9d35e571881f27ed625ae7a392f8deb0d4ea71a1b743fc417f5a.json",
+      "size_bytes": 21350,
+      "sha256": "7be1749ca9a31d2fe2f177003d307db935f0079394b6ecd3b809cb8e7f663f60"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/7155280369f6f8c7903625826f7d8fb024f5b970bf1862e1c41ac0f65ec1a799.json",
+      "size_bytes": 22650,
+      "sha256": "723c4295eb0c2b88cc9c70e0d2ed444c129a4abb3a0dd4a6a074ee38af0f913b"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/71d6f67ba32959387290f7fd40c1d3c3aaea55c1e57fa94174796c041636a06a.json",
+      "size_bytes": 31570,
+      "sha256": "6f4444464e27224181401125119fb107a1bdfa85b05fa63a07d2d51e12272d69"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/71e68a6988ae92eaa088e72950f71ceb761bb2c8619c340b9f1addf2c33c8483.json",
+      "size_bytes": 27668,
+      "sha256": "eee48f911a8969b6141906892142101b1f3f0f83169c2e982e8d528bd5f50ca5"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/72348a66200819b2adfb617585761162452732b4fc6cae7b054ca825884a5752.json",
+      "size_bytes": 27148,
+      "sha256": "0532dd3c41df29ad5892008902f0bc474b19fe3e49c3ee63684e77b6c4d8271b"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/732c02fad0a96d9a9767f171b624d52775fc5c988314e81de471424293409283.json",
+      "size_bytes": 29162,
+      "sha256": "947e444245513914abb0ab5883ce1157302c6f2158c31507d036fa36d3935dfe"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/73962eb0192384bac7d491803dc8a625eb2a44ead95f375e0c8eb89494bd2bd7.json",
+      "size_bytes": 11424,
+      "sha256": "2254204b99aea4ee89bd10ce1a758f7723c05b0d979f46ebe74b13f61f096700"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/749088e28f0ed4a918266ca034cb3d4a94cbf5d3116f96f552aa7909e57de3d1.json",
+      "size_bytes": 408471,
+      "sha256": "da834ae8bf8fd2b201f431c41943882a7be21083939b40c5cdfb790a0e7ff58f"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/7759db16047ba3f4c93591df99b7317b065ef52358b94930e8ac463694c26d35.json",
+      "size_bytes": 27394,
+      "sha256": "62b49c8eef54db46e67f5f959714eeb4fa957a1a84545cbc9b93537a5b3bd296"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/78223dc9707fa85c496e64f6665f1c37ee8cb5ec0fe8c17e3c7c82a0886f5358.json",
+      "size_bytes": 44928,
+      "sha256": "6b09613521134258703a6bda18e9ef359f5608ef032cca04b7db3fc651bdb7b4"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/791e7150231e868609c4ab34efeee8a26c6fc344549ab8df21c96b07a12bd4a3.json",
+      "size_bytes": 29207,
+      "sha256": "95d86111a0dc50684ee9724fc26f9036f6f4c4445a761b608370b34b034fc219"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/7a710a048e20dcf030cb534b3b6f05e15b416f07112f5f38726ef074511791a7.json",
+      "size_bytes": 32740,
+      "sha256": "39d7030cca066f4056acd0511a9b578d0c0cfc2acf2b417f703ac23f7bb297ad"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/7b2ec3dac9064257875c244e2354273e195d967c611e830cda76cb28d7697513.json",
+      "size_bytes": 42331,
+      "sha256": "6738afce7fab23df58d1ae2053125b58c4e11e75bfdc474e5b92823c73905b6c"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/7e542bce619fd94acfe3a77558316516f0276ed400099f32637a72ec53c918dc.json",
+      "size_bytes": 46057,
+      "sha256": "a1def99fc686796743f01af62fec083c2877c86fa96fb08d6297c843b124aef1"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/7e6e96364f578ef1bdedafdf2a78a57cd8ee3aea7774675587767107f650318d.json",
+      "size_bytes": 18511,
+      "sha256": "73a7a2014bd9301df675fb3a8b27c2ef25d09b40cc8ed86838d87c19fcb4221b"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/7f85dd8dd52c9240d12aa49d65be03bea84e83ed7cb8db11ee922d4e13202341.json",
+      "size_bytes": 21970,
+      "sha256": "0c68abc54deacf04b90613512b9047c7bf6978fb74807177902e057cae8996c5"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/8068e828d28c926c08abc83c51c94f78f855f8932d9903b96935787cff44a8f0.json",
+      "size_bytes": 21036,
+      "sha256": "3c3419d7990970cad89ee8523182dfc3f2ab3a3728dd13b27ba1ca809fc453c4"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/83e8d14f7339b1081017d0857ed14c010bdeb37d1cd5b538c0858bf4d02fa73b.json",
+      "size_bytes": 39636,
+      "sha256": "9cf92dc8ded93e533f44f39655df0a9a3f1e75a9e85c1bd434c417b232996689"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/841afda17d3a122dbb978498a74c8f311a90e7bf490f7076c0151e270e670799.json",
+      "size_bytes": 26283,
+      "sha256": "b02483a424a03165e86e511999a3e844806d547d0b608ecd02403c5a09596f22"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/84395905fa02d4806d794b0119c43977d352ff0ce17b5b486f9d4629c2060078.json",
+      "size_bytes": 30878,
+      "sha256": "8a471a5c7f62739e7a41f127d64f67e9734a47ca8762114de4c0f4ea3d706ef9"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/8465d3df38f49471b7831ce1abca5b6d1c09a1ad11b28599f59d37b1b2c9c0df.json",
+      "size_bytes": 31185,
+      "sha256": "3b3e4a03759459ec47693efb7e4f82d8001c48b71b7dcab81ad5950c1de90b1c"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/850f5fc5db261b196ffd8b800b79c5e2c5e2800cad2cef2045d0698edc7fad8d.json",
+      "size_bytes": 28735,
+      "sha256": "d5cd45205c8ee33f699f8d7885024a109226bb759db9610c47689f75cbe72f04"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/857194b30f5e0cc6db88186bebc481be20cec300e9751960699033f463e9be74.json",
+      "size_bytes": 33933,
+      "sha256": "177e06384f3e7212f24bdb2eb5c30ff4fa4ee35616c3d9658fb096aacf5a13e1"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/85915e198cb2c660cf84607516c78e733126c0f7d029b01d04be5cef69556549.json",
+      "size_bytes": 26626,
+      "sha256": "5592127d952035306803db6e3c3820340a07e4e6ecb0d729b70c3ad4006c6916"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/87bd443267a94a33add3c0a175dc249f713ee08ef40920881807ca03f28720f1.json",
+      "size_bytes": 42283,
+      "sha256": "016d6053426b2ac33d6801240e9ce5628fffdfd5637c715a9452359476dfe5ec"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/8851a427dcfb20d97d02f1145bac950b518738dc5939e8f76954a4501593ce53.json",
+      "size_bytes": 26099,
+      "sha256": "ccd5665cbbaaf312acacac849343e6aa54ca3b9b8ac4bdeae890561646958e86"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/892004f51a9411b44ce0b724380690d0c4bef92b9e42376e3c4cc1a2e0edd69c.json",
+      "size_bytes": 24104,
+      "sha256": "449642d1314d73c1a4e8732b28d3ab5a520b6cce28b9062d79f3d10a422ad621"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/8bdff2749a24bde131597e5eba7c194f2467b85e2f4b987a9f6fa9bf49776ee8.json",
+      "size_bytes": 25531,
+      "sha256": "e33589c2e7de3e631521e70bb9148d1b7153a093b5d9810160029dc135e128e5"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/8d398f8add24d74bc6de07df0718dc5ac869988d02c7f8924ef884360fa4b94e.json",
+      "size_bytes": 34684,
+      "sha256": "882ab04668512701b455655437b40d870abf28eb50ade608b5bbc351ed641fea"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/8dbf37c9e987d8225bd345c42b389fbff78cf2f7a5b3cca37c078b53b5b4b329.json",
+      "size_bytes": 14744,
+      "sha256": "5ed61527b9e8e7e3c3e75517dec74ef88b1e0af0c36ab99418e857160a7e5835"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/92a775fe2d1dc772e5c4e3ab77070642680d40bcd0a6d82bfa2fd32fe3d76260.json",
+      "size_bytes": 22367,
+      "sha256": "d66d13e43b85b46c8193dafd19559b765587c3119b3909e600f4b9e3c228657a"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/930f9f836a0a67073eed9c1580c31840ab5465e46caa1bde3f48adc41c0129d1.json",
+      "size_bytes": 40915,
+      "sha256": "61b28a7c1443f1b9cd246abd0af38b219229d6e5fd13be6a504d78348e744b08"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/94c3b1ff19b220f2864ca86b84b3d33821207c5cee37be6dc8dfbdee39fc4ee5.json",
+      "size_bytes": 20244,
+      "sha256": "401bdc4ba769735af3c1b5ab6050c1d8499b0cd5b845288cace32e8940969ed5"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/94f68be8811dc4b2faaa246b584247d7dc3bcf4cf45cfef10d58dbddb1ca45dd.json",
+      "size_bytes": 25459,
+      "sha256": "fd91cd5871b0d759fb65dd76c1bcbe861939996d3f837bffc8a3ca80b4b342ea"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/955ec8a6ffc1c1b3bd0014971f3eb4136aeef460d68a1750554a8f347c85cd9f.json",
+      "size_bytes": 20066,
+      "sha256": "65931d0c5a3f0ec872cd082835f8a4c6d2639040b54752ca1ae83a65e1a88fc7"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/95d85371e9fb52f4082e25e3b1a179f0792b6fe016666ac532ece59a7cdd57ab.json",
+      "size_bytes": 27540,
+      "sha256": "56b46bbbc2882bf9597d6bca31cee6d2570af3b466e1f1d7f3dc63a436b260f6"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/97767db034a3a56631ed4929a9bbe7f2138742ef2c8a4ea06e3c02553982d599.json",
+      "size_bytes": 29267,
+      "sha256": "7033f587e2586252c3ad8e93dd45cecc28a76124dbae2196ae00b4d20a74df1d"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/98344282f0f771e23e0a82227245d661983cee798fe606e01e8a35086b80504d.json",
+      "size_bytes": 38148,
+      "sha256": "4261b6297d0aedcc3f1ac87b795a241489e65934f85e3c4a2ae454d113af4513"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/986e61440b55fb9f3c0718117fcc4839524d0e79ee2cba0e0773b1d4c9ad7451.json",
+      "size_bytes": 34553,
+      "sha256": "22ed2f03cb3fdc3bb7f0b94e593fc41bcf0cecaf9c4c00dcf263fc0270ee8524"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/9b9f3d61c6bdd66fcaeddbb14f6be4099495c9f1d1397f960f2ed6a3efad5909.json",
+      "size_bytes": 28869,
+      "sha256": "c8d05ea60828a61c54b006f2704c8e62416ba2aa17e6c3a4e70a61182086673e"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/9bb1e33eac84c78764bd3a7ce2ed4f07b6596275ff1f9ec8576e00786854b434.json",
+      "size_bytes": 28892,
+      "sha256": "2a1c3bcf6189708d5c4d298912667a029a022f160d00fa5cdfbdaa86b384b625"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/9ce4f40d5c798c3ea63931c8e07099c6382d7f90e068ad4b808db76ca00268c5.json",
+      "size_bytes": 24282,
+      "sha256": "9284fc7cbdeae47ccecbec267465477e4927738b9d503ac835d9897382bcd2d0"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/9dc77a9da17ee2076da5529ea124becbce74770222bf8326a713bc4135ddc66c.json",
+      "size_bytes": 46177,
+      "sha256": "7fcb03df1063e0b26a91cc19cd083921fe48c0fe16242ec9a87f19e886f6b689"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/9e022f623b9b7fa77a0b5271aada706f481d6252230d02a6d723883dc490e21b.json",
+      "size_bytes": 38841,
+      "sha256": "387a471d6f8449f4c5cdd60a4b6c5d4ccffce40d68268365bbdf483957e71e14"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/9ece7ca3f37d2ac97c8cf6ea0bc4266c5c30fb2b96ae48883e97abd62303f9fe.json",
+      "size_bytes": 18809,
+      "sha256": "ba89c497e313f3a7484c386929330eb2d45af15ff9a829da041e3216ab597310"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/a039efdc5751b8f7285f351635383e8d0849440691edb2036551aaf888d4990a.json",
+      "size_bytes": 16864,
+      "sha256": "be98c00384ecbd86931e771849bc1f8bca691f434c69f1902bc1ba63676ab261"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/a0b19a15e7e49a2c852d6e0b65beb0601247ac0da634724d4896cb513b98a55f.json",
+      "size_bytes": 27568,
+      "sha256": "5601047f4d9b49104bdaf15b122c8e68639b4fde5119891d239a04e10b39bb24"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/a1742a2cb7a2566495456f0ace9013ff60a36991cb50f967a6875ea08e4a635d.json",
+      "size_bytes": 39103,
+      "sha256": "c379b0dce8593c304f632ca2c40c08a94a63d23c1ed4c8938b9c5e64404d4db4"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/a3322219e518e69bbffa807a2f885708a265902213c3daa1b016892696f735d5.json",
+      "size_bytes": 21845,
+      "sha256": "7425b17700b5ade7a9e9d570333556040cd290472ac64f80b0060ed6fc457109"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/a379b1a6baa54214468e53954f8556438794cf29df9a266e0b0290f72950991f.json",
+      "size_bytes": 21218,
+      "sha256": "29bf2527342d6d1c0240e88198674bc29bc45f9d64b6172631f2592fc73f17c9"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/a6fef60ad3bf5e115d1fa8c3a6da791af30578c8acdd2045cf2b5f189580449d.json",
+      "size_bytes": 15190,
+      "sha256": "2a2e9694a80ee36c7f4219cd8d8130db8b6b24fd31948d3c827458b27377da80"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/a77988d9262d5e7dc7828ad5f5448656d699f8586a51809f50c011f6f22c9fbf.json",
+      "size_bytes": 25921,
+      "sha256": "5a058ca0724909114a2d1ae61861c4221302c809325c95fff1f0bbf617290383"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/a81ca6869d491f3d2bfbec5015f3e94f55995a9c6771cb1b16e97a64ae7d5f8f.json",
+      "size_bytes": 31732,
+      "sha256": "d613884ba7225de4a651a374b49554f5dd99a79c96d2094fe08a74b8e9a03887"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/a88aa92f328b1a619b331e7dd1c440f548bae1e5272a963548c92d6fd69621a6.json",
+      "size_bytes": 45304,
+      "sha256": "6aed75706046b490ec69d8eea0ae1d6502789e5595b64029666ccdd65a521804"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/a8fc0338cddccb94829fc12bb83b42bcabb0668961fda674e849b771b95500bb.json",
+      "size_bytes": 34120,
+      "sha256": "bac93de27c973327793d4baf1847061102de474cb5d2a92efa9d62b6a40fb86d"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/a905dc1498ee757b59619a1c9ec63994ab8ae81113ee92e092285e597e43867e.json",
+      "size_bytes": 46914,
+      "sha256": "fe26d2b10e230c93118297ac488fb37d356295bf7001d6ddecbf006b9fde3ded"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/aa69ae65fe4a2ad05abbc02b0443ac6e13a5ff0fce1285e2ae22815478414a22.json",
+      "size_bytes": 23873,
+      "sha256": "89384164218b3b93b44ae601070a2cc178d75b4614776ece1c5c5c639d41bf05"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/aab468d44da68aaa70f101ee45e86cca970be4bd20a4caa627060f52415d7ac7.json",
+      "size_bytes": 19240,
+      "sha256": "f0e31ecf8a89a1915ccd1d99d093209fbe4c0a30ff1eeb41d9f15b36a63cb819"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/aad9318ad42ad6b7a5f31d0d0d0e086a6d920de0c3bc3c35ef4afdc6a3595886.json",
+      "size_bytes": 27191,
+      "sha256": "cfac5b6295cec3c9e358d2a40543ce236e3ed1b076fe49d5fd2a4d1911ef6cd1"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/ab59abf35486c49ba7cdc9409de6fb12ebbfc03d0646a5aba0710c45a2a192bc.json",
+      "size_bytes": 26531,
+      "sha256": "ac6e78cf802a47f69e322ea92b31a97fc5c956c63fae1a5d47b18cc121b45abb"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/acfb66bcbb07a44a7d074831ae600debaa1ae752390a9dac174ed5a022c47796.json",
+      "size_bytes": 27184,
+      "sha256": "7c7690ab8b92a650514978acaafc4c1ffbf95105990102a87bad0560e4d490b9"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/ad18e89e5a0d556ecdafab7122986270981f1865d7c4d8175b941fe6fc05109e.json",
+      "size_bytes": 39467,
+      "sha256": "31455e88228089fadea37cb07181250423298318ca0ea4ef0d6ff087f59413f3"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/b0d527e35782cd18fa68302d6cdc15918f8ea043be3c5c4d970e43864a7ce610.json",
+      "size_bytes": 29813,
+      "sha256": "b83bc4308fd015da8c15051e522a88b9f50ab2f5cbc7064e50bb6dd71a183e74"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/b13cdce01e89029894827fc7aba9ac8444cec8eb4879ae21da9ee6d55ccc4e16.json",
+      "size_bytes": 29706,
+      "sha256": "d1aaf46cac526d46d07beb508a4e59c0cdf0bb166f98535b3d4c5236ecb659ad"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/b1444dceed8098b77e64b3b0f862be9d4702e6aec8156453ddfd058e6f11644e.json",
+      "size_bytes": 25091,
+      "sha256": "cd8d70c0c0f8c4c5ff24996de1930d6d0e99e3176e06773f49cf5204ed3e0e5e"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/b35a80e74a45f0037add70aa9f9e8c4fc792f8cb963837f0ab31bb6d684bbb7a.json",
+      "size_bytes": 23572,
+      "sha256": "0203d9425054337f97336a15e746201540a416d22318c7f1ca8c593ff4de959a"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/b3855a9d3a9949392f016d4e4669a6cc117c836571868300fb5ff573d12a0412.json",
+      "size_bytes": 50114,
+      "sha256": "cbca7ad04948343e11818860fcbfa0422015ba74800a8ff499a2ee03931b1d99"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/b3ad98bc4539f8a45a2ae498a7130c59757c2fe75dd166284b6096c27f9ae54f.json",
+      "size_bytes": 37502,
+      "sha256": "19eb34223cd829c45489214345f2a8eb151a2210a1a65441b154d9aecc0bf3f7"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/b42cf11e2e5c27cbf70dc0253fd72e09054f4aea980e23c6fc2ae8088fdacfd2.json",
+      "size_bytes": 31255,
+      "sha256": "0d9e3af88dbe3dde715a8a41bb446bf547c16f0be77b90f888eea36e8e11c992"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/b57c24155f1bc219ad2fbecd0dacddc4da1ffc7f26e855d4329ce0ff061936c6.json",
+      "size_bytes": 25114,
+      "sha256": "e1e66705757ca1bdaaee70967852658a60e929b2bde32adad01c15dd8a65f87f"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/b6f5f4d32fb7e210cc9f8ae9b93c66dce816c488fad8fcf1b75df34f0a8b9463.json",
+      "size_bytes": 30871,
+      "sha256": "ecb84846e043da3069dbee2117f237bb0afc9727db79f928ace60072b24811f8"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/ba8123fc87da76652af6b473c5f2406df634f14bedd3b3cab82cd1dc9392c8ef.json",
+      "size_bytes": 38425,
+      "sha256": "a58726bfa23ed52842e30a73a64ad0c49fee261fcc3f1f9f47fd2fd5724aaa6e"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/bc01f269de4428afa01bf400058512d5803cef58c1fa4e28dcedb04d91a6f580.json",
+      "size_bytes": 30180,
+      "sha256": "b4545bddac4f1bee76d0023de8d4bb8a3df6860a0d754db5175bc737c2af9a2a"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/bcf2cadf15af264571a093b34f7e86db9080f1b9147a2f737d4560fb1f1084a1.json",
+      "size_bytes": 34711,
+      "sha256": "92dbcdec9022c3006d4fd7966ab5bc4fac7d060dc0c5ec4cb4f302355cd68a17"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/bf20ffd75fcbb03704227b5ea342926d0e6477d3fe2bfd3c7dbd2e22f8816233.json",
+      "size_bytes": 41970,
+      "sha256": "03a56ba70b4b25faf7140fc9c2587bbb82bdfc65f3a99bc93f0f1712647bf623"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/c05dc3a94adf6682adb2ccfc63e0dbf0ae4e3493f379fe1ffac823c6ec310ca9.json",
+      "size_bytes": 29560,
+      "sha256": "296f6b3d350a68fa611c825c8edf622dfd1d3a90077cf40e81d925fa5d0f6fd4"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/c1554e8805359f1fcf0dcf6a2e75fc7a5a6559d9c835d53eba3b59876720d4fd.json",
+      "size_bytes": 22064,
+      "sha256": "a5d4f788e64100b86e493c7cdd57f923fed804070a80de692103e5c00e5dbf7e"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/c29b79cd85b6bc66a17c5a3a1bf739483a2f7bda0395392609c161cffdfa1e09.json",
+      "size_bytes": 31948,
+      "sha256": "e8f1d7f920e7bd58cf99671de4a1276159d864d61b025c246cd7af9086158aec"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/c335e3deba35e7f0d8d8ee9914ee6aa79b23926804d36bbe4714c750f1170957.json",
+      "size_bytes": 40226,
+      "sha256": "60b9cb54ea3fbeb83e43137cd0ea3bd5934c21d753545a114e05c30d6f0274ef"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/c3f58eb42b9fd5a3527035410569a5a4efa14b3c61f11c2d82ef158939173447.json",
+      "size_bytes": 35680,
+      "sha256": "c242d9d27bbf42295a327a1f892cb4eab60ab202c70242a11916b21959a1053f"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/c46e82164da51d06613bd44eef2bb36b864acfb4e6727c7e1160a843d9de1070.json",
+      "size_bytes": 14963,
+      "sha256": "a44d25ab301424be8a54a6d2a9470021f8e6d4155a8b534cad38418c5fd088a7"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/c8de122945779ac27ced41bafea4e8ab6310ca659584df6dda5e5632b1af1245.json",
+      "size_bytes": 14751,
+      "sha256": "e77a717c1a5c93aac9bd0023cbc3cc9fbb216673ea67f6f4880cc840f188c1ea"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/c9df7b39ff51707bb6d02af46e49415d509a0cfe0c6b6f25e3b6dabce166faa8.json",
+      "size_bytes": 23039,
+      "sha256": "23509f92759c446b20ef13d029bd1b2395e35bb57c227535432310dd5a0fefc3"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/cb4f9902aeb42061f16022d4c825f80d2557b5bfb09d67cba1b7f6f7506375ee.json",
+      "size_bytes": 27368,
+      "sha256": "08f6fb84b7e528ee4d606ea22925c2092d19753d6b80b722bb00cf4bee091224"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/cca91644cc4b8eb7774061d4836dcb4c3d0e8c35f52e45baad04536e245e9b8e.json",
+      "size_bytes": 133638,
+      "sha256": "fc5819fb788aa9ff959f0d7a141c949a85bac2c94c04c6c671ff554c11bf35c4"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/cdff54346baf24a76a949d43b38b6949b7fe5b38d73a4a5196feefc374711e41.json",
+      "size_bytes": 61959,
+      "sha256": "e3b74881ddf0d524b0efa5020b14243128199031f4febfe6da356974acec954f"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/ce2631115b06581549c85de78a06fbe8523a8f0892696b67a669ce062fbbb9d8.json",
+      "size_bytes": 35179,
+      "sha256": "e9a5cbf7e8ba882c0121e46058728362bc9ac8e4fdab4b55e61d6d0a357a8f6a"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/d0a157135758b01f6e057b0aedd67afd4835fa034b03da1ced333a590ed2fd8d.json",
+      "size_bytes": 23422,
+      "sha256": "0fc99770618a4001f87ca6292b6fa7b94f6c309b88d6522d9bc3e7768e6ac521"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/d2f9911432cb341bd9d11c16474865f6243ad9d8c008104232b2a2fa39750c5d.json",
+      "size_bytes": 55580,
+      "sha256": "4338eab31fbb9bb98a783ef7a6a63146f37785a6ed1dda1f584c89f823dceb88"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/d3467b08bbd5bcb904ef5b279cc0d4bf53ef14beed730f73a341ec9aeb9fed9d.json",
+      "size_bytes": 18161,
+      "sha256": "bc075dba99db8beb98a5e4f38ce8ad08133c7fada8eb19392798accbb02e726f"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/d391cb16f8b0cb0328903ae7a4226d8bfd279543162f1c22737fd055f3fa6523.json",
+      "size_bytes": 26286,
+      "sha256": "abbc265958eb67664addb2289fc79ce5655bcc60bcdee47445895733b3f52ec7"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/d3a7cfd8b14a4c1cf7b68703681892b4784333580492e241e7755611fd72d5be.json",
+      "size_bytes": 50075,
+      "sha256": "0b02eab11c99ebbc5382750e39552d128578552031edd13fbe786ff93e6ba3c8"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/d3b612552fe87ac66a65b99cf14cb44a54a8dad1f3a0f243c68976ae69d6496f.json",
+      "size_bytes": 7732,
+      "sha256": "614f91b29b3272dba396337f60d296ae0a7e22ac9b3382102407442fabc38bd9"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/d45a9b0b8c8a642bf66a1478c60a2a2aa790270c55709bade9e88d067d254ef7.json",
+      "size_bytes": 22821,
+      "sha256": "10a5a0ca7c1b82add1f4bb8342a979a91800a0034bfd58c485fa2cf5a1e1566b"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/d576a426577b717ebcb9eed33f22440911136136c870d89ea492b1ba2498eb4a.json",
+      "size_bytes": 24501,
+      "sha256": "ff4c9ddd7adf4b0fe2e29543ba968435514f70067683734c41baee82c1e7ca03"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/d635e2f1807240d597a0ee27f2da4b28e2ee46ca7d36e8edc776874701fc59d8.json",
+      "size_bytes": 16830,
+      "sha256": "611ce7cfaaf6bf4467b8d3124680159cd70c27e8c5bcf14818d69e0d921c5d12"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/d7a5c035cbbab77243d47f1d671b90f37f584ddf7f43f805147c17a43db48241.json",
+      "size_bytes": 34393,
+      "sha256": "89c6e1e575cb86a477f0816d86a4c334afabcb6f2787aa16b09df57d28e280d4"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/d7e211878c38071ff51853656278effe6b34be05cea2ebe800ecab367188c350.json",
+      "size_bytes": 30694,
+      "sha256": "119c655267851a58a467c18affdd8e29b15663d589fbd01115e7835f7334547f"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/d9e82c8131bba899141ce0460871e40f7571a0e0c4c1d6890b2130b22d7f0913.json",
+      "size_bytes": 38422,
+      "sha256": "07964352ec8e88eacb9ba6f1e36e191e162012d53499b29c27e1e8836fe6da7f"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/daa2bd98520108873bb524ce7694bc9f6519714d153d996c89cadd65d71cc475.json",
+      "size_bytes": 20580,
+      "sha256": "f1fce8056a1baeefb01b011a9611daf1b3d2759bd8dc16afe7ee551eef7373eb"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/db37ea66f4eb2f4d20d4e5521a2242fb629e137bae809f5d23368395fd262717.json",
+      "size_bytes": 31571,
+      "sha256": "1a3522f4859fde7dc6d7635501a7554852a95ba9edede7831cb69d7d9e1f211c"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/db5f7b9179ad1a1878bdc54b387124ca0f02b478d9fdc4258d9ab342c52373ef.json",
+      "size_bytes": 33739,
+      "sha256": "8a2530e06ec8adcb345e4e9a2882c33159d8ea68713bffe326856cc3315bbc21"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/dd7cff74fb4dc7c490bc993f6a7c1fd272dd882d9c0d6bea60ef4b400c3efa9c.json",
+      "size_bytes": 34295,
+      "sha256": "f1a10c4ed6320747f7f3425a252fc889107c804b245beace603d2ded0be7219c"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/de04638131411852d7090585bc28f07a80119f40e98ccffa370fe1f515f7372b.json",
+      "size_bytes": 46926,
+      "sha256": "110177a266d805cc402308c4980307a8dcf2bce566d3611b8116fafde14f8587"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/e06cd522dcc562de734ee6bb9c72e1edd4b7834fdce08c0c1e4874e6122f20d3.json",
+      "size_bytes": 23657,
+      "sha256": "6ab7f2e872accb69ad8b724149cbbcd8a368238b475f4bbb8be4f717b08223bc"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/e0c03a6383e25e88dbf631e69db6cace7e77e4b9ad8284aef4889ba96be17c1a.json",
+      "size_bytes": 18770,
+      "sha256": "de5dadc0e09bfdb8fcafb34e0ff23a2d6f406f40bb9d5e906c3ae79e425f6b52"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/e3059898198782c578c985ab499c9ba17152ec51d55924f5b4ab6558d17defb7.json",
+      "size_bytes": 49594,
+      "sha256": "e6c93e975e717d41ee8b70ecae8c241b19c3603e9d1ec7fb4990e569ce5120dc"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/e4fa413e4ad38890f96cf47d4a98723b2ae399e234c49721ad3416bb466ddda3.json",
+      "size_bytes": 30797,
+      "sha256": "24c4a87fd830696a0baea2039fd7f46f4b8570b13ab986eaf157a0c42eb55a97"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/e5a0ce72af5c578a32b1cf64becc58dd2f0c9404838172555a200346e63e6e1e.json",
+      "size_bytes": 37155,
+      "sha256": "9b01efac94fe3f555eed6ba331cacbb339de70b66908cbc2341e9026a0088746"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/e7466f80cbec5500d86c62a95dc69b84ca8731f24d3ea7057291c28d2180c76b.json",
+      "size_bytes": 20974,
+      "sha256": "5109f62b2297b1f28f73ca25bed90a2278d0d0fa80f1dde9e4d4cf3c099b3bae"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/e948e25d7764a8d0b800dfbfe2062fd903f03f95498ba4d668ade00a654f635f.json",
+      "size_bytes": 38782,
+      "sha256": "3556b435daf264723d58b38d25ffdce690087ab6d02ace2e5716afd905603c64"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/ec35a92cc7de4cea82dd4aa79c1ec53866e929b2bef3c053ed153ec22e1d9d99.json",
+      "size_bytes": 27119,
+      "sha256": "35c5a701714b12b4d3585d75bf0188f608dc8f8bd0fc758159c9f08bb5b8d949"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/ec91a5905f2ad5bd056c0090614691df5e7db3d0d03b890f632b55365895bd5d.json",
+      "size_bytes": 25785,
+      "sha256": "60db35f5c5a92a30d029d170ac910adbc842baf44c601625d29627e8915c092a"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/ec9610c5ab2dac72f7b8398bb2f4eae633abda2173d00e9735ce32560de0d9d0.json",
+      "size_bytes": 21310,
+      "sha256": "fc2398bef615252e42de58e76e891118d425abca11873e6dc80b6a2703d97d1a"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/ed512c8e4759c5d6637e8bed26e221615fdf837ff785ac9161333aadd9f8ed44.json",
+      "size_bytes": 34805,
+      "sha256": "b437da8787f2f25c03dcd8b08be80132823a38cec2a92d1289bb6389741dff2f"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/edda1d21c910a48dcdb6314d5f7e2dbaf4152682f949351f7e8d245ccc06c86a.json",
+      "size_bytes": 38074,
+      "sha256": "53496906499268b42e24e9662d428ca647637ca1aeac69ab03da64867177293e"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/eea0a6f1a88ff8eb8318e80edc92a1a543b17e4f8432f593e686f8469b274b79.json",
+      "size_bytes": 29283,
+      "sha256": "cc5c58bb740f8d378729808a943ea05ba2079510e5411ccf94bc7ec78c107ee2"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/ef15458ff1eeef1616b55da26946ab14857810dc7dd1dee823d92d0351e35492.json",
+      "size_bytes": 15734,
+      "sha256": "6735c318026e2c054e7800a8c1b3949f631a6a0c77938a514ab230fc8f3204a2"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/f09306c2c0be4fe2731566cee7247120b671308afe0a6050cc7e544601e82b3c.json",
+      "size_bytes": 26748,
+      "sha256": "7b9d80c6fdcbd3ce84376bb8e96cf455771b941780d349400c103031080a6422"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/f3c8f79491f33a9a7ada6c7d4c5d863f4c2f751d977f381f48c34a485f2b5fb8.json",
+      "size_bytes": 29348,
+      "sha256": "42916186227fe527d3d363c7ee19cbbba22e27e58c3890c4f9c3304a3d758da3"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/f5817e62511526b0bbb71754f19cc75d80ad3a438ff7a8844fad265fa78f8509.json",
+      "size_bytes": 20001,
+      "sha256": "8ae87472cfb6f47c6ef625948c45c846ea5f1a09e11ed975f0f5eb9c858fb896"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/f5ab6e8dead6656ad573cd6c76c089b8a687eb541950516f11519de7490026fd.json",
+      "size_bytes": 48189,
+      "sha256": "9acede34cf0929c9b89c82530ef1dc987480831f70a20509810bdb0bd2b68ccb"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/f6018dbb31cffcb2eb4b0994cd4672d2d2da544b5e092ebe83f6c9e02b0d0e2f.json",
+      "size_bytes": 25954,
+      "sha256": "a990b20d85a4818dbb113e00229af92d0126c4080d3991234e54cb1263e8752d"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/f7b8abb8c9ee1029d3ba89c0bcf851420c2a2c86de58bac899aab151e9d5c5a0.json",
+      "size_bytes": 25851,
+      "sha256": "6f9eb38515558d59e3cf8b5511f41cc479c54853e02570a3c46859bd512a6134"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/f7f44fbd22e409f5a0078f96fc643e95e2cbc5468f9f7aef9b01490104783113.json",
+      "size_bytes": 28543,
+      "sha256": "8bd4dd611b9f7902c2dd1d4e7d6188547732aa80c2fefc4e120ff489fecfbf96"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/f85f44ae4b5eefad2e0d6030cf82d406b2db1074cff14fdefe68c56127b10b6d.json",
+      "size_bytes": 45364,
+      "sha256": "dff1d9bc622145945c041312a8be8c46ac326b5419d6d5d324559b8fc050e052"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/f86c01f13d4a63d1a62561eb5bef87aa07d3d73a40eca598a7e2a2b66dd515a6.json",
+      "size_bytes": 28637,
+      "sha256": "bdd186ee4c008c3edf8623e6778c4030cec92e225d9472c1214a4dc4d4e5545d"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/fb95ea0ab826fb2f23c3ebe184436328669a161c13d04fba5559e145e49106b6.json",
+      "size_bytes": 38518,
+      "sha256": "5bb85661f05cc1cf9fc610ae851ac68646ef4248d0a1c8576eb19c8084ae82da"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/fc7d332dad93788c5522a26b8bb006956cf25bb9f481df97973e0c94fb0add1f.json",
+      "size_bytes": 29329,
+      "sha256": "9cddc931568073815589e63a3d3b3c6eacff560e5aeac114f5fd4545951dd6de"
+    },
+    {
+      "archive_path": "outputs/snowball_repair_2026-07-22/cache/fde585b503050160550727fd9ccb2f7e8d3e2eac27fc33afeba856f25331bfb2.json",
+      "size_bytes": 30870,
+      "sha256": "fb58c3afa5d69ad732cae733badbfa22d4ce1886291467ed66dcfcc0338ff394"
+    },
+    {
+      "archive_path": "outputs/snowball_s2_retry_2026-07-22/cache/04c9262901fa43ba3b839f5c840425fde701b5924013861e6759c947f7ea20bd.json",
+      "size_bytes": 34,
+      "sha256": "825db155b98984d1126ca77857827ecc7f589583bd51a4e0aefa3ff674b2e296"
+    },
+    {
+      "archive_path": "outputs/snowball_s2_retry_2026-07-22/cache/0c6fdc3bf44659e2796cfc68a26731043ddec697d27c84dd11011944a8d7ba52.json",
+      "size_bytes": 70855,
+      "sha256": "747e135495a0e8b98ff1b9cdc04ee2e175b27f4a976e4bb9d85c9388065fc392"
+    },
+    {
+      "archive_path": "outputs/snowball_s2_retry_2026-07-22/cache/1c1f6208506e64b747d1f35f89dad2b49cf3b34695ddee8b01deceb3ef44f263.json",
+      "size_bytes": 21671,
+      "sha256": "30edd6a637e0e5af13bd526395d8dfd4b5205155a4c1510b895c73954d854c21"
+    },
+    {
+      "archive_path": "outputs/snowball_s2_retry_2026-07-22/cache/2c9059ce8b392bf366ea8222906bfdc802e519e0f37a9b011b1cb9742b356bc0.json",
+      "size_bytes": 195264,
+      "sha256": "4f988079302a60724816e45f838f9edec6dbcd20f3bb3847bcd756786eaac8d2"
+    },
+    {
+      "archive_path": "outputs/snowball_s2_retry_2026-07-22/cache/3b9cc8f84ac9138a75af572c46e04d125fca2b6f4b0052b865c834e13bca4d77.json",
+      "size_bytes": 64757,
+      "sha256": "1bc78fb3683c92205cc1961a37363fc476c1f0205340307f7b0fa633da7cd663"
+    },
+    {
+      "archive_path": "outputs/snowball_s2_retry_2026-07-22/cache/4253d1ab6297b95ef838757bd3d7c9c6a6b3511fb7d9df080f3b154bbedcbd2f.json",
+      "size_bytes": 4353,
+      "sha256": "2b4bac20ee4c783538fe8b0baa9306d03eaf827f4e72ba113ae8d4716b6c2b60"
+    },
+    {
+      "archive_path": "outputs/snowball_s2_retry_2026-07-22/cache/529547f4a0f0755ffe6fcbcc543393f60d8b33d0bb6ef6362064ca50df617d64.json",
+      "size_bytes": 4214,
+      "sha256": "a9c0d58b003bc325f51b8d0b3819061f8e861cfc3ed42d7103544caeea3ea7dd"
+    },
+    {
+      "archive_path": "outputs/snowball_s2_retry_2026-07-22/cache/65e3226dacc076b32bea223468a3f158742481d171c71032676c673cf095eb41.json",
+      "size_bytes": 9457,
+      "sha256": "61956dfdae2db99dd8cdc77984451c47268545db20f345c67a901ffae3f17138"
+    },
+    {
+      "archive_path": "outputs/snowball_s2_retry_2026-07-22/cache/8e397d3201f02ec8761bcd68dcfc5c4341f852f080ef1060dc82652f2a0e8cf0.json",
+      "size_bytes": 3171,
+      "sha256": "2b993a2f3c8c95614860f7fe3638fb564be936908f1ef6790c399ebc438d78c7"
+    },
+    {
+      "archive_path": "outputs/snowball_s2_retry_2026-07-22/cache/b524d5a4c488897e8a22eb784d8101d2a8d84d05d91dcc923d96eabeb84befd0.json",
+      "size_bytes": 3405,
+      "sha256": "72dee8cadf208ee02d89b08392684371d8d6644239cc9c6c77ce0428fd211757"
+    },
+    {
+      "archive_path": "outputs/snowball_s2_retry_2026-07-22/cache/e03526d28ed189f25719cb17fa3b618cdde8471d2438d7d5f675ec92a171f916.json",
+      "size_bytes": 99353,
+      "sha256": "fbd306f1053453df5c7ed3dcf1d3b7b8b85db36defff4b382eaf3ed77c8526c9"
+    }
+  ]
+}

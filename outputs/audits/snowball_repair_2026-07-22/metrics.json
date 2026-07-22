@@ -1,0 +1,24 @@
+{
+  "audit_created_utc": "2026-07-22T14:32:33.963106+00:00",
+  "run_dir": "C:\\Users\\mouadh\\Documents\\Computer Vision Datasets in Agriculture\\outputs\\snowball_repair_2026-07-22",
+  "required_files_missing": 0,
+  "seed_provider_rows": 7,
+  "seed_rows_merged_manifest": 7,
+  "unresolved_provider_rows": 7,
+  "edge_rows": 266,
+  "node_rows": 251,
+  "canonical_related_identities_approx": 244,
+  "exact_duplicate_edge_rows": 0,
+  "cross_provider_redundant_edge_rows": 0,
+  "edges_missing_related_title": 16,
+  "edges_missing_related_provider_id": 0,
+  "identity_empty_edges": 16,
+  "duplicate_title_year_node_groups": 1,
+  "quarantined_seed_ids": [],
+  "issue_counts": {
+    "medium": 8,
+    "high": 1,
+    "low": 1
+  },
+  "quality_gate_passed": false
+}

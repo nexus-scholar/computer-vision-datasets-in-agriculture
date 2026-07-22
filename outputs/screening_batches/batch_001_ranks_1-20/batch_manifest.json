@@ -1,0 +1,18 @@
+{
+  "batch_id": "B001",
+  "batch_type": "title_abstract",
+  "ranks": "1-20",
+  "decision_count": 20,
+  "included": 19,
+  "excluded": 1,
+  "unclear": 0,
+  "protocol_version": "AI_SCREENING_V1",
+  "source_queue": "outputs/screening_queue_2026-07-22/screening_queue.csv",
+  "source_queue_sha256": "feb7c8a80978b97f3bdcffd7291708e8ac5282301ce06c793247227bc43712be",
+  "screened_rows_sha256": "699ae8e406c912e463905b61a357c91a979cab06bd4c87d7add1b0dde73595f3",
+  "provenance_status": "migrated_from_original_snapshot",
+  "quality_gates_passed": true,
+  "notes": "Original screened_rows.csv existed and was structurally valid; converted to normalized schema.",
+  "status": "finalized",
+  "finalized_utc": "2026-07-22T16:25:00Z"
+}
