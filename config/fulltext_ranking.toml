@@ -1,0 +1,67 @@
+# Full-text evidence-prioritization policy.
+# These weights are a versioned research policy, not learned truth.
+
+[project]
+name = "Agricultural computer vision dataset opportunity mapping"
+protocol_version = "EVIDENCE_ROI_V1"
+current_year = 2026
+primary_thesis = "Robust, sensor-aware and reliability-aware agricultural vision under missing, corrupted, heterogeneous or unseen inputs."
+secondary_thesis = "High-quality underutilized agricultural datasets can enable publishable novelty in segmentation, multimodal learning, domain shift, foundation-model adaptation, 3D vision and phenotyping."
+
+[weights.science]
+project_fit = 0.24
+dataset_evidence_value = 0.20
+method_gap_value = 0.18
+decision_leverage = 0.14
+actual_use_likelihood = 0.10
+evidence_specificity = 0.06
+network_breadth = 0.04
+citation_velocity = 0.02
+recency = 0.02
+
+[weights.feasibility]
+legal_access = 0.45
+identifier_completeness = 0.20
+abstract_completeness = 0.15
+extraction_ease = 0.20
+
+[weights.recommended]
+science = 0.72
+information_gain = 0.18
+feasibility = 0.10
+
+[weights.base]
+strategic = 0.68
+fast_roi = 0.32
+
+[roi]
+# Cost is deliberately damped so difficult but decisive papers are not buried.
+feasibility_floor = 0.55
+feasibility_span = 0.45
+cost_floor = 0.65
+cost_span = 0.35
+
+[diversity]
+# MMR-style diversity-aware scheduling.
+mmr_lambda = 0.78
+first_window = 20
+max_same_dataset_first_window = 3
+max_same_theme_first_window = 6
+quota_penalty = 0.05
+
+[sensitivity]
+# Deterministic Monte Carlo policy-stability analysis.
+simulations = 500
+seed = 20260722
+weight_lognormal_sigma = 0.18
+semantic_score_sigma_ai = 0.05
+semantic_score_sigma_bootstrap = 0.12
+
+[tiers]
+tier_a_count = 40
+tier_b_count = 80
+
+[policy]
+pinned_candidate_ids = []
+allow_automatic_exclusion = false
+minimum_outcomes_for_recalibration = 40

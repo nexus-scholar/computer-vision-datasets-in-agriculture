@@ -7,9 +7,10 @@ This repository supports a citation-guided study of recent and underused compute
 - 13 seed dataset papers are locally available and identity-mapped.
 - One-hop OpenAlex and Semantic Scholar snowballing has been collected and repaired.
 - The frozen screening queue contains 560 canonical candidates.
-- Ranks 1–60 have active AI title/abstract decisions under a human-authorized protocol.
-- Current active counts: 55 include, 5 exclude, 0 unclear.
-- The next bounded screening batch is ranks 61–80.
+- All 560 candidates have active AI title/abstract decisions under a human-authorized protocol.
+- Current active counts: 260 include, 300 exclude, 0 unclear.
+- Title/abstract screening is complete. The next stage is evidence-priority ranking,
+  lawful full-text acquisition, full-text eligibility, and source-located extraction.
 
 The screening queue is intentionally frozen so existing rank-based progress remains stable. Its accepted graph is conditionally usable for screening but not for citation-coverage claims because Semantic Scholar reference retrieval is incomplete for P001 and P007.
 
@@ -25,10 +26,11 @@ OpenCode:
 
 ```text
 /status
-/screen-paper 61-80
+/ranking-status
+/bootstrap-ranking
 ```
 
-The `/screen-paper` workflow prepares a bounded batch, asks the model to classify only those records, and then runs deterministic validation and finalization. Do not hand-edit the active screening CSV.
+The paper-priority workflow orders all 260 inclusions for full-text work without changing screening decisions. Do not hand-edit the active screening CSV.
 
 ## Important paths
 
@@ -52,7 +54,7 @@ The `/screen-paper` workflow prepares a bounded batch, asks the model to classif
 The screening layer is normalized:
 
 - `title_abstract_decision_history.csv` is append-only and preserves superseded decisions.
-- `title_abstract_decisions.csv` is the active 60-row snapshot.
+- `title_abstract_decisions.csv` is the active 560-row snapshot.
 - `title_abstract_relevance.csv` is a derived wide tag table.
 - `title_abstract_decisions_enriched.csv` is the human-readable joined view; it is regenerated, never edited.
 - `screening_batches.csv` links each decision batch to an immutable queue hash and screened-row hash.

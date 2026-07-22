@@ -39,3 +39,20 @@ Agricultural datasets increasingly include multiple sensors, spectral channels, 
 ## Cleanup audit
 
 The structural migration and preserved-progress details are recorded in `docs/project/REPOSITORY_AUDIT_2026-07-22.md`, `PRESERVED_PROGRESS_2026-07-22.md`, and `CLEANUP_MIGRATION_2026-07-22.md`.
+
+<!-- BEGIN AGRI-CV FULLTEXT WORKFLOW -->
+## Full-text acquisition and document processing
+
+- Workflow: `docs/workflow/FULLTEXT_WORKFLOW.md`
+- Representation policy: `docs/workflow/PDF_REPRESENTATION_POLICY.md`
+- Configuration: `config/fulltext.toml`
+- Isolated tool: `tools/fulltext_pipeline/`
+- Source registry: `data/curated/fulltext/artifact_registry.csv`
+- Fetch-attempt registry: `data/curated/fulltext/fetch_attempt_registry.csv`
+- Resolver-error registry: `data/curated/fulltext/resolver_error_registry.csv`
+- Extraction registry: `data/curated/fulltext/extraction_registry.csv`
+- Full-text decisions: `data/curated/screening/full_text_decisions.csv`
+- Local source bytes: `data/raw/fulltext/` (ignored by Git)
+- Generated acquisition/processing runs: `outputs/fulltext/` (ignored by Git)
+- OpenCode commands: `/fulltext-status`, `/prepare-fulltext`, `/acquire-fulltext`, `/process-fulltext`, `/review-fulltext`
+<!-- END AGRI-CV FULLTEXT WORKFLOW -->

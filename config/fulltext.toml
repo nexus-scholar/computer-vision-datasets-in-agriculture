@@ -1,0 +1,44 @@
+[project]
+queue_path = "outputs/screening_queue_2026-07-22/screening_queue.csv"
+decisions_path = "data/curated/screening/title_abstract_decisions_enriched.csv"
+raw_dir = "data/raw/fulltext"
+artifact_registry = "data/curated/fulltext/artifact_registry.csv"
+attempt_registry = "data/curated/fulltext/fetch_attempt_registry.csv"
+resolver_error_registry = "data/curated/fulltext/resolver_error_registry.csv"
+extraction_registry = "data/curated/fulltext/extraction_registry.csv"
+quality_reviews = "data/curated/fulltext/fulltext_quality_reviews.csv"
+output_root = "outputs/fulltext/acquisition"
+processing_root = "outputs/fulltext/processing"
+
+[acquisition]
+# Exact-identifier resolvers only. No title-search fallback is enabled.
+source_order = [
+  "direct",
+  "pmc_id_converter",
+  "pmc_oai",
+  "europe_pmc",
+  "arxiv",
+  "unpaywall",
+  "crossref",
+  "openalex",
+  "semantic_scholar",
+]
+user_agent = "AgriCVFullText/0.1 (academic literature review)"
+timeout_seconds = 45
+max_retries = 2
+max_bytes = 100000000
+failed_cooldown_hours = 24
+allow_unknown_rights = false
+
+# OpenAlex content downloads currently have a per-file cost. Keep disabled until
+# you explicitly decide to use the content API and understand the rights record.
+openalex_content_enabled = false
+openalex_content_allow_unknown_license = false
+
+[processing]
+docling_mode = "local" # local | remote
+docling_service_url = ""
+docling_device = "auto" # auto | cpu | cuda | mps | xpu
+docling_threads = 4
+docling_timeout_seconds = 900
+grobid_url = "http://localhost:8070"

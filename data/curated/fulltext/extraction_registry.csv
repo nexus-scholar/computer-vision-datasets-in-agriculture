@@ -1,0 +1,1 @@
+extraction_id,paper_id,rank,title,source_sha256,source_artifact_type,output_dir,docling_status,grobid_status,publisher_xml_status,preflight_class,qa_status,processor_version,created_at,run_id,manifest_sha256,notes

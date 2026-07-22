@@ -35,3 +35,12 @@ tools/agri_cv_snowball_package/outputs/*
 !tools/agri_cv_snowball_package/outputs/README_EXPECTED_OUTPUTS.md
 tools/agri_cv_snowball_package/cache/
 tools/agri_cv_snowball_package/raw_api_json/
+
+# BEGIN AGRI-CV FULLTEXT WORKFLOW
+# Full-text bytes and generated parsing runs stay local by default.
+data/raw/fulltext/**
+!data/raw/fulltext/README.md
+outputs/fulltext/**
+!outputs/fulltext/README.md
+tools/fulltext_pipeline/.venv/
+# END AGRI-CV FULLTEXT WORKFLOW

@@ -1,0 +1,11 @@
+services:
+  grobid:
+    image: grobid/grobid:0.9.0-crf
+    container_name: agri-cv-grobid
+    init: true
+    ports:
+      - "8070:8070"
+      - "8071:8071"
+    ulimits:
+      core: 0
+    restart: unless-stopped

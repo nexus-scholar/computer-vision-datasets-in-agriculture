@@ -1,0 +1,34 @@
+[project]
+name = "agri-fulltext"
+version = "0.1.0"
+description = "Legal full-text acquisition and scholarly document normalization for the agricultural CV review workspace."
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "requests>=2.32.0,<3",
+  "lxml>=5.3.0,<7",
+  "pymupdf>=1.24.0,<2",
+]
+
+[project.optional-dependencies]
+docling = [
+  "docling>=2.111.0,<2.112",
+]
+
+dev = [
+  "pytest>=8.4.0,<10",
+]
+
+[project.scripts]
+agri-fulltext = "agri_fulltext.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/agri_fulltext"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["src"]

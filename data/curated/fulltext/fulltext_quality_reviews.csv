@@ -1,0 +1,1 @@
+review_id,paper_id,extraction_id,decision,text_quality,layout_quality,table_quality,figure_quality,reference_quality,page_grounding_quality,preferred_text_source,needs_visual_review,reviewer,reviewed_at,notes

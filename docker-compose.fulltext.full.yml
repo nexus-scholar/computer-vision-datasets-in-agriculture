@@ -1,0 +1,3 @@
+services:
+  grobid:
+    image: grobid/grobid:0.9.0-full

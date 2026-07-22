@@ -1,0 +1,5 @@
+error_id,run_id,paper_id,source,error,recorded_at
+FTERR_110a3303f2cf40bfc1ab,FTA_20260722T193927Z,doi:10.48550/arxiv.2512.01753,crossref,HTTPError: 404 Client Error: Not Found for url: https://api.crossref.org/works/10.48550%2Farxiv.2512.01753,2026-07-22T19:46:24Z
+FTERR_8045e6a54a6f39830f8b,FTA_20260722T193927Z,doi:10.48550/arxiv.2505.07444,crossref,HTTPError: 404 Client Error: Not Found for url: https://api.crossref.org/works/10.48550%2Farxiv.2505.07444,2026-07-22T19:46:24Z
+FTERR_d888162b880f5e973048,FTA_20260722T193927Z,doi:10.48550/arxiv.2603.29941,crossref,HTTPError: 404 Client Error: Not Found for url: https://api.crossref.org/works/10.48550%2Farxiv.2603.29941,2026-07-22T19:46:24Z
+FTERR_5ccd575c6e8672eed244,FTA_20260722T193927Z,doi:10.48550/arxiv.2604.09907,crossref,HTTPError: 404 Client Error: Not Found for url: https://api.crossref.org/works/10.48550%2Farxiv.2604.09907,2026-07-22T19:46:24Z

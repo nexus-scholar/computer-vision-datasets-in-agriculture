@@ -68,3 +68,16 @@ Stop and report when:
 - the requested batch exceeds 20 papers;
 - a full-text claim lacks a page, section, table, or figure location;
 - an experiment lacks a falsifiable claim, grouped split, strong simple baseline, and stop/go rule.
+
+<!-- BEGIN AGRI-CV FULLTEXT WORKFLOW -->
+## Full-text workflow rules
+
+- Acquire only legal open-access artifacts or lawfully obtained local copies.
+- Never bypass paywalls, login controls, CAPTCHAs, or use shadow libraries.
+- Keep PDF/XML bytes local and out of Git unless redistribution rights are verified.
+- Preserve original source bytes and SHA-256; derivatives never replace source artifacts.
+- Treat publisher JATS, Docling JSON/HTML, GROBID TEI, Markdown, and JSONL chunks as complementary representations.
+- Markdown and LLM chunks are navigation views, not evidentiary ground truth.
+- Tables, figures, equations, diagrams, and page-sensitive claims require visual verification against the PDF or layout-aware representation.
+- Full-text inclusion, actual dataset use, dataset selection, and manuscript claims remain explicit review decisions.
+<!-- END AGRI-CV FULLTEXT WORKFLOW -->
