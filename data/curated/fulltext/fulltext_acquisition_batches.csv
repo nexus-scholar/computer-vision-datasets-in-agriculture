@@ -1,0 +1,2 @@
+batch_id,ranking_source,ranking_source_sha256,queue_path,limit,skip_complete,created_at,paper_count,error_count,notes
+FAB_20260722T212609Z,outputs\fulltext_ranking\runs\RANK_20260722T210245Z\next_20_fulltext.csv,a8af9751fd6f7ed61c56c5ccfa29efe9814cc7d8f2216a55e807ead909e5afac,C:\Users\mouadh\Documents\Computer Vision Datasets in Agriculture\outputs\fulltext\acquisition\queue_20260722T212609Z\fulltext_queue.csv,0,false,2026-07-22T21:26:09Z,20,0,

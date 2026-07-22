@@ -14,7 +14,7 @@ from .io_utils import atomic_write_csv, parse_rank_spec, read_csv, redact_secret
 from .models import Work
 from .preflight import inspect_pdf
 from .processing import process_registered_artifacts, render_pages
-from .queueing import build_queue, load_eligible_works, work_from_queue_row
+from .queueing import build_queue, build_queue_from_ranking, load_eligible_works, work_from_queue_row
 from .reviewing import finalize_review, prepare_review
 from .resolvers import resolve_candidates
 from .schema import CANDIDATE_FIELDS
@@ -29,6 +29,9 @@ def build_parser() -> argparse.ArgumentParser:
 
     queue = sub.add_parser("queue", help="Build an acquisition queue from active title/abstract decisions")
     queue.add_argument("--ranks", help="Ranks N, N-M, or comma-separated ranges")
+    queue.add_argument("--ranking", type=Path, help="Ranking CSV path (e.g. next_20_fulltext.csv)")
+    queue.add_argument("--limit", type=int, default=0, help="Max rows (default: all with 50 safety cap)")
+    queue.add_argument("--skip-complete", action="store_true", help="Skip papers with both PDF and structured XML")
     queue.add_argument("--decisions", default="include,unclear")
     queue.add_argument("--out", type=Path)
 
@@ -92,12 +95,23 @@ def main(argv: list[str] | None = None) -> int:
     settings = load_settings(args.repo, args.config)
 
     if args.command == "queue":
-        path = build_queue(
-            settings,
-            rank_spec=args.ranks,
-            decisions=[item.strip() for item in args.decisions.split(",") if item.strip()],
-            out_dir=args.out,
-        )
+        if args.ranking and args.ranks:
+            parser.error("--ranking and --ranks are mutually exclusive")
+        if args.ranking:
+            path = build_queue_from_ranking(
+                settings,
+                ranking_path=args.ranking,
+                limit=args.limit,
+                skip_complete=args.skip_complete,
+                out_dir=args.out,
+            )
+        else:
+            path = build_queue(
+                settings,
+                rank_spec=args.ranks,
+                decisions=[item.strip() for item in args.decisions.split(",") if item.strip()],
+                out_dir=args.out,
+            )
         print(path)
         return 0
 

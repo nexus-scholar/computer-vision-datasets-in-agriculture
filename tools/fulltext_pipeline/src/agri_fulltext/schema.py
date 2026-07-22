@@ -38,6 +38,11 @@ QUALITY_REVIEW_FIELDS = [
     "preferred_text_source", "needs_visual_review", "reviewer", "reviewed_at", "notes",
 ]
 
+ACQUISITION_BATCH_FIELDS = [
+    "batch_id", "ranking_source", "ranking_source_sha256", "queue_path",
+    "limit", "skip_complete", "created_at", "paper_count", "error_count", "notes",
+]
+
 FULLTEXT_DECISION_FIELDS = [
     "fulltext_screening_id", "paper_id", "rank", "title", "extraction_id", "decision",
     "reason_code", "paper_role", "actual_dataset_use", "dataset_relationship", "named_datasets",
