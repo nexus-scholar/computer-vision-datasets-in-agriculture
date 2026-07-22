@@ -219,3 +219,343 @@ TA_R0217,doi:10.1109/cvpr52688.2022.01187,217,no,no,no,no,no,no,no,no,no,no,no,n
 TA_R0218,doi:10.1016/j.compag.2025.111167,218,yes,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
 TA_R0219,doi:10.1007/s00122-013-2066-0,219,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
 TA_R0220,doi:10.48550/arxiv.2410.17725,220,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0221,doi:10.1109/access.2020.3021739,221,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0222,doi:10.3390/agronomy13061503,222,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0223,doi:10.1109/wacv51458.2022.00302,223,no,yes,no,no,no,no,yes,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0224,doi:10.1016/j.biosystemseng.2023.08.010,224,yes,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+TA_R0225,doi:10.48550/arxiv.2508.02067,225,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0226,doi:10.1007/s11263-023-01799-6,226,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0227,doi:10.3390/s17102307,227,no,no,no,no,yes,no,no,no,yes,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0228,doi:10.1017/wsc.2017.78,228,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0229,doi:10.1007/s13593-020-00631-6,229,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0230,doi:10.1186/s13007-020-00672-8,230,no,no,no,yes,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+TA_R0231,doi:10.64898/2026.01.13.699247,231,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0232,doi:10.1109/iccca52192.2021.9666441,232,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0233,doi:10.1109/cvpr.2019.00086,233,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0234,doi:10.1109/cvpr.2017.660,234,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0235,doi:10.1109/cvpr.2016.90,235,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0236,doi:10.1007/978-3-319-10602-1_48,236,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0237,doi:10.1109/siu59756.2023.10223838,237,yes,yes,no,no,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+TA_R0238,doi:10.1093/jxb/erv345,238,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0239,doi:10.1016/j.aiia.2024.06.002,239,no,no,no,no,yes,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0240,doi:10.3390/s24227266,240,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0241,doi:10.1109/lra.2023.3288383,241,no,yes,no,no,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+TA_R0242,doi:10.1109/wacv57701.2024.00053,242,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0243,doi:10.3390/rs12132136,243,no,no,no,yes,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0244,doi:10.1016/j.compag.2019.02.005,244,yes,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0245,doi:10.5281/zenodo.17719108,245,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0246,doi:10.1109/dicta63115.2024.00017,246,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0247,doi:10.21203/rs.3.rs-547766/v1,247,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0248,doi:10.1109/wacvw54805.2022.00010,248,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0249,doi:10.1109/access.2024.3374073,249,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0250,arxiv:210915068,250,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0251,doi:10.1016/j.aiia.2024.06.004,251,yes,no,no,yes,yes,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0252,doi:10.1109/icip42928.2021.9506719,252,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0253,doi:10.1109/agro-geoinformatics59224.2023.10233389,253,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0254,doi:10.48550/arxiv.2105.13688,254,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0255,doi:10.1186/s13007-019-0528-3,255,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0256,doi:10.1093/jxb/erae455,256,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0257,doi:10.1109/icra46639.2022.9811358,257,no,no,no,no,no,no,yes,yes,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0258,doi:10.1016/j.atech.2024.100538,258,no,no,no,yes,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0259,doi:10.3390/s23073670,259,yes,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0260,doi:10.1109/jstars.2026.3671199,260,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0261,doi:10.1145/3774905.3794671,261,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0262,doi:10.1109/ichora65333.2025.11017243,262,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0263,doi:10.1007/978-981-96-4008-9_24,263,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0264,doi:10.1109/cvpr52688.2022.00135,264,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0265,arxiv:210515203,265,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0266,doi:10.1111/j.1744-7348.1991.tb04895.x,266,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0267,doi:10.1186/s12940-016-0117-0,267,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0268,doi:10.3389/fpls.2022.1031748,268,yes,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0269,doi:10.1016/j.plantsci.2019.110396,269,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0270,doi:10.1109/lra.2023.3346760,270,yes,yes,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0271,doi:10.1109/igarss47720.2021.9555143,271,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0272,doi:10.1038/s41598-022-17840-6,272,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0273,doi:10.1109/cvpr.2016.350,273,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0274,doi:10.3389/fpls.2018.01933,274,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0275,doi:10.1109/cvpr46437.2021.01223,275,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0276,doi:10.1109/discover62353.2024.10750697,276,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0277,doi:10.1109/cvpr52729.2023.00297,277,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0278,doi:10.3390/s17092007,278,no,no,no,no,yes,no,no,no,yes,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0279,doi:10.1109/cvpr52729.2023.00288,279,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0280,doi:10.1016/j.asoc.2020.106597,280,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,yes,no,no,no
+TA_R0281,doi:10.48550/arxiv.2304.11127,281,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0282,doi:10.1002/ps.4821,282,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0283,doi:10.3390/jof7040283,283,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0284,doi:10.1109/iccv48922.2021.00986,284,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0285,doi:10.3389/fpls.2016.01419,285,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0286,doi:10.1146/annurev-arplant-042809-112119,286,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0287,doi:10.3390/rs17193367,287,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0288,doi:10.3390/agriculture12101554,288,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0289,doi:10.3390/agronomy14061178,289,no,yes,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0290,doi:10.3920/978-90-8686-947-3_62,290,no,yes,no,no,no,no,no,yes,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no
+TA_R0291,doi:10.1016/j.cj.2021.03.015,291,no,no,no,no,no,no,yes,yes,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0292,doi:10.1109/cvpr52729.2023.02336,292,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0293,doi:10.3390/s19173796,293,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0294,doi:10.3389/fpls.2022.859290,294,no,yes,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0295,doi:10.1145/3371158.3371196,295,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0296,doi:10.1146/annurev-arplant-042916-041124,296,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0297,doi:10.1016/j.eswa.2015.10.043,297,no,no,no,no,yes,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0298,doi:10.1109/iccv.2017.322,298,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0299,doi:10.9734/ijecc/2023/v13i71885,299,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0300,doi:10.5194/isprs-archives-xliii-b3-2020-1077-2020,300,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0301,arxiv:171105458,301,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0302,doi:10.1016/j.compag.2020.105351,302,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0303,doi:10.5073/jfk.2009.02.01,303,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0304,doi:10.3390/rs13183564,304,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0305,doi:10.48550/arxiv.2509.22407,305,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0306,doi:10.1109/iccv.2019.00069,306,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0307,doi:10.48550/arxiv.1802.02611,307,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0308,doi:10.1109/cvpr.2019.00963,308,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0309,doi:10.1007/978-3-030-01219-9_18,309,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0310,arxiv:170604599,310,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0311,arxiv:151108060,311,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0312,doi:10.1614/0043-1745(2000)048[0094:ibwapa]2.0.co;2,312,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0313,doi:10.1109/access.2020.2982456,313,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0314,doi:10.1016/j.gecco.2020.e01316,314,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0315,doi:10.48550/arxiv.2506.10137,315,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0316,doi:10.3390/agronomy12010118,316,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0317,doi:10.1109/access.2023.3249759,317,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0318,doi:10.48550/arxiv.2602.21445,318,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0319,doi:10.1007/s10343-024-01054-z,319,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0320,doi:10.1002/rob.21938,320,no,no,no,no,yes,yes,no,yes,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0321,doi:10.3390/rs12193164,321,yes,no,no,no,no,no,yes,no,yes,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0322,doi:10.1109/cvpr.2018.00077,322,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0323,doi:10.1109/icip.2019.8803025,323,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0324,doi:10.1093/bioinformatics/btz190,324,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0325,doi:10.1109/cvpr.2019.00234,325,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0326,doi:10.1109/cvpr52688.2022.01632,326,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0327,doi:10.1186/s13007-020-00699-x,327,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0328,doi:10.1007/s00138-015-0727-5,328,yes,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0329,doi:10.4081/jae.2022.1432,329,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0330,doi:10.1109/cvpr.2019.00423,330,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0331,doi:10.3390/s18103337,331,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0332,arxiv:170306870,332,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0333,titleyear:tomatowur an annotated dataset of 3d tomato plants to quantitatively evaluate segmentation skeletonisation and plant trait extraction algorithms for 3d plant phenotyping 2025 4tu:,333,yes,yes,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0334,doi:10.3389/fpls.2020.00751,334,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0335,doi:10.1109/iccvw60793.2023.00057,335,yes,no,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0336,doi:10.1101/pdb.emo105,336,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0337,doi:10.1109/access.2024.3368914,337,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0338,doi:10.1093/jxb/erv251,338,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0339,doi:10.14459/2023mp1717366,339,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0340,doi:10.1614/ws-05-180r2.1,340,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0341,doi:10.1016/j.compag.2019.105091,341,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0342,doi:10.1109/iros47612.2022.9982017,342,yes,no,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0343,doi:10.13031/aim.202301280,343,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0344,doi:10.1016/j.ifacol.2016.10.076,344,no,no,no,no,yes,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0345,doi:10.1614/wt-d-12-00109.1,345,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0346,doi:10.1109/igarss46834.2022.9884103,346,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0347,doi:10.1007/3-7643-7380-6_12,347,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0348,arxiv:260522183,348,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0349,arxiv:260600089,349,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0350,arxiv:260619408,350,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0351,doi:10.1007/978-3-032-07837-7_14,351,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0352,arxiv:260618144,352,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0353,arxiv:260621493,353,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0354,titleyear:techniques for plant feature extraction and segmentation a survey:2024,354,yes,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0355,doi:10.48550/arxiv.2405.14458,355,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0356,doi:10.1109/cvpr52733.2024.01605,356,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0357,doi:10.1109/cvpr52688.2022.01167,357,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0358,arxiv:210608254,358,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0359,doi:10.1007/s11263-021-01515-2,359,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0360,arxiv:210615282,360,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0361,arxiv:210706278,361,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0362,arxiv:201011929,362,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0363,doi:10.1109/tpami.2020.2983686,363,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0364,doi:10.1016/j.compag.2018.05.012,364,no,no,no,no,yes,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0365,doi:10.1016/j.tplants.2013.09.008,365,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0366,doi:10.1145/3411764.3445518,366,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0367,doi:10.1186/s12870-018-1245-1,367,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0368,doi:10.1007/978-3-031-72933-1_19,368,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0369,doi:10.1109/cibcb48159.2020.9277638,369,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0370,doi:10.1016/j.eswa.2012.03.040,370,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0371,doi:10.1109/cvprw59228.2023.00472,371,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0372,doi:10.1016/j.asoc.2015.08.027,372,no,no,no,no,yes,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0373,doi:10.3390/agriengineering6030119,373,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0374,doi:10.1007/s11119-015-9415-8,374,no,no,no,no,yes,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0375,doi:10.3390/s18082557,375,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0376,doi:10.1109/iccv.2019.00140,376,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0377,doi:10.1109/cvpr.2015.7298965,377,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0378,doi:10.1007/978-3-031-91835-3_4,378,no,no,no,yes,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0379,doi:10.17632/ngdgg79rzb.1,379,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0380,doi:10.1016/j.compag.2024.109500,380,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0381,doi:10.9734/ijpss/2023/v35i112946,381,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0382,doi:10.3390/agronomy12020518,382,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0383,doi:10.2135/cropsci2011.11.0608,383,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0384,doi:10.1007/978-1-4842-6168-2_6,384,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0385,doi:10.1007/978-3-031-72630-9_24,385,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0386,doi:10.34133/2020/8329798,386,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+TA_R0387,doi:10.3390/ijms20225562,387,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0388,doi:10.3389/fpls.2024.1362569,388,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0389,doi:10.1071/fp08084,389,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0390,titleyear:tomatopgt tools binary release cloudseg and cloudgraph for organ level digital twin modeling of tomato plants from 3d point clouds:2026,390,yes,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+TA_R0391,doi:10.1146/annurev.phyto.43.113004.133839,391,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0392,doi:10.18653/v1/2024.emnlp-main.54,392,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0393,doi:10.1007/978-3-030-65414-6_9,393,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0394,doi:10.1109/icftic57696.2022.10075204,394,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0395,doi:10.1007/978-3-030-58574-7_25,395,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0396,doi:10.3390/foods11162402,396,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0397,doi:10.1016/j.engappai.2023.106669,397,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0398,doi:10.1109/iros.2017.8206517,398,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+TA_R0399,titleyear:sustainable approach to weed management the role of precision weed management:2022,399,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0400,doi:10.1007/978-981-95-2581-2_9,400,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0401,doi:10.1007/978-3-031-58174-8_15,401,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0402,doi:10.1109/tpami.2023.3237740,402,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0403,doi:10.1613/jair.1.13188,403,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0404,doi:10.1016/j.compag.2020.105277,404,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0405,doi:10.1016/j.compag.2024.109201,405,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0406,doi:10.3390/s22072456,406,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0407,doi:10.1111/tpj.12616,407,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0408,titleyear:last straw lincoln s annotated spatio temporal strawberry dataset:2025,408,no,no,no,yes,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0409,titleyear:instance segmentation dataset:2020,409,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0410,doi:10.1109/cvprw50498.2020.00203,410,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0411,arxiv:190511946,411,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0412,doi:10.1109/cvpr42600.2020.00982,412,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0413,doi:10.1109/cvpr.2018.00745,413,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0414,doi:10.1007/978-3-030-00889-5_1,414,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0415,doi:10.1007/978-3-030-01228-1_26,415,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0416,arxiv:150602142,416,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0417,doi:10.48550/arxiv.1506.02142,417,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0418,doi:10.1007/978-3-319-24574-4_28,418,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0419,doi:10.1111/j.1469-8137.2012.04164.x,419,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0420,doi:10.1029/2011jf002289,420,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0421,doi:10.13031/2013.27838,421,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0422,titleyear:annotated 3d point cloud dataset of broad leaf legumes captured by high throughput phenotyping platform:,422,yes,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+TA_R0423,doi:10.3390/s18103576,423,yes,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+TA_R0424,doi:10.1016/j.compag.2021.106150,424,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0425,doi:10.1029/2020wr028095,425,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0426,doi:10.1007/s11240-014-0664-4,426,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0427,doi:10.1007/s00530-023-01158-y,427,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0428,doi:10.17485/ijst/v17i2.1821,428,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0429,doi:10.4060/cc9205en,429,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0430,doi:10.3390/s21248241,430,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0431,doi:10.3389/fpls.2023.1158933,431,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0432,doi:10.2478/ausi-2018-0002,432,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0433,doi:10.1007/978-3-031-73414-4_3,433,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0434,doi:10.1016/j.compag.2017.12.032,434,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0435,doi:10.1016/j.scitotenv.2016.01.153,435,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0436,doi:10.1093/oxfordjournals.aob.a083148,436,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0437,doi:10.1017/s002081830000607x,437,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0438,doi:10.1109/mra.2023.3309098,438,yes,no,no,no,no,no,no,yes,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0439,doi:10.1016/j.compag.2023.107716,439,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0440,doi:10.1126/science.abi8870,440,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0441,doi:10.1016/j.jag.2020.102282,441,no,no,no,no,no,no,yes,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0442,doi:10.1007/978-3-030-01249-6_15,442,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0443,doi:10.1016/j.compag.2015.05.021,443,no,no,no,yes,no,no,no,no,no,no,yes,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no
+TA_R0444,titleyear:remote mapping of standing crop biomass for estimation of the productivity of the shortgrass prairie pawnee national grasslands colorado:1972,444,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0445,doi:10.1109/cvprw.2015.7301274,445,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0446,doi:10.1038/s41586-020-2649-2,446,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0447,titleyear:a leaf level dataset for soybean cotton detection and segmentation 2025:,447,yes,yes,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0448,doi:10.1145/1289603.1289610,448,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+TA_R0449,doi:10.2134/advagricsystmodel4.c8,449,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0450,doi:10.31274/td-20260223-107,450,yes,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+TA_R0451,doi:10.1016/j.compag.2021.106468,451,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0452,doi:10.1007/978-3-031-20077-9_17,452,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0453,doi:10.1007/s42976-021-00207-4,453,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0454,doi:10.47709/cnahpc.v3i1.939,454,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0455,doi:10.1038/s41592-019-0686-2,455,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0456,doi:10.5555/1953048.2078195,456,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0457,doi:10.1007/s11119-016-9468-3,457,no,no,no,no,yes,no,no,no,yes,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0458,doi:10.1002/9781118460566.ch1,458,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0459,doi:10.1016/j.eja.2017.02.003,459,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0460,doi:10.17632/rv3kxfv47y.1,460,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0461,doi:10.17632/369cky7n39.1,461,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0462,titleyear:p4 multispectral image processing guide:2020,462,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0463,titleyear:tomato multi angle multi pose dataset for fine grained phenotyping:,463,no,no,no,no,yes,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0464,doi:10.3390/plants10081720,464,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0465,doi:10.1007/978-3-030-58548-8_31,465,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0466,doi:10.1016/j.fcr.2012.06.001,466,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0467,doi:10.1007/s00122-018-3094-6,467,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0468,doi:10.1104/pp.114.248971,468,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0469,doi:10.1071/fp08081,469,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0470,doi:10.3389/fpls.2012.00076,470,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0471,doi:10.1016/j.compag.2022.107345,471,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0472,doi:10.1016/j.pbi.2014.10.007,472,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0473,doi:10.1016/b978-0-12-819304-4.00002-6,473,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0474,titleyear:application of artificial intelligence in agri tech environmental and biodiversity conservation:2025,474,no,no,no,no,yes,no,no,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0475,titleyear:european commission eurostat:2025,475,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0476,titleyear:production of tomatoes for fresh consumption:2025,476,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0477,doi:10.4018/978-1-5225-2255-3.ch159,477,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0478,doi:10.1145/3292500.3330701,478,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0479,doi:10.1007/s11263-019-01247-4,479,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0480,doi:10.1109/tnnls.2018.2876865,480,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0481,arxiv:180109847,481,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0482,arxiv:170404861,482,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0483,doi:10.1098/rsta.2015.0202,483,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0484,doi:10.1038/sdata.2016.18,484,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0485,doi:10.4097/kjae.2015.68.6.540,485,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0486,arxiv:14126980,486,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0487,titleyear:international conference on learning representations iclr 2013:2013,487,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0488,titleyear:making a science of model search hyperparameter optimization in hundreds of dimensions for vision architectures:2013,488,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0489,doi:10.1016/j.geomorph.2012.08.021,489,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0490,doi:10.1111/j.1469-8137.2009.02830.x,490,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0491,doi:10.1109/tkde.2008.239,491,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0492,doi:10.1073/pnas.0701976104,492,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0493,doi:10.1007/s00365-006-0663-2,493,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0494,doi:10.1016/s0034-4257(02)00096-2,494,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0495,doi:10.1023/a:1010933404324,495,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0496,doi:10.1016/0034-4257(95)00186-7,496,no,no,no,no,no,no,no,no,yes,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0497,doi:10.1201/9780429246593,497,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0498,doi:10.1201/9780429258589,498,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0499,doi:10.2307/2532320,499,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0500,doi:10.2307/2529310,500,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0501,doi:10.1177/001316446002000104,501,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0502,doi:10.1111/j.2517-6161.1958.tb00292.x,502,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0503,titleyear:uber den lichtfaktor in den pflanzengesellschaften und seine bedeutung fur die stoffproduktion:1953,503,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0504,titleyear:a plant image dataset with high label ambiguity and a:,504,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0505,titleyear:tomatodiff on plant tomato segmentation with diffusion models:,505,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0506,doi:10.1161/circresaha.114.303819,506,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0507,doi:10.1111/mpp.12618,507,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0508,doi:10.1145/3343440,508,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0509,doi:10.3115/1072064.1072067,509,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0510,doi:10.1109/cvpr52729.2023.01145,510,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0511,doi:10.1016/j.compag.2019.06.001,511,no,yes,no,yes,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0512,doi:10.1007/978-3-031-19809-0_20,512,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0513,doi:10.1016/j.knosys.2019.07.008,513,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0514,doi:10.1007/s004420050471,514,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0515,doi:10.1198/tast.2010.09058,515,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0516,doi:10.1007/s00138-020-01081-6,516,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0517,doi:10.4172/2161-0487.1000197,517,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0518,doi:10.1109/iccv51070.2023.01721,518,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0519,titleyear:chapter 2 plant diseases pathogens and diagnosis:2020,519,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0520,titleyear:agrobtomato dataset greenhouse tomatoes with different ripeness stages:2015,520,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0521,titleyear:leaf disease dataset:1973,521,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0522,titleyear:machine learning datasets papers with code:,522,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0523,doi:10.1016/j.isprsjprs.2018.04.012,523,no,no,no,no,no,no,yes,no,yes,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0524,titleyear:ph nologische entwicklungsstadien von gem sepflanzen ii fruchtgem se und h lsenfr chte codierung und beschreibung nach der erweiterten bbch skala mit abbildungen:1995,524,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0525,doi:10.1016/s1369-5266(99)80010-7,525,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0526,doi:10.1007/978-981-10-6430-2_15,526,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0527,doi:10.1088/1361-6501/aa5cfd,527,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no,no
+TA_R0528,titleyear:tomato growth height prediction method by phenotypic feature extraction using multi modal data:,528,no,no,no,no,no,no,yes,yes,no,no,no,no,no,no,no,no,yes,no,no,no,no,no,no,no,no,no
+TA_R0529,doi:10.17660/actahortic.2015.1085.70,529,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0530,titleyear:manejo qu mico de plantas volunt rias de algod o rr:2012,530,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0531,titleyear:comunidade de plantas daninhas e tiguera de algod o ap s a aplica o de herbicidas e aduba o nitrogenada de cobertura em diferentes pocas no cons rcio de milho com brachiaria ruziziensis:2010,531,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0532,titleyear:circular t cnica n 41 destrui o de soqueiras do algodoeiro:2019,532,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0533,titleyear:detectron2 github:2019,533,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0534,titleyear:a method for stochastic optimization:2017,534,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0535,titleyear:embrapa algod o:2017,535,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0536,titleyear:a method for stochastic optimization:2015,536,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0537,titleyear:close range photogrammetry and 3d imaging 2nd ed:2013,537,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0538,titleyear:textitmanual de boas pr ticas de manejo do algodoeiro em mato grosso 1 a edi o:2012,538,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0539,titleyear:the opencv library:2000,539,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0540,titleyear:agisoft:,540,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0541,titleyear:agisoft metashape professional version 2 0:,541,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0542,titleyear:assign edge type by traversing all nodes with the root as starting point:,542,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0543,titleyear:clearml:,543,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0544,titleyear:cluster points into groups of bins by shortest distance from root to point:,544,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0545,titleyear:como manejar as tigueras no algodoeiro 2023:,545,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0546,titleyear:computer vision annotation tool cvat:,546,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0547,titleyear:create nodes by calculating centroid of points and create edges by connecting adjacent bins again using dijkstra algorithm:,547,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0548,titleyear:data curation validation writing j n:,548,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0549,titleyear:estimating leaf nitrogen accumulation considering vertical leaf layers in winter wheat:,549,no,no,no,no,no,no,yes,no,yes,no,no,yes,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0550,titleyear:gvals resources:,550,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0551,titleyear:isat with segment anything an interactive semi automatic annotation tool:,551,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0552,titleyear:label studio data labeling software:,552,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0553,titleyear:license agreement with ieee restrictions apply:,553,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0554,titleyear:manejo da destrui o qu mica da soqueira do algodoeiro no estado do mato grosso 2022:,554,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0555,titleyear:on the prac 4776:,555,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0556,titleyear:primeira estimativa para safra de gr os 2024 25 indica:,556,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0557,titleyear:python language reference version 3 11 11:,557,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0558,titleyear:the cityscapes authorized licensed use limited to the terms of the:,558,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0559,titleyear:the complete data development platform for ai encord:,559,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
+TA_R0560,titleyear:ultralytics yolo11 version 11 0 0:,560,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no,no
