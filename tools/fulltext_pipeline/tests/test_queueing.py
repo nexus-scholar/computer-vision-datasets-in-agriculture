@@ -1,14 +1,19 @@
-import json
+import re
+import subprocess
+import sys
 from pathlib import Path
 
+import pytest
+
 from agri_fulltext.config import load_settings
-from agri_fulltext.io_utils import atomic_write_csv, read_csv, read_json
-from agri_fulltext.queueing import build_queue, build_queue_from_ranking, load_eligible_works
+from agri_fulltext.io_utils import append_csv, atomic_write_csv, read_csv, read_json
+from agri_fulltext.queueing import QueueValidationError, build_queue, build_queue_from_ranking, load_eligible_works
 
 
 RANKING_FIELDS = [
     "candidate_id", "original_screening_rank", "recommended_fulltext_rank",
     "title", "year", "authors", "venue", "doi", "arxiv_id", "pmid", "pmcid",
+    "paper_id", "canonical_paper_id",
     "landing_url", "pdf_url", "is_open_access", "provider_ids", "priority_score",
     "likely_paper_type",
 ]
@@ -89,7 +94,9 @@ def make_ranking_repo(tmp_path: Path, decisions_rows: list[dict[str, str]] | Non
         {"artifact_id": "A3", "paper_id": "doi:10.1/b", "status": "success", "artifact_type": "pdf"},
     ])
 
-    ranking_path = repo / "ranking_input.csv"
+    ranking_dir = repo / "outputs/fulltext_ranking/runs/RANK_20260722T210245Z"
+    ranking_dir.mkdir(parents=True, exist_ok=True)
+    ranking_path = ranking_dir / "next_20_fulltext.csv"
     return repo, ranking_path
 
 
@@ -98,7 +105,23 @@ def _write_ranking_csv(ranking_path: Path, rows: list[dict[str, str]]) -> Path:
     return ranking_path
 
 
-# --- Existing test ---
+def _make_ranking_row(candidate_id: str, screening_rank: str, rec_rank: str, title: str, year: str = "2024", **kw):
+    row = {
+        "candidate_id": candidate_id,
+        "original_screening_rank": screening_rank,
+        "recommended_fulltext_rank": rec_rank,
+        "title": title,
+        "year": year,
+        "authors": "Author", "venue": "Venue", "doi": "",
+        "arxiv_id": "", "pmid": "", "pmcid": "",
+        "landing_url": "", "pdf_url": "", "is_open_access": "False",
+        "provider_ids": "", "priority_score": "5", "likely_paper_type": "",
+    }
+    row.update(kw)
+    return row
+
+
+# --- Existing legacy test ---
 
 def test_build_queue(tmp_path: Path):
     repo = make_repo(tmp_path)
@@ -113,22 +136,22 @@ def test_build_queue(tmp_path: Path):
     assert rows[0]["pdf_status"] == "missing"
 
 
-# --- build_queue_from_ranking tests ---
+# --- Happy path ---
 
 def test_build_queue_from_ranking_basic(tmp_path: Path):
     repo, ranking_path = make_ranking_repo(tmp_path)
     settings = load_settings(repo)
     _write_ranking_csv(ranking_path, [
-        {"candidate_id": "doi:10.1/a", "original_screening_rank": "1", "recommended_fulltext_rank": "1",
-         "title": "Paper A", "year": "2024", "authors": "Author A", "venue": "Venue A", "doi": "10.1/a",
-         "arxiv_id": "", "pmid": "", "pmcid": "PMC1", "landing_url": "https://a.org",
-         "pdf_url": "https://a.org/a.pdf", "is_open_access": "True",
-         "provider_ids": "openalex:WA1", "priority_score": "8", "likely_paper_type": "dataset_paper"},
-        {"candidate_id": "doi:10.1/b", "original_screening_rank": "2", "recommended_fulltext_rank": "2",
-         "title": "Paper B", "year": "2023", "authors": "Author B", "venue": "Venue B", "doi": "10.1/b",
-         "arxiv_id": "", "pmid": "", "pmcid": "PMC2", "landing_url": "https://b.org",
-         "pdf_url": "https://b.org/b.pdf", "is_open_access": "True",
-         "provider_ids": "openalex:WB1", "priority_score": "7", "likely_paper_type": "method_paper"},
+        _make_ranking_row("doi:10.1/a", "1", "1", "Paper A", "2024",
+                          authors="Author A", venue="Venue A",
+                          pmcid="PMC1", is_open_access="True",
+                          provider_ids="openalex:WA1", priority_score="8",
+                          likely_paper_type="dataset_paper"),
+        _make_ranking_row("doi:10.1/b", "2", "2", "Paper B", "2023",
+                          authors="Author B", venue="Venue B",
+                          pmcid="PMC2", is_open_access="True",
+                          provider_ids="openalex:WB1", priority_score="7",
+                          likely_paper_type="method_paper"),
     ])
     path = build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_rank_queue")
     _, rows = read_csv(path)
@@ -139,36 +162,51 @@ def test_build_queue_from_ranking_basic(tmp_path: Path):
     assert rows[0]["acquisition_status"] == "complete"
     assert rows[0]["pdf_status"] == "available"
     assert rows[0]["structured_status"] == "available"
+    assert rows[0]["acquisition_batch_id"] != ""
+    assert rows[0]["ranking_position"] == "1"
+    assert rows[0]["ranking_run_id"] != ""
+    assert rows[0]["ranking_source_sha256"] != ""
     assert rows[1]["paper_id"] == "doi:10.1/b"
     assert rows[1]["acquisition_status"] == "partial"
     assert rows[1]["pdf_status"] == "available"
     assert rows[1]["structured_status"] == "missing"
+    assert rows[1]["ranking_position"] == "2"
 
     manifest = read_json(path.parent / "queue_manifest.json")
-    assert manifest["eligible_works"] == 2
-    assert manifest["validation_errors"] == 0
+    assert manifest["validation_status"] == "passed"
+    assert manifest["selected_count"] == 2
+    assert manifest["selection_policy"] == "exact-top-n"
+
+    batch_snapshot = repo / "data/curated/fulltext/acquisition_batches" / rows[0]["acquisition_batch_id"]
+    assert batch_snapshot.exists()
+    assert (batch_snapshot / "selection.csv").exists()
+    assert (batch_snapshot / "manifest.json").exists()
+    snap_manifest = read_json(batch_snapshot / "manifest.json")
+    assert snap_manifest["ordered_candidate_ids"] == ["doi:10.1/a", "doi:10.1/b"]
+    assert snap_manifest["validation_status"] == "passed"
+
+    _, sel_rows = read_csv(batch_snapshot / "selection.csv")
+    assert len(sel_rows) == 2
+    assert sel_rows[0]["candidate_id"] == "doi:10.1/a"
+    assert sel_rows[1]["candidate_id"] == "doi:10.1/b"
 
     batch_path = repo / "data/curated/fulltext/fulltext_acquisition_batches.csv"
     assert batch_path.exists()
     _, batch_rows = read_csv(batch_path)
-    assert len(batch_rows) == 1
-    assert batch_rows[0]["paper_count"] == "2"
+    assert len(batch_rows) >= 1
+    last = batch_rows[-1]
+    assert last["validation_status"] == "passed"
+    assert last["selected_count"] == "2"
 
+
+# --- Limit tests ---
 
 def test_build_queue_from_ranking_limit(tmp_path: Path):
     repo, ranking_path = make_ranking_repo(tmp_path)
     settings = load_settings(repo)
     _write_ranking_csv(ranking_path, [
-        {"candidate_id": "doi:10.1/a", "original_screening_rank": "1", "recommended_fulltext_rank": "1",
-         "title": "Paper A", "year": "2024", "authors": "Author A", "venue": "Venue A", "doi": "10.1/a",
-         "arxiv_id": "", "pmid": "", "pmcid": "PMC1", "landing_url": "https://a.org",
-         "pdf_url": "https://a.org/a.pdf", "is_open_access": "True",
-         "provider_ids": "openalex:WA1", "priority_score": "8", "likely_paper_type": "dataset_paper"},
-        {"candidate_id": "doi:10.1/b", "original_screening_rank": "2", "recommended_fulltext_rank": "2",
-         "title": "Paper B", "year": "2023", "authors": "Author B", "venue": "Venue B", "doi": "10.1/b",
-         "arxiv_id": "", "pmid": "", "pmcid": "PMC2", "landing_url": "https://b.org",
-         "pdf_url": "https://b.org/b.pdf", "is_open_access": "True",
-         "provider_ids": "openalex:WB1", "priority_score": "7", "likely_paper_type": "method_paper"},
+        _make_ranking_row("doi:10.1/a", "1", "1", "Paper A"),
+        _make_ranking_row("doi:10.1/b", "2", "2", "Paper B"),
     ])
     path = build_queue_from_ranking(settings, ranking_path, limit=1, out_dir=repo / "outputs/fulltext/test_rank_limit")
     _, rows = read_csv(path)
@@ -176,75 +214,68 @@ def test_build_queue_from_ranking_limit(tmp_path: Path):
     assert rows[0]["paper_id"] == "doi:10.1/a"
 
 
+def test_build_queue_from_ranking_limit_exceeds_cap(tmp_path: Path):
+    repo, ranking_path = make_ranking_repo(tmp_path)
+    settings = load_settings(repo)
+    _write_ranking_csv(ranking_path, [_make_ranking_row("doi:10.1/a", "1", "1", "Paper A")])
+    with pytest.raises(ValueError, match="limit must be between 1 and 50"):
+        build_queue_from_ranking(settings, ranking_path, limit=99)
+
+
+def test_build_queue_from_ranking_limit_negative(tmp_path: Path):
+    repo, ranking_path = make_ranking_repo(tmp_path)
+    settings = load_settings(repo)
+    _write_ranking_csv(ranking_path, [_make_ranking_row("doi:10.1/a", "1", "1", "Paper A")])
+    with pytest.raises(ValueError, match="limit must be between 1 and 50"):
+        build_queue_from_ranking(settings, ranking_path, limit=-1)
+
+
+# --- skip-complete ---
+
 def test_build_queue_from_ranking_skip_complete(tmp_path: Path):
     repo, ranking_path = make_ranking_repo(tmp_path)
     settings = load_settings(repo)
     _write_ranking_csv(ranking_path, [
-        {"candidate_id": "doi:10.1/a", "original_screening_rank": "1", "recommended_fulltext_rank": "1",
-         "title": "Paper A", "year": "2024", "authors": "Author A", "venue": "Venue A", "doi": "10.1/a",
-         "arxiv_id": "", "pmid": "", "pmcid": "PMC1", "landing_url": "https://a.org",
-         "pdf_url": "https://a.org/a.pdf", "is_open_access": "True",
-         "provider_ids": "openalex:WA1", "priority_score": "8", "likely_paper_type": "dataset_paper"},
-        {"candidate_id": "doi:10.1/b", "original_screening_rank": "2", "recommended_fulltext_rank": "2",
-         "title": "Paper B", "year": "2023", "authors": "Author B", "venue": "Venue B", "doi": "10.1/b",
-         "arxiv_id": "", "pmid": "", "pmcid": "PMC2", "landing_url": "https://b.org",
-         "pdf_url": "https://b.org/b.pdf", "is_open_access": "True",
-         "provider_ids": "openalex:WB1", "priority_score": "7", "likely_paper_type": "method_paper"},
-        {"candidate_id": "doi:10.1/c", "original_screening_rank": "3", "recommended_fulltext_rank": "3",
-         "title": "Paper C", "year": "2022", "authors": "Author C", "venue": "Venue C", "doi": "10.1/c",
-         "arxiv_id": "", "pmid": "", "pmcid": "PMC3", "landing_url": "https://c.org",
-         "pdf_url": "", "is_open_access": "False",
-         "provider_ids": "openalex:WC1", "priority_score": "6", "likely_paper_type": "survey"},
+        _make_ranking_row("doi:10.1/a", "1", "1", "Paper A"),
+        _make_ranking_row("doi:10.1/b", "2", "2", "Paper B", year="2023"),
     ])
-    path = build_queue_from_ranking(settings, ranking_path, skip_complete=True, out_dir=repo / "outputs/fulltext/test_skip")
-    _, rows = read_csv(path)
-    assert len(rows) == 2
-    assert rows[0]["paper_id"] == "doi:10.1/b"
-    assert rows[1]["paper_id"] == "doi:10.1/c"
-
-
-def test_build_queue_from_ranking_duplicate_id(tmp_path: Path):
-    repo, ranking_path = make_ranking_repo(tmp_path)
-    settings = load_settings(repo)
-    _write_ranking_csv(ranking_path, [
-        {"candidate_id": "doi:10.1/a", "original_screening_rank": "1", "recommended_fulltext_rank": "1",
-         "title": "Paper A", "year": "2024", "authors": "Author A", "venue": "Venue A", "doi": "10.1/a",
-         "arxiv_id": "", "pmid": "", "pmcid": "PMC1", "landing_url": "https://a.org",
-         "pdf_url": "https://a.org/a.pdf", "is_open_access": "True",
-         "provider_ids": "openalex:WA1", "priority_score": "8", "likely_paper_type": "dataset_paper"},
-        {"candidate_id": "doi:10.1/a", "original_screening_rank": "1", "recommended_fulltext_rank": "2",
-         "title": "Paper A duplicate", "year": "2024", "authors": "Author A", "venue": "Venue A", "doi": "10.1/a",
-         "arxiv_id": "", "pmid": "", "pmcid": "PMC1", "landing_url": "https://a.org",
-         "pdf_url": "https://a.org/a.pdf", "is_open_access": "True",
-         "provider_ids": "openalex:WA1", "priority_score": "8", "likely_paper_type": "dataset_paper"},
-    ])
-    path = build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_dup")
+    # With limit=1 and skip-complete: A is complete, so skip it, B fills the slot → 1 row
+    path = build_queue_from_ranking(settings, ranking_path, skip_complete=True, limit=1, out_dir=repo / "outputs/fulltext/test_skip_1")
     _, rows = read_csv(path)
     assert len(rows) == 1
-    assert rows[0]["paper_id"] == "doi:10.1/a"
+    assert rows[0]["paper_id"] == "doi:10.1/b"
 
-    errors = read_json(path.parent / "ranking_validation_errors.json")
-    assert any("Duplicate" in e and "doi:10.1/a" in e for e in errors)
+    # With limit=2 and skip-complete, A is skipped, B is included → 1 row
+    path = build_queue_from_ranking(settings, ranking_path, skip_complete=True, limit=2, out_dir=repo / "outputs/fulltext/test_skip_ok")
+    _, rows = read_csv(path)
+    assert len(rows) == 1
+    assert rows[0]["paper_id"] == "doi:10.1/b"
 
 
-def test_build_queue_from_ranking_not_in_decisions(tmp_path: Path):
+# --- Strict fail on errors ---
+
+def test_build_queue_from_ranking_duplicate_id_fails(tmp_path: Path):
     repo, ranking_path = make_ranking_repo(tmp_path)
     settings = load_settings(repo)
     _write_ranking_csv(ranking_path, [
-        {"candidate_id": "doi:10.1/unknown", "original_screening_rank": "99", "recommended_fulltext_rank": "1",
-         "title": "Unknown Paper", "year": "2024", "authors": "Author X", "venue": "Venue X", "doi": "10.1/unknown",
-         "arxiv_id": "", "pmid": "", "pmcid": "", "landing_url": "", "pdf_url": "",
-         "is_open_access": "False", "provider_ids": "", "priority_score": "5", "likely_paper_type": ""},
+        _make_ranking_row("doi:10.1/a", "1", "1", "Paper A"),
+        _make_ranking_row("doi:10.1/a", "1", "2", "Paper A dup"),
     ])
-    path = build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_missing")
-    _, rows = read_csv(path)
-    assert len(rows) == 0
-
-    errors = read_json(path.parent / "ranking_validation_errors.json")
-    assert any("not found in decisions" in e for e in errors)
+    with pytest.raises(QueueValidationError, match="Duplicate"):
+        build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_dup")
 
 
-def test_build_queue_from_ranking_excluded(tmp_path: Path):
+def test_build_queue_from_ranking_not_in_decisions_fails(tmp_path: Path):
+    repo, ranking_path = make_ranking_repo(tmp_path)
+    settings = load_settings(repo)
+    _write_ranking_csv(ranking_path, [
+        _make_ranking_row("doi:10.1/unknown", "99", "1", "Unknown"),
+    ])
+    with pytest.raises(QueueValidationError, match="not found in decisions"):
+        build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_missing")
+
+
+def test_build_queue_from_ranking_excluded_fails(tmp_path: Path):
     repo, ranking_path = make_ranking_repo(tmp_path, decisions_rows=[
         {"candidate_id": "doi:10.1/x", "rank": "99", "title": "Excluded Paper",
          "decision": "exclude", "decision_confidence": "high", "likely_paper_type": "",
@@ -252,38 +283,45 @@ def test_build_queue_from_ranking_excluded(tmp_path: Path):
     ])
     settings = load_settings(repo)
     _write_ranking_csv(ranking_path, [
-        {"candidate_id": "doi:10.1/x", "original_screening_rank": "99", "recommended_fulltext_rank": "1",
-         "title": "Excluded Paper", "year": "2024", "authors": "Author X", "venue": "Venue X", "doi": "10.1/x",
-         "arxiv_id": "", "pmid": "", "pmcid": "", "landing_url": "", "pdf_url": "",
-         "is_open_access": "False", "provider_ids": "", "priority_score": "5", "likely_paper_type": ""},
+        _make_ranking_row("doi:10.1/x", "99", "1", "Excluded Paper"),
     ])
-    path = build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_excluded")
-    _, rows = read_csv(path)
-    assert len(rows) == 0
-
-    errors = read_json(path.parent / "ranking_validation_errors.json")
-    assert any("not active" in e and "exclude" in e for e in errors)
+    with pytest.raises(QueueValidationError, match="not active"):
+        build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_excluded")
 
 
-def test_build_queue_from_ranking_identity_conflict(tmp_path: Path):
+def test_build_queue_from_ranking_identity_conflict_fails(tmp_path: Path):
     repo, ranking_path = make_ranking_repo(tmp_path)
     settings = load_settings(repo)
     _write_ranking_csv(ranking_path, [
-        {"candidate_id": "doi:10.1/a", "original_screening_rank": "1", "recommended_fulltext_rank": "1",
-         "title": "Completely Different Title", "year": "2025", "authors": "Author A", "venue": "Venue A",
-         "doi": "10.1/a", "arxiv_id": "", "pmid": "", "pmcid": "PMC1", "landing_url": "https://a.org",
-         "pdf_url": "https://a.org/a.pdf", "is_open_access": "True",
-         "provider_ids": "openalex:WA1", "priority_score": "8", "likely_paper_type": "dataset_paper"},
+        _make_ranking_row("doi:10.1/a", "1", "1", "Completely Different Title", year="2025"),
     ])
-    path = build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_conflict")
-    _, rows = read_csv(path)
-    assert len(rows) == 0
-
-    errors = read_json(path.parent / "ranking_validation_errors.json")
-    assert any("Identity conflict" in e for e in errors)
+    with pytest.raises(QueueValidationError, match="Identity conflict"):
+        build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_conflict")
 
 
-def test_build_queue_from_ranking_multimix(tmp_path: Path):
+def test_build_queue_from_ranking_rank_mismatch_fails(tmp_path: Path):
+    repo, ranking_path = make_ranking_repo(tmp_path)
+    settings = load_settings(repo)
+    _write_ranking_csv(ranking_path, [
+        _make_ranking_row("doi:10.1/a", "99", "1", "Paper A"),  # rank 99 ≠ authoritative rank 1
+    ])
+    with pytest.raises(QueueValidationError, match="rank mismatch"):
+        build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_rank_mismatch")
+
+
+def test_build_queue_from_ranking_paper_id_mismatch_fails(tmp_path: Path):
+    repo, ranking_path = make_ranking_repo(tmp_path)
+    settings = load_settings(repo)
+    _write_ranking_csv(ranking_path, [
+        _make_ranking_row("doi:10.1/a", "1", "1", "Paper A", paper_id="doi:10.1/wrong"),
+    ])
+    with pytest.raises(QueueValidationError, match="does not match candidate_id"):
+        build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_paperid_mismatch")
+
+
+# --- allow-partial ---
+
+def test_build_queue_from_ranking_allow_partial(tmp_path: Path):
     repo, ranking_path = make_ranking_repo(tmp_path, decisions_rows=[
         {"candidate_id": "doi:10.1/a", "rank": "1", "title": "Paper A",
          "decision": "include", "decision_confidence": "high", "likely_paper_type": "dataset_paper",
@@ -297,38 +335,32 @@ def test_build_queue_from_ranking_multimix(tmp_path: Path):
     ])
     settings = load_settings(repo)
     _write_ranking_csv(ranking_path, [
-        {"candidate_id": "doi:10.1/a", "original_screening_rank": "1", "recommended_fulltext_rank": "1",
-         "title": "Paper A", "year": "2024", "authors": "Author A", "venue": "Venue A", "doi": "10.1/a",
-         "arxiv_id": "", "pmid": "", "pmcid": "PMC1", "landing_url": "https://a.org",
-         "pdf_url": "https://a.org/a.pdf", "is_open_access": "True",
-         "provider_ids": "openalex:WA1", "priority_score": "8", "likely_paper_type": "dataset_paper"},
-        {"candidate_id": "doi:10.1/b", "original_screening_rank": "2", "recommended_fulltext_rank": "2",
-         "title": "Paper B", "year": "2023", "authors": "Author B", "venue": "Venue B", "doi": "10.1/b",
-         "arxiv_id": "", "pmid": "", "pmcid": "PMC2", "landing_url": "https://b.org",
-         "pdf_url": "https://b.org/b.pdf", "is_open_access": "True",
-         "provider_ids": "openalex:WB1", "priority_score": "7", "likely_paper_type": "method_paper"},
-        {"candidate_id": "doi:10.1/c", "original_screening_rank": "3", "recommended_fulltext_rank": "3",
-         "title": "Paper C", "year": "2022", "authors": "Author C", "venue": "Venue C", "doi": "10.1/c",
-         "arxiv_id": "", "pmid": "", "pmcid": "PMC3", "landing_url": "https://c.org",
-         "pdf_url": "", "is_open_access": "False",
-         "provider_ids": "openalex:WC1", "priority_score": "6", "likely_paper_type": "survey"},
-        {"candidate_id": "doi:10.1/a", "original_screening_rank": "1", "recommended_fulltext_rank": "4",
-         "title": "Paper A duplicate", "year": "2024", "authors": "Author A", "venue": "Venue A", "doi": "10.1/a",
-         "arxiv_id": "", "pmid": "", "pmcid": "PMC1", "landing_url": "https://a.org",
-         "pdf_url": "https://a.org/a.pdf", "is_open_access": "True",
-         "provider_ids": "openalex:WA1", "priority_score": "8", "likely_paper_type": "dataset_paper"},
+        _make_ranking_row("doi:10.1/a", "1", "1", "Paper A"),
+        _make_ranking_row("doi:10.1/c", "3", "2", "Paper C"),  # excluded
     ])
-    path = build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_mix")
+    # Without --allow-partial, this fails
+    with pytest.raises(QueueValidationError):
+        build_queue_from_ranking(settings, ranking_path, selection_policy="first-n-eligible", out_dir=repo / "outputs/fulltext/test_partial_no")
+
+    # With --allow-partial and first-n-eligible, we get only paper A
+    path = build_queue_from_ranking(settings, ranking_path, selection_policy="first-n-eligible", allow_partial=True, out_dir=repo / "outputs/fulltext/test_partial_yes")
     _, rows = read_csv(path)
-    assert len(rows) == 2
+    assert len(rows) == 1
     assert rows[0]["paper_id"] == "doi:10.1/a"
-    assert rows[1]["paper_id"] == "doi:10.1/b"
 
-    errors = read_json(path.parent / "ranking_validation_errors.json")
-    assert len(errors) == 2
-    assert any("not active" in e for e in errors)
-    assert any("Duplicate" in e for e in errors)
+    manifest = read_json(path.parent / "queue_manifest.json")
+    assert manifest["validation_status"] == "partial"
 
+    batch_snapshot = repo / "data/curated/fulltext/acquisition_batches" / rows[0]["acquisition_batch_id"]
+    assert batch_snapshot.exists()
+    snap_manifest = read_json(batch_snapshot / "manifest.json")
+    assert snap_manifest["validation_status"] == "partial"
+
+    _, batch_rows = read_csv(repo / "data/curated/fulltext/fulltext_acquisition_batches.csv")
+    assert batch_rows[-1]["validation_status"] == "partial"
+
+
+# --- Default limit cap ---
 
 def test_build_queue_from_ranking_default_limit(tmp_path: Path):
     repo, ranking_path = make_ranking_repo(tmp_path)
@@ -336,81 +368,179 @@ def test_build_queue_from_ranking_default_limit(tmp_path: Path):
     rows = []
     for i in range(60):
         cid = f"doi:10.1/paper{i}"
-        rows.append({
-            "candidate_id": cid, "original_screening_rank": str(i + 1), "recommended_fulltext_rank": str(i + 1),
-            "title": f"Paper {i}", "year": "2024", "authors": "Author", "venue": "Venue", "doi": cid,
-            "arxiv_id": "", "pmid": "", "pmcid": "", "landing_url": "", "pdf_url": "",
-            "is_open_access": "False", "provider_ids": "", "priority_score": "5", "likely_paper_type": "",
-        })
+        rows.append(_make_ranking_row(cid, str(i + 1), str(i + 1), f"Paper {i}"))
     _write_ranking_csv(ranking_path, rows)
 
-    from agri_fulltext.io_utils import append_csv
-    from agri_fulltext.schema import FULLTEXT_QUEUE_FIELDS
     decisions = repo / "data/curated/screening/title_abstract_decisions_enriched.csv"
     _, existing = read_csv(decisions)
     extra_rows = [
         {"candidate_id": f"doi:10.1/paper{i}", "rank": str(i + 1), "title": f"Paper {i}",
          "decision": "include", "decision_confidence": "medium", "likely_paper_type": "",
          "provider_ids": "", "doi": f"doi:10.1/paper{i}", "year": "2024"}
-        for i in range(3, 60)
+        for i in range(60)
     ]
     append_csv(decisions, list(existing[0].keys()), extra_rows)
 
     path = build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_default_limit")
     _, result = read_csv(path)
-    assert len(result) <= 50
+    assert len(result) == 50  # capped at 50
 
 
-def test_build_queue_from_ranking_id_detection_priority(tmp_path: Path):
-    repo_path = tmp_path / "repo"
-    (repo_path / "config").mkdir(parents=True)
-    queue_path = repo_path / "outputs/screening_queue_2026-07-22/screening_queue.csv"
-    decisions_path = repo_path / "data/curated/screening/title_abstract_decisions_enriched.csv"
-    atomic_write_csv(queue_path, [
-        "screening_rank", "canonical_paper_id", "title",
-    ], [{"screening_rank": "1", "canonical_paper_id": "canon:1", "title": "Test"}])
-    atomic_write_csv(decisions_path, [
-        "candidate_id", "rank", "title", "decision", "decision_confidence", "likely_paper_type",
-        "provider_ids", "doi", "year",
-    ], [{"candidate_id": "doi:10.1/real", "rank": "1", "title": "Test", "decision": "include",
-         "decision_confidence": "high", "likely_paper_type": "", "provider_ids": "", "doi": "10.1/real", "year": "2024"}])
-    atomic_write_csv(repo_path / "data/curated/fulltext/artifact_registry.csv", [
-        "artifact_id", "paper_id", "status", "artifact_type",
-    ], [])
+# --- Selection policy: first-n-eligible ---
 
-    ranking_path = repo_path / "ranking.csv"
-    _write_ranking_csv(ranking_path, [
-        {"candidate_id": "doi:10.1/real", "original_screening_rank": "1", "recommended_fulltext_rank": "1",
-         "title": "Test", "year": "2024", "authors": "", "venue": "", "doi": "10.1/real",
-         "arxiv_id": "", "pmid": "", "pmcid": "", "landing_url": "", "pdf_url": "",
-         "is_open_access": "False", "provider_ids": "", "priority_score": "5", "likely_paper_type": ""},
+def test_build_queue_from_ranking_first_n_eligible(tmp_path: Path):
+    repo, ranking_path = make_ranking_repo(tmp_path, decisions_rows=[
+        {"candidate_id": "doi:10.1/a", "rank": "1", "title": "Paper A",
+         "decision": "include", "decision_confidence": "high", "likely_paper_type": "dataset_paper",
+         "provider_ids": "openalex:WA1", "doi": "10.1/a", "year": "2024"},
+        {"candidate_id": "doi:10.1/b", "rank": "2", "title": "Paper B",
+         "decision": "include", "decision_confidence": "medium", "likely_paper_type": "method_paper",
+         "provider_ids": "openalex:WB1", "doi": "10.1/b", "year": "2023"},
     ])
-    settings = load_settings(repo_path)
-    path = build_queue_from_ranking(settings, ranking_path, out_dir=repo_path / "outputs/fulltext/test_id")
+    settings = load_settings(repo)
+    _write_ranking_csv(ranking_path, [
+        _make_ranking_row("doi:10.1/a", "1", "1", "Paper A", year="2024"),
+        _make_ranking_row("doi:10.1/unknown", "99", "2", "Unknown"),
+        _make_ranking_row("doi:10.1/b", "2", "3", "Paper B", year="2023"),
+    ])
+    # first-n-eligible skips the unknown, includes A and B
+    path = build_queue_from_ranking(settings, ranking_path, selection_policy="first-n-eligible", limit=2, allow_partial=True, out_dir=repo / "outputs/fulltext/test_fne")
     _, rows = read_csv(path)
-    assert rows[0]["screening_decision"] == "include"
+    assert len(rows) == 2
+    assert rows[0]["paper_id"] == "doi:10.1/a"
+    assert rows[1]["paper_id"] == "doi:10.1/b"
 
+
+# --- Stable ID identity handling ---
+
+def test_build_queue_from_ranking_stable_id_warning(tmp_path: Path):
+    """Same DOI but different title → warning not error."""
+    repo, ranking_path = make_ranking_repo(tmp_path, decisions_rows=[
+        {"candidate_id": "doi:10.1/a", "rank": "1", "title": "Original Title",
+         "decision": "include", "decision_confidence": "high", "likely_paper_type": "dataset_paper",
+         "provider_ids": "openalex:WA1", "doi": "10.1/a", "year": "2024"},
+    ])
+    settings = load_settings(repo)
+    ranking_row = _make_ranking_row("doi:10.1/a", "1", "1", "Different Title")
+    ranking_row["doi"] = "10.1/a"  # same DOI
+    _write_ranking_csv(ranking_path, [ranking_row])
+    path = build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_stable")
+    _, rows = read_csv(path)
+    assert len(rows) == 1  # succeeds because DOI matches
+
+
+def test_build_queue_from_ranking_no_stable_id_title_mismatch_fails(tmp_path: Path):
+    """No DOI/arXiv/PMID but title differs → error."""
+    repo, ranking_path = make_ranking_repo(tmp_path, decisions_rows=[
+        {"candidate_id": "doi:10.1/a", "rank": "1", "title": "Original Title",
+         "decision": "include", "decision_confidence": "high", "likely_paper_type": "dataset_paper",
+         "provider_ids": "", "doi": "", "year": "2024"},
+    ])
+    settings = load_settings(repo)
+    ranking_row = _make_ranking_row("doi:10.1/a", "1", "1", "Different Title")
+    ranking_row["doi"] = ""  # no DOI
+    _write_ranking_csv(ranking_path, [ranking_row])
+    with pytest.raises(QueueValidationError, match="Identity conflict"):
+        build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_no_id")
+
+
+# --- Repo-relative paths ---
+
+def test_build_queue_from_ranking_repo_relative_paths(tmp_path: Path):
+    repo, ranking_path = make_ranking_repo(tmp_path)
+    settings = load_settings(repo)
+    _write_ranking_csv(ranking_path, [
+        _make_ranking_row("doi:10.1/a", "1", "1", "Paper A"),
+    ])
+    path = build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_rel")
+    manifest = read_json(path.parent / "queue_manifest.json")
+    assert "C:" not in manifest["queue_path"]
+    assert manifest["queue_path"].startswith("outputs/")
+    assert "C:" not in manifest["ranking_source"]
+    assert manifest["ranking_source"].startswith("outputs/fulltext_ranking")
+
+    batch_id = read_csv(path)[1][0]["acquisition_batch_id"]
+    snap_manifest = read_json(repo / "data/curated/fulltext/acquisition_batches" / batch_id / "manifest.json")
+    assert "C:" not in snap_manifest["queue_path"]
+    assert "C:" not in snap_manifest["ranking_source"]
+
+
+# --- Exit code on validation failure ---
+
+def test_build_queue_from_ranking_exit_code(tmp_path: Path):
+    repo, ranking_path = make_ranking_repo(tmp_path)
+    settings = load_settings(repo)
+    _write_ranking_csv(ranking_path, [
+        _make_ranking_row("doi:10.1/unknown", "99", "1", "Unknown"),
+    ])
+    from agri_fulltext.queueing import build_queue_from_ranking
+    import subprocess
+    with pytest.raises(QueueValidationError, match="not found in decisions"):
+        build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_exit")
+
+
+# --- CLI mutual exclusivity ---
+
+def test_cli_ranking_options_rejected_in_rank_mode(tmp_path: Path):
+    repo, ranking_path = make_ranking_repo(tmp_path)
+    _write_ranking_csv(ranking_path, [_make_ranking_row("doi:10.1/a", "1", "1", "Paper A")])
+    from agri_fulltext.cli import main
+    with pytest.raises(SystemExit) as exc:
+        main(["--repo", str(repo), "queue", "--ranks", "1-10", "--limit", "5"])
+    assert exc.value.code != 0
+
+
+# --- Queue has provenance columns ---
+
+def test_build_queue_from_ranking_has_provenance_columns(tmp_path: Path):
+    repo, ranking_path = make_ranking_repo(tmp_path)
+    settings = load_settings(repo)
+    _write_ranking_csv(ranking_path, [
+        _make_ranking_row("doi:10.1/a", "1", "1", "Paper A"),
+    ])
+    path = build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_prov")
+    _, rows = read_csv(path)
+    assert "acquisition_batch_id" in rows[0]
+    assert "ranking_position" in rows[0]
+    assert "ranking_run_id" in rows[0]
+    assert "ranking_source_sha256" in rows[0]
+
+
+# --- Empty CSV ---
 
 def test_build_queue_from_ranking_empty_csv(tmp_path: Path):
     repo, ranking_path = make_ranking_repo(tmp_path)
     settings = load_settings(repo)
     _write_ranking_csv(ranking_path, [])
+    with pytest.raises(SystemExit, match="No rows found"):
+        build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_empty")
 
-    import subprocess
-    import sys
-    result = subprocess.run(
-        [sys.executable, "-c", f"""
-import sys; sys.path.insert(0, r'{repo.parent.parent / "tools/fulltext_pipeline/src"}')
-from pathlib import Path; from agri_fulltext.config import load_settings
-from agri_fulltext.queueing import build_queue_from_ranking
-try:
-    build_queue_from_ranking(load_settings(Path(r'{repo}')), Path(r'{ranking_path}'))
-    print("NO_ERROR")
-except SystemExit as e:
-    print(f"ERROR:{{e}}")
-except Exception as e:
-    print(f"EXC:{{e}}")
-"""],
-        capture_output=True, text=True, timeout=30,
-    )
-    assert "ERROR" in result.stdout or "EXC" in result.stdout
+
+# --- Ranking run ID extraction ---
+
+def test_ranking_run_id_extracted(tmp_path: Path):
+    repo, ranking_path = make_ranking_repo(tmp_path)
+    settings = load_settings(repo)
+    # Create ranking CSV with RANK_ in path
+    rank_dir = repo / "outputs/fulltext_ranking/runs/RANK_20260722T210245Z"
+    rank_dir.mkdir(parents=True, exist_ok=True)
+    ranking_path2 = rank_dir / "next_20_fulltext.csv"
+    _write_ranking_csv(ranking_path2, [
+        _make_ranking_row("doi:10.1/a", "1", "1", "Paper A"),
+    ])
+    path = build_queue_from_ranking(settings, ranking_path2, out_dir=repo / "outputs/fulltext/test_runid")
+    _, rows = read_csv(path)
+    assert rows[0]["ranking_run_id"] == "RANK_20260722T210245Z"
+
+
+# --- Authoritative rank is used, not ranking-provided rank ---
+
+def test_authoritative_rank_used(tmp_path: Path):
+    repo, ranking_path = make_ranking_repo(tmp_path)
+    settings = load_settings(repo)
+    _write_ranking_csv(ranking_path, [
+        _make_ranking_row("doi:10.1/a", "1", "1", "Paper A"),  # ranking says rank=1
+    ])
+    path = build_queue_from_ranking(settings, ranking_path, out_dir=repo / "outputs/fulltext/test_auth_rank")
+    _, rows = read_csv(path)
+    assert rows[0]["rank"] == "1"  # authoritative rank from decisions

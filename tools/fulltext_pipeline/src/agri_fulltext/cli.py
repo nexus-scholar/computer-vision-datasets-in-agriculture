@@ -14,7 +14,7 @@ from .io_utils import atomic_write_csv, parse_rank_spec, read_csv, redact_secret
 from .models import Work
 from .preflight import inspect_pdf
 from .processing import process_registered_artifacts, render_pages
-from .queueing import build_queue, build_queue_from_ranking, load_eligible_works, work_from_queue_row
+from .queueing import QueueValidationError, build_queue, build_queue_from_ranking, load_eligible_works, work_from_queue_row
 from .reviewing import finalize_review, prepare_review
 from .resolvers import resolve_candidates
 from .schema import CANDIDATE_FIELDS
@@ -30,8 +30,10 @@ def build_parser() -> argparse.ArgumentParser:
     queue = sub.add_parser("queue", help="Build an acquisition queue from active title/abstract decisions")
     queue.add_argument("--ranks", help="Ranks N, N-M, or comma-separated ranges")
     queue.add_argument("--ranking", type=Path, help="Ranking CSV path (e.g. next_20_fulltext.csv)")
-    queue.add_argument("--limit", type=int, default=0, help="Max rows (default: all with 50 safety cap)")
+    queue.add_argument("--limit", type=int, default=0, help="Max rows (1-50, default: auto-cap at 50)")
     queue.add_argument("--skip-complete", action="store_true", help="Skip papers with both PDF and structured XML")
+    queue.add_argument("--allow-partial", action="store_true", help="Proceed with partial queue when validation errors exist")
+    queue.add_argument("--selection-policy", choices=["exact-top-n", "first-n-eligible"], default="exact-top-n", help="How to handle invalid ranking rows (default: exact-top-n)")
     queue.add_argument("--decisions", default="include,unclear")
     queue.add_argument("--out", type=Path)
 
@@ -97,14 +99,22 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "queue":
         if args.ranking and args.ranks:
             parser.error("--ranking and --ranks are mutually exclusive")
+        if not args.ranking and (args.limit or args.skip_complete or args.allow_partial or args.selection_policy != "exact-top-n"):
+            parser.error("--limit, --skip-complete, --allow-partial, and --selection-policy require --ranking")
         if args.ranking:
-            path = build_queue_from_ranking(
-                settings,
-                ranking_path=args.ranking,
-                limit=args.limit,
-                skip_complete=args.skip_complete,
-                out_dir=args.out,
-            )
+            try:
+                path = build_queue_from_ranking(
+                    settings,
+                    ranking_path=args.ranking,
+                    limit=args.limit,
+                    skip_complete=args.skip_complete,
+                    allow_partial=args.allow_partial,
+                    selection_policy=args.selection_policy,
+                    out_dir=args.out,
+                )
+            except QueueValidationError as exc:
+                print(str(exc), file=sys.stderr)
+                return 1
         else:
             path = build_queue(
                 settings,

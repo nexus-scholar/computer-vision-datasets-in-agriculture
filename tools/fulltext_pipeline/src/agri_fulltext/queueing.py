@@ -1,12 +1,24 @@
 from __future__ import annotations
 
+import re
 from pathlib import Path
 from typing import Iterable
 
 from .config import Settings
 from .io_utils import append_csv, atomic_write_csv, boolish, now_utc, parse_rank_spec, read_csv, sha256_file, timestamp_id, write_json
 from .models import Work
-from .schema import ACQUISITION_BATCH_FIELDS, FULLTEXT_QUEUE_FIELDS
+from .schema import ACQUISITION_BATCH_FIELDS, FULLTEXT_QUEUE_FIELDS, SELECTION_FIELDS
+
+
+class QueueValidationError(Exception):
+    pass
+
+
+def _repo_rel(settings: Settings, path: Path) -> str:
+    try:
+        return str(path.relative_to(settings.repo)).replace("\\", "/")
+    except ValueError:
+        return str(path)
 
 
 def parse_provider_ids(value: str) -> dict[str, str]:
@@ -112,16 +124,20 @@ def build_queue(
                 "acquisition_status": "complete" if {"pdf", "jats_xml"} <= types or {"pdf", "tei_xml"} <= types else ("partial" if types else "pending"),
                 "structured_status": "available" if types & {"jats_xml", "tei_xml"} else "missing",
                 "pdf_status": "available" if "pdf" in types else "missing",
+                "acquisition_batch_id": "",
+                "ranking_position": "",
+                "ranking_run_id": "",
+                "ranking_source_sha256": "",
                 "notes": "",
             }
         )
     queue_path = out_dir / "fulltext_queue.csv"
     atomic_write_csv(queue_path, FULLTEXT_QUEUE_FIELDS, rows)
     manifest = {
-        "queue_path": str(queue_path),
-        "created_from_decisions": str(settings.decisions_path),
+        "queue_path": _repo_rel(settings, queue_path),
+        "created_from_decisions": _repo_rel(settings, settings.decisions_path),
         "decisions_sha256": sha256_file(settings.decisions_path),
-        "source_queue": str(settings.queue_path),
+        "source_queue": _repo_rel(settings, settings.queue_path),
         "source_queue_sha256": sha256_file(settings.queue_path),
         "rank_spec": rank_spec or "all eligible",
         "decisions": list(decisions),
@@ -136,8 +152,15 @@ def build_queue_from_ranking(
     ranking_path: Path,
     limit: int = 0,
     skip_complete: bool = False,
+    allow_partial: bool = False,
+    selection_policy: str = "exact-top-n",
     out_dir: Path | None = None,
 ) -> Path:
+    if limit < 0 or limit > 50:
+        raise ValueError("--limit must be between 1 and 50")
+    if selection_policy not in ("exact-top-n", "first-n-eligible"):
+        raise ValueError(f"Unknown selection_policy: {selection_policy}")
+
     _, ranking_rows = read_csv(ranking_path)
     if not ranking_rows:
         raise SystemExit(f"No rows found in ranking CSV: {ranking_path}")
@@ -156,41 +179,85 @@ def build_queue_from_ranking(
             artifacts_by_paper.setdefault(row.get("paper_id", ""), set()).add(row.get("artifact_type", ""))
 
     effective_limit = limit if limit > 0 else min(len(ranking_rows), 50)
+    ranking_run_id = _extract_ranking_run_id(ranking_path)
+    ranking_source_sha256 = sha256_file(ranking_path)
+    batch_id = f"FAB_{timestamp_id()}"
     errors: list[str] = []
+    warnings: list[str] = []
     queue_rows: list[dict[str, str]] = []
+    selection_rows: list[dict[str, str]] = []
     seen_candidate_ids: set[str] = set()
 
     for idx, ranking_row in enumerate(ranking_rows):
-        if len(queue_rows) >= effective_limit:
-            break
-
         candidate_id = _detect_id(ranking_row, "candidate_id", "canonical_paper_id", "paper_id")
+        ranking_position = str(idx + 1)
+
         if not candidate_id:
             errors.append(f"Row {idx}: No detectable candidate_id")
+            if selection_policy == "exact-top-n":
+                break
             continue
 
         if candidate_id in seen_candidate_ids:
             errors.append(f"Row {idx}: Duplicate candidate_id: {candidate_id}")
+            if selection_policy == "exact-top-n":
+                break
             continue
         seen_candidate_ids.add(candidate_id)
 
         decision_row = decisions_by_id.get(candidate_id)
         if decision_row is None:
-            errors.append(f"Row {idx}: Candidate {candidate_id} not found in decisions at {settings.decisions_path}")
+            errors.append(f"Row {idx}: Candidate {candidate_id} not found in decisions")
+            if selection_policy == "exact-top-n":
+                break
             continue
 
         decision = (decision_row.get("decision") or "").strip().lower()
         if decision not in ("include", "unclear"):
             errors.append(f"Row {idx}: Candidate {candidate_id} has decision '{decision}', not active")
+            if selection_policy == "exact-top-n":
+                break
             continue
 
+        # Validate screening rank against authoritative decision
+        authoritative_rank_str = (decision_row.get("rank") or "0").strip()
+        try:
+            authoritative_rank = int(authoritative_rank_str)
+        except ValueError:
+            authoritative_rank = 0
+        if authoritative_rank <= 0:
+            errors.append(f"Row {idx}: Authoritative rank for {candidate_id} is {authoritative_rank_str}, must be > 0")
+            if selection_policy == "exact-top-n":
+                break
+            continue
+        ranking_rank = _detect_screening_rank(ranking_row)
+        if ranking_rank and ranking_rank != authoritative_rank:
+            errors.append(f"Row {idx}: Screening rank mismatch for {candidate_id}: ranking says {ranking_rank}, decision says {authoritative_rank}")
+            if selection_policy == "exact-top-n":
+                break
+            continue
+
+        # Validate ranking paper_id alias if present
+        ranking_paper_id = _detect_id(ranking_row, "paper_id", "canonical_paper_id")
+        if ranking_paper_id and ranking_paper_id != candidate_id:
+            errors.append(f"Row {idx}: paper_id '{ranking_paper_id}' does not match candidate_id '{candidate_id}'")
+            if selection_policy == "exact-top-n":
+                break
+            continue
+
+        # Identity conflict with stable ID priority
         conflict = _detect_identity_conflict(ranking_row, decision_row)
-        if conflict:
+        if isinstance(conflict, str):
             errors.append(f"Row {idx}: Identity conflict for {candidate_id}: {conflict}")
+            if selection_policy == "exact-top-n":
+                break
             continue
+        if isinstance(conflict, list):
+            for w in conflict:
+                warnings.append(f"Row {idx}: {w}")
 
-        rank = _detect_screening_rank(ranking_row)
-        paper_id = _detect_id(ranking_row, "paper_id", "canonical_paper_id") or candidate_id or f"rank:{rank}"
+        paper_id = candidate_id
+        rank = authoritative_rank
         types = artifacts_by_paper.get(paper_id, set())
 
         if skip_complete:
@@ -199,35 +266,81 @@ def build_queue_from_ranking(
             if has_pdf and has_xml:
                 continue
 
-        queue_rows.append(_build_queue_row(ranking_row, decision_row, rank, paper_id, types))
+        if len(queue_rows) >= effective_limit:
+            break
 
-    ranking_source_sha256 = sha256_file(ranking_path)
+        queue_rows.append(_build_queue_row(ranking_row, decision_row, rank, paper_id, types, batch_id, ranking_position, ranking_run_id, ranking_source_sha256))
+        selection_rows.append({
+            "acquisition_batch_id": batch_id,
+            "ranking_position": ranking_position,
+            "candidate_id": candidate_id,
+            "original_screening_rank": str(rank),
+            "title": ranking_row.get("title") or decision_row.get("title", ""),
+            "priority_score": ranking_row.get("priority_score") or decision_row.get("priority_score", "") or "",
+            "ranking_run_id": ranking_run_id,
+        })
+
+        if selection_policy == "exact-top-n" and len(queue_rows) >= effective_limit:
+            break
+
+    if not allow_partial and errors:
+        raise QueueValidationError(
+            f"Queue validation failed with {len(errors)} error(s):\n" + "\n".join(errors)
+        )
+
+    validation_status = "passed" if not errors else ("partial" if allow_partial else "failed")
+
     out_dir = out_dir or (settings.output_root / f"queue_{timestamp_id()}")
     out_dir.mkdir(parents=True, exist_ok=False)
     queue_path = out_dir / "fulltext_queue.csv"
+    queue_sha256 = sha256_file(queue_path) if queue_path.exists() else ""
     atomic_write_csv(queue_path, FULLTEXT_QUEUE_FIELDS, queue_rows)
+    queue_sha256 = sha256_file(queue_path)
 
     write_json(
         out_dir / "queue_manifest.json",
         {
-            "queue_path": str(queue_path),
-            "ranking_source": str(ranking_path),
+            "queue_path": _repo_rel(settings, queue_path),
+            "ranking_source": _repo_rel(settings, ranking_path),
             "ranking_source_sha256": ranking_source_sha256,
-            "source_decisions": str(settings.decisions_path),
+            "queue_sha256": queue_sha256,
+            "source_decisions": _repo_rel(settings, settings.decisions_path),
             "source_decisions_sha256": sha256_file(settings.decisions_path),
-            "limit": limit,
+            "source_screening_queue": _repo_rel(settings, settings.queue_path),
+            "source_screening_queue_sha256": sha256_file(settings.queue_path),
+            "source_active_scores_sha256": _scores_sha256(settings),
+            "selection_policy": selection_policy,
+            "requested_limit": limit,
+            "source_row_count": len(ranking_rows),
+            "effective_limit": effective_limit,
+            "selected_count": len(queue_rows),
             "skip_complete": skip_complete,
-            "eligible_works": len(queue_rows),
-            "validation_errors": len(errors),
+            "validation_status": validation_status,
         },
     )
 
     if errors:
-        write_json(out_dir / "ranking_validation_errors.json", errors)
+        write_json(out_dir / "ranking_validation_errors.json", {"errors": errors, "warnings": warnings})
 
-    _append_acquisition_batch(settings, ranking_path, ranking_source_sha256, queue_path, limit, skip_complete, len(queue_rows), len(errors))
+    _create_batch_snapshot(settings, batch_id, selection_rows, validation_status, effective_limit, len(queue_rows), queue_path, ranking_path, ranking_source_sha256, queue_sha256, limit, skip_complete, selection_policy, len(ranking_rows), settings)
+
+    _append_acquisition_batch(settings, ranking_path, ranking_source_sha256, queue_path, queue_sha256, validation_status, limit, len(ranking_rows), effective_limit, len(queue_rows), skip_complete, selection_policy)
 
     return queue_path
+
+
+def _extract_ranking_run_id(ranking_path: Path) -> str:
+    for part in ranking_path.parts:
+        if re.match(r"^(RANK|BOOTSTRAP)_", part):
+            return part
+    return ""
+
+
+def _scores_sha256(settings: Settings) -> str:
+    scores_path = settings.repo / "data/curated/ranking/paper_priority_scores.csv"
+    if scores_path.exists():
+        return sha256_file(scores_path)
+    return ""
 
 
 def _detect_id(row: dict[str, str], *keys: str) -> str:
@@ -239,18 +352,45 @@ def _detect_id(row: dict[str, str], *keys: str) -> str:
 
 
 def _detect_screening_rank(row: dict[str, str]) -> int:
-    raw = row.get("original_screening_rank") or row.get("screening_rank") or row.get("rank") or "0"
+    raw = row.get("original_screening_rank") or row.get("screening_rank") or row.get("rank") or ""
+    if not raw:
+        return 0
     try:
         return int(raw)
     except ValueError:
         return 0
 
 
-def _detect_identity_conflict(ranking_row: dict[str, str], decision_row: dict[str, str]) -> str | None:
-    ranking_doi = (ranking_row.get("doi") or "").strip().lower().removeprefix("https://doi.org/")
-    decision_doi = (decision_row.get("doi") or "").strip().lower().removeprefix("https://doi.org/")
+def _stable_ids_match(ranking_row: dict[str, str], decision_row: dict[str, str]) -> bool:
+    for key, transform in [
+        ("doi", lambda v: v.strip().lower().removeprefix("https://doi.org/").removeprefix("doi:")),
+        ("arxiv_id", lambda v: v.strip().lower()),
+        ("pmid", lambda v: v.strip()),
+    ]:
+        rv = transform(ranking_row.get(key, ""))
+        dv = transform(decision_row.get(key, ""))
+        if rv and dv and rv == dv:
+            return True
+    return False
+
+
+def _detect_identity_conflict(ranking_row: dict[str, str], decision_row: dict[str, str]) -> str | list[str] | None:
+    ranking_doi = (ranking_row.get("doi") or "").strip().lower().removeprefix("https://doi.org/").removeprefix("doi:")
+    decision_doi = (decision_row.get("doi") or "").strip().lower().removeprefix("https://doi.org/").removeprefix("doi:")
     if ranking_doi and decision_doi and ranking_doi != decision_doi:
         return f"DOI mismatch: {ranking_doi} vs {decision_doi}"
+
+    if _stable_ids_match(ranking_row, decision_row):
+        warnings: list[str] = []
+        ranking_title = (ranking_row.get("title") or "").strip().lower()
+        decision_title = (decision_row.get("title") or "").strip().lower()
+        if ranking_title and decision_title and ranking_title != decision_title:
+            warnings.append(f"Title differs despite stable ID match")
+        ranking_year = (ranking_row.get("year") or "").strip()
+        decision_year = (decision_row.get("year") or "").strip()
+        if ranking_year and decision_year and ranking_year != decision_year:
+            warnings.append(f"Year differs despite stable ID match: {ranking_year} vs {decision_year}")
+        return warnings if warnings else None
 
     ranking_title = (ranking_row.get("title") or "").strip().lower()
     decision_title = (decision_row.get("title") or "").strip().lower()
@@ -267,7 +407,17 @@ def _detect_identity_conflict(ranking_row: dict[str, str], decision_row: dict[st
     return None
 
 
-def _build_queue_row(ranking_row: dict[str, str], decision_row: dict[str, str], rank: int, paper_id: str, types: set[str]) -> dict[str, str]:
+def _build_queue_row(
+    ranking_row: dict[str, str],
+    decision_row: dict[str, str],
+    rank: int,
+    paper_id: str,
+    types: set[str],
+    batch_id: str,
+    ranking_position: str,
+    ranking_run_id: str,
+    ranking_source_sha256: str,
+) -> dict[str, str]:
     provider_ids = parse_provider_ids(ranking_row.get("provider_ids") or decision_row.get("provider_ids", ""))
     screening_decision = (decision_row.get("decision") or "").strip().lower()
     priority_score = ranking_row.get("priority_score") or decision_row.get("priority_score") or ""
@@ -295,8 +445,60 @@ def _build_queue_row(ranking_row: dict[str, str], decision_row: dict[str, str], 
         "acquisition_status": "complete" if {"pdf", "jats_xml"} <= types or {"pdf", "tei_xml"} <= types else ("partial" if types else "pending"),
         "structured_status": "available" if types & {"jats_xml", "tei_xml"} else "missing",
         "pdf_status": "available" if "pdf" in types else "missing",
+        "acquisition_batch_id": batch_id,
+        "ranking_position": ranking_position,
+        "ranking_run_id": ranking_run_id,
+        "ranking_source_sha256": ranking_source_sha256,
         "notes": "",
     }
+
+
+def _create_batch_snapshot(
+    settings: Settings,
+    batch_id: str,
+    selection_rows: list[dict[str, str]],
+    validation_status: str,
+    effective_limit: int,
+    selected_count: int,
+    queue_path: Path,
+    ranking_path: Path,
+    ranking_source_sha256: str,
+    queue_sha256: str,
+    limit: int,
+    skip_complete: bool,
+    selection_policy: str,
+    source_row_count: int,
+    _settings: Settings,
+) -> Path:
+    snapshot_dir = settings.repo / "data/curated/fulltext/acquisition_batches" / batch_id
+    snapshot_dir.mkdir(parents=True, exist_ok=True)
+
+    selection_path = snapshot_dir / "selection.csv"
+    atomic_write_csv(selection_path, SELECTION_FIELDS, selection_rows)
+
+    ordered_ids = [row["candidate_id"] for row in selection_rows]
+
+    manifest = {
+        "acquisition_batch_id": batch_id,
+        "ranking_source": _repo_rel(settings, ranking_path),
+        "ranking_source_sha256": ranking_source_sha256,
+        "queue_path": _repo_rel(settings, queue_path),
+        "queue_sha256": queue_sha256,
+        "source_decisions_sha256": sha256_file(settings.decisions_path),
+        "source_screening_queue_sha256": sha256_file(settings.queue_path),
+        "source_active_scores_sha256": _scores_sha256(settings),
+        "ordered_candidate_ids": ordered_ids,
+        "selection_policy": selection_policy,
+        "requested_limit": limit,
+        "source_row_count": source_row_count,
+        "effective_limit": effective_limit,
+        "selected_count": selected_count,
+        "skip_complete": skip_complete,
+        "validation_status": validation_status,
+        "created_at": now_utc(),
+    }
+    write_json(snapshot_dir / "manifest.json", manifest)
+    return snapshot_dir
 
 
 def _append_acquisition_batch(
@@ -304,27 +506,36 @@ def _append_acquisition_batch(
     ranking_path: Path,
     ranking_source_sha256: str,
     queue_path: Path,
+    queue_sha256: str,
+    validation_status: str,
     limit: int,
+    source_row_count: int,
+    effective_limit: int,
+    selected_count: int,
     skip_complete: bool,
-    paper_count: int,
-    error_count: int,
+    selection_policy: str,
 ) -> None:
     batch_path = settings.repo / "data/curated/fulltext/fulltext_acquisition_batches.csv"
     batch_path.parent.mkdir(parents=True, exist_ok=True)
+    batch_id = f"FAB_{timestamp_id()}"
     append_csv(
         batch_path,
         ACQUISITION_BATCH_FIELDS,
         [
             {
-                "batch_id": f"FAB_{timestamp_id()}",
-                "ranking_source": str(ranking_path),
+                "batch_id": batch_id,
+                "ranking_source": _repo_rel(settings, ranking_path),
                 "ranking_source_sha256": ranking_source_sha256,
-                "queue_path": str(queue_path),
-                "limit": str(limit),
+                "queue_path": _repo_rel(settings, queue_path),
+                "queue_sha256": queue_sha256,
+                "selection_policy": selection_policy,
+                "requested_limit": str(limit),
+                "source_row_count": str(source_row_count),
+                "effective_limit": str(effective_limit),
+                "selected_count": str(selected_count),
                 "skip_complete": str(skip_complete).lower(),
+                "validation_status": validation_status,
                 "created_at": now_utc(),
-                "paper_count": str(paper_count),
-                "error_count": str(error_count),
                 "notes": "",
             }
         ],

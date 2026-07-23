@@ -2,7 +2,9 @@ FULLTEXT_QUEUE_FIELDS = [
     "paper_id", "rank", "title", "year", "authors", "venue", "doi", "arxiv_id", "pmid", "pmcid",
     "openalex_id", "semantic_scholar_id", "landing_url", "pdf_url", "is_open_access",
     "screening_decision", "screening_confidence", "likely_paper_type", "priority_score",
-    "acquisition_status", "structured_status", "pdf_status", "notes",
+    "acquisition_status", "structured_status", "pdf_status",
+    "acquisition_batch_id", "ranking_position", "ranking_run_id",
+    "ranking_source_sha256", "notes",
 ]
 
 CANDIDATE_FIELDS = [
@@ -38,9 +40,16 @@ QUALITY_REVIEW_FIELDS = [
     "preferred_text_source", "needs_visual_review", "reviewer", "reviewed_at", "notes",
 ]
 
+SELECTION_FIELDS = [
+    "acquisition_batch_id", "ranking_position", "candidate_id",
+    "original_screening_rank", "title", "priority_score", "ranking_run_id",
+]
+
 ACQUISITION_BATCH_FIELDS = [
     "batch_id", "ranking_source", "ranking_source_sha256", "queue_path",
-    "limit", "skip_complete", "created_at", "paper_count", "error_count", "notes",
+    "queue_sha256", "selection_policy", "requested_limit", "source_row_count",
+    "effective_limit", "selected_count", "skip_complete", "validation_status",
+    "created_at", "notes",
 ]
 
 FULLTEXT_DECISION_FIELDS = [
