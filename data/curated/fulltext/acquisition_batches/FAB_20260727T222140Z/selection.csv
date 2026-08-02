@@ -1,0 +1,21 @@
+acquisition_batch_id,ranking_position,candidate_id,original_screening_rank,title,priority_score,ranking_run_id
+FAB_20260727T222140Z,1,arxiv:260503784,22,ReLeaf: Benchmarking Leaf Segmentation across Domains and Species,17.0,RANK_20260722T210245Z
+FAB_20260727T222140Z,2,doi:10.1109/icra.2018.8460962,124,Real-Time Semantic Segmentation of Crop and Weed for Precision Agriculture Robots Leveraging Background Knowledge in CNNs,12.388,RANK_20260722T210245Z
+FAB_20260727T222140Z,3,doi:10.1109/aict67988.2025.11268618,27,Residual-Enhanced YOLO with Motion-Blur Augmentation for UAV-Based Weed Detection,17.0,RANK_20260722T210245Z
+FAB_20260727T222140Z,4,doi:10.1007/s00371-025-04351-4,88,GenYOLO-leaf: a data-centric and open source framework for generalizable leaf instance segmentation across diverse datasets,13.5,RANK_20260722T210245Z
+FAB_20260727T222140Z,5,doi:10.3389/fpls.2024.1352935,82,Semantic segmentation of microbial alterations based on SegFormer,13.611,RANK_20260722T210245Z
+FAB_20260727T222140Z,6,doi:10.1038/s41598-022-23399-z,75,Use of synthetic images for training a deep learning model for weed detection and biomass estimation in cotton,13.813,RANK_20260722T210245Z
+FAB_20260727T222140Z,7,doi:10.48550/arxiv.2411.11285,133,Zero-Shot Automatic Annotation and Instance Segmentation using LLM-Generated Datasets: Eliminating Field Imaging and Manual Annotation for Deep Learning Model Development,12.079,RANK_20260722T210245Z
+FAB_20260727T222140Z,8,doi:10.1109/cipher70417.2026.11523795,19,GTAssure: Ground Truth Quality Assurance Framework for Semantic Segmentation in Precision Agriculture,17.0,RANK_20260722T210245Z
+FAB_20260727T222140Z,9,doi:10.3389/fpls.2022.1053329,194,Weed25: A deep learning dataset for weed identification,10.459,RANK_20260722T210245Z
+FAB_20260727T222140Z,10,doi:10.1016/j.atech.2026.101875,24,Unveiling the hidden: Early detection of invasive vegetation in crops with UAV multispectral imaging,17.0,RANK_20260722T210245Z
+FAB_20260727T222140Z,11,doi:10.1002/ppj2.70083,21,Pixel‐level supervision resolves overlap: Benchmarking YOLOv12 segmentation for accurate multi‐cluster dry bean stand counting from time series unoccupied aerial systems imagery,17.0,RANK_20260722T210245Z
+FAB_20260727T222140Z,12,doi:10.1016/j.patrec.2015.10.013,108,Finely-grained annotated datasets for image-based plant phenotyping,12.751,RANK_20260722T210245Z
+FAB_20260727T222140Z,13,doi:10.1109/dicta63115.2024.00095,55,Multispectral Remote Sensing for Weed Detection in West Australian Agricultural Lands,14.602,RANK_20260722T210245Z
+FAB_20260727T222140Z,14,doi:10.3389/fpls.2016.01419,285,Using Deep Learning for Image-Based Plant Disease Detection,8.5,RANK_20260722T210245Z
+FAB_20260727T222140Z,15,doi:10.3390/s23052713,67,WE3DS: An RGB-D Image Dataset for Semantic Segmentation in Agriculture,14.212,RANK_20260722T210245Z
+FAB_20260727T222140Z,16,doi:10.1016/j.aiia.2024.07.001,147,Comparing YOLOv8 and Mask R-CNN for instance segmentation in complex orchard environments,11.76,RANK_20260722T210245Z
+FAB_20260727T222140Z,17,doi:10.1016/j.dib.2022.108575,79,CoFly-WeedDB: A UAV image dataset for weed detection and species identification,13.699,RANK_20260722T210245Z
+FAB_20260727T222140Z,18,doi:10.1109/lra.2023.3262417,86,Towards Domain Generalization in Crop and Weed Segmentation for Precision Farming Robots,13.505,RANK_20260722T210245Z
+FAB_20260727T222140Z,19,doi:10.1038/s41597-024-04290-0,36,Crops3D: a diverse 3D crop dataset for realistic perception and segmentation toward agricultural applications,15.519,RANK_20260722T210245Z
+FAB_20260727T222140Z,20,doi:10.1016/j.dib.2025.111852,68,"TomatoWUR: An annotated dataset of tomato plants to quantitatively evaluate segmentation, skeletonisation, and plant-trait extraction algorithms for 3D plant phenotyping",14.199,RANK_20260722T210245Z

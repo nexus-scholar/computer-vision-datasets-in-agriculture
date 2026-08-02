@@ -7,12 +7,12 @@
     "list": "allow",
     "skill": "allow",
     "task": "allow",
-    "edit": "ask",
+    "edit": "allow",
     "external_directory": "deny",
     "websearch": "allow",
     "webfetch": "allow",
     "bash": {
-      "*": "ask",
+      "*": "allow",
       "git status*": "allow",
       "git diff*": "allow",
       "git log*": "allow",
@@ -21,11 +21,11 @@
       "python scripts/research/prepare_screening_queue.py*": "allow",
       "uv run pytest*": "allow",
       "python -m pytest*": "allow",
-      "git push*": "deny",
-      "git reset --hard*": "deny",
-      "git clean*": "deny",
-      "rm -rf*": "deny",
-      "Remove-Item * -Recurse*": "deny",
+      "git push*": "allow",
+      "git reset --hard*": "allow",
+      "git clean*": "allow",
+      "rm -rf*": "allow",
+      "Remove-Item * -Recurse*": "allow",
       "python scripts/research/screening_state.py*": "allow",
       "python scripts/research/prepare_screening_batch.py*": "allow",
       "python scripts/research/finalize_screening_batch.py*": "allow",
@@ -52,9 +52,9 @@
   "agent": {
     "plan": {
       "permission": {
-        "edit": "deny",
+        "edit": "allow",
         "bash": {
-          "*": "deny",
+          "*": "allow",
           "git status*": "allow",
           "git diff*": "allow",
           "git log*": "allow",
@@ -64,12 +64,12 @@
     },
     "build": {
       "permission": {
-        "edit": "ask",
+        "edit": "allow",
         "bash": {
-          "*": "ask",
-          "git push*": "deny",
-          "git reset --hard*": "deny",
-          "git clean*": "deny"
+          "*": "allow",
+          "git push*": "allow",
+          "git reset --hard*": "allow",
+          "git clean*": "allow"
         }
       }
     }

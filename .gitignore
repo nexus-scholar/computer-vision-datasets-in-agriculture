@@ -36,6 +36,10 @@ tools/agri_cv_snowball_package/outputs/*
 tools/agri_cv_snowball_package/cache/
 tools/agri_cv_snowball_package/raw_api_json/
 
+# Frontend build artifacts
+frontend/node_modules/
+frontend/dist/
+
 # BEGIN AGRI-CV FULLTEXT WORKFLOW
 # Full-text bytes and generated parsing runs stay local by default.
 data/raw/fulltext/**

@@ -4,6 +4,7 @@ import json
 import os
 import shutil
 import subprocess
+import sys
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -242,6 +243,18 @@ def _process_one(
 
 def _run_docling(settings: Settings, pdf_path: Path, output_dir: Path, preflight: dict[str, Any]) -> dict[str, Any]:
     output_dir.mkdir(parents=True, exist_ok=True)
+    # Belt-and-suspenders: some docling_core versions export referenced images into
+    # source_artifacts/ without creating it first. Harmless if it already exists.
+    (output_dir / "source_artifacts").mkdir(parents=True, exist_ok=True)
+    # Docling image filenames embed a 64-char SHA; the resulting path can exceed
+    # Windows MAX_PATH (260) for deeply nested paper directories, which makes the
+    # Python process report FileNotFoundError. Passing the \\?\ prefixed output
+    # directory on win32 lets docling write those files. See _win32_longpath().
+    output_arg = str(output_dir)
+    if sys.platform == "win32":
+        worst_case = output_dir / "source_artifacts" / ("image_000000_" + "a" * 64 + ".png")
+        if len(os.path.abspath(str(worst_case))) > 240:
+            output_arg = _win32_longpath(output_dir)
     mode = settings.docling_mode.lower()
     if mode == "remote":
         if not settings.docling_service_url:
@@ -251,7 +264,7 @@ def _run_docling(settings: Settings, pdf_path: Path, output_dir: Path, preflight
             "--from", "pdf", "--to", "json", "--to", "md", "--to", "html", "--to", "chunks",
             "--chunks-type", "hierarchical", "--image-export-mode", "referenced", "--tables",
             "--pipeline", "standard", "--document-timeout", str(settings.docling_timeout_seconds),
-            "--output", str(output_dir), "--abort-on-error", "--timeout", str(settings.docling_timeout_seconds),
+            "--output", output_arg, "--abort-on-error", "--timeout", str(settings.docling_timeout_seconds),
         ]
         _append_docling_ocr_flags(command, preflight)
     elif mode == "local":
@@ -260,7 +273,7 @@ def _run_docling(settings: Settings, pdf_path: Path, output_dir: Path, preflight
             "--to", "html", "--to", "chunks", "--chunks-type", "hierarchical",
             "--image-export-mode", "referenced", "--tables", "--table-mode", "accurate",
             "--pipeline", "standard", "--device", settings.docling_device, "--num-threads", str(settings.docling_threads),
-            "--document-timeout", str(settings.docling_timeout_seconds), "--output", str(output_dir), "--abort-on-error",
+            "--document-timeout", str(settings.docling_timeout_seconds), "--output", output_arg, "--abort-on-error",
         ]
         _append_docling_ocr_flags(command, preflight)
     else:
@@ -332,7 +345,7 @@ def _normalize_docling_outputs(output_dir: Path, source_stem: str) -> dict[str, 
     for target, source in selected.items():
         destination = normalized_dir / target
         if source.resolve() != destination.resolve():
-            shutil.copy2(source, destination)
+            _longpath_copy2(source, destination)
 
     markdown_path = normalized_dir / "document.md"
     document_json = normalized_dir / "document.json"
@@ -488,7 +501,7 @@ def _copy_docling_assets(output_dir: Path, normalized_dir: Path) -> None:
     """Preserve referenced visual assets next to normalized HTML/Markdown exports."""
     media_suffixes = {".png", ".jpg", ".jpeg", ".webp", ".svg", ".gif", ".css"}
     for source in output_dir.rglob("*"):
-        if not source.is_file() or normalized_dir in source.parents:
+        if not _longpath_isfile(source) or normalized_dir in source.parents:
             continue
         if source.suffix.lower() not in media_suffixes:
             continue
@@ -496,7 +509,35 @@ def _copy_docling_assets(output_dir: Path, normalized_dir: Path) -> None:
         destination = normalized_dir / relative
         destination.parent.mkdir(parents=True, exist_ok=True)
         if source.resolve() != destination.resolve():
-            shutil.copy2(source, destination)
+            _longpath_copy2(source, destination)
+
+
+def _longpath_isfile(path: Path) -> bool:
+    """Return whether path is a regular file, handling win32 long paths."""
+    if sys.platform == "win32":
+        try:
+            return os.path.isfile(_win32_longpath(path))
+        except OSError:
+            return False
+    return path.is_file()
+
+
+def _longpath_copy2(source: Path, destination: Path) -> None:
+    """Copy a file, bypassing Windows MAX_PATH limit via the \\\\?\\ prefix."""
+    if sys.platform == "win32":
+        src = _win32_longpath(source)
+        dst = _win32_longpath(destination)
+        shutil.copy2(src, dst)
+    else:
+        shutil.copy2(source, destination)
+
+
+def _win32_longpath(path: Path) -> str:
+    """Return a \\\\?\\-prefixed absolute path for Windows long-path support."""
+    raw = os.path.abspath(path)
+    if raw.startswith("\\\\?\\"):
+        return raw
+    return "\\\\?\\" + raw
 
 
 def _caption_text(value: dict[str, Any]) -> str:
@@ -546,15 +587,22 @@ def _build_llm_bundle(
     publisher = paper_dir / "publisher_xml"
     docling = paper_dir / "docling/normalized"
     grobid = paper_dir / "grobid/normalized"
-    if publisher_xml_status == "success" and (publisher / "document.md").exists():
-        text_source = publisher / "document.md"
-        preferred_text_source = "publisher_xml"
-    elif docling_status == "success" and (docling / "document.md").exists():
-        text_source = docling / "document.md"
-        preferred_text_source = "docling"
-    elif grobid_status == "success" and (grobid / "document.md").exists():
-        text_source = grobid / "document.md"
-        preferred_text_source = "grobid"
+    MIN_TEXT_BYTES = 1000
+    publisher_text = publisher / "document.md" if publisher_xml_status == "success" else None
+    docling_text = docling / "document.md" if docling_status == "success" else None
+    grobid_text = grobid / "document.md" if grobid_status == "success" else None
+    candidates = []
+    if publisher_text and publisher_text.exists() and publisher_text.stat().st_size > MIN_TEXT_BYTES:
+        candidates.append(("publisher_xml", publisher_text))
+    if docling_text and docling_text.exists():
+        candidates.append(("docling", docling_text))
+    if grobid_text and grobid_text.exists():
+        candidates.append(("grobid", grobid_text))
+    if candidates:
+        preferred_text_source, text_source = candidates[0]
+    elif publisher_text and publisher_text.exists():
+        text_source = publisher_text
+        preferred_text_source = "publisher_xml_minimal"
     else:
         text_source = None
         preferred_text_source = "none"

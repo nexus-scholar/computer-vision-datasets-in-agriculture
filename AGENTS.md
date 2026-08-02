@@ -57,6 +57,44 @@ python scripts/research/finalize_screening_batch.py outputs/screening_batches/ba
 
 OpenCode should normally run these through `/screen-paper`.
 
+## Required method-gap commands
+
+After full-text decisions are finalized for a batch, run sequentially:
+
+```powershell
+python scripts/research/method_gap_extract_structured.py --repo .
+python scripts/research/method_gap_evidence.py --repo .
+# Then: split outputs/method_gap_evidence.csv into ≤10-paper batches,
+#       tag each batch with an agent per the method-gap-analysis skill taxonomy,
+#       writing each to outputs/mga_batch_{N}_results.csv
+python scripts/research/method_gap_merge.py --repo . --batch-csvs outputs/mga_batch_*_results.csv
+```
+
+## Work state
+
+### Completed
+- Pipeline: queueing bridge implemented, 24 queueing tests / 41 total pass; committed `a4b14c7`, pushed `origin/master`
+- Batch 1–3: 56 papers screened (40 core, 13 supporting, 2 unresolved)
+- **Batch 5**: 14 full-text papers acquired/re-acquired via Docling, processed, and reviewed (ranks 81,83–100). Ranks 83,85 XML-only (Elsevier coredata). Rank 100 PDF required PyMuPDF fallback. Rank 91 (MuST-C) imported from user-supplied PDF, processed, reviewed.
+- **Ranks 43,47,70,71**: previously failed extraction; user downloaded PDFs; imported, processed (Docling), and reviewed — rank 43 include_supporting (survey), 47 include_core (3D tomato stemwork, request-only data), 70 include_core (NIAM9weeds, HuggingFace), 71 include_supporting (INMATEH 3D tomato phenotyping)
+- **Batch 6 (partial)**: 5 papers auto-acquired, processed, reviewed, finalized — rank 25 include_core (WeedsGalore U-Net), 29 include_supporting (edge-computing review), 30 include_core (Tianchi/GTPBD/Vaihingen HVM-UNet), 33 include_supporting (disease-detection review), 34 include_core (Pheno4D introduces, PLOS ONE)
+- **Batch 6 (10 more, user PDFs)**: ranks 6,11,14,17,28,31,35,38,39,41 reviewed + finalized — 6 include_core FI01 (AgriAdapt dataset), 11 include_supporting FS01 (robotics review), 14 include_core FI02 (MFWD subset), 17 include_core FI02 (SoyCotton+CWD ES2-LeafSeg), 28 include_core FI01 (TomatoWUR introduced), 31 include_supporting FS01 (weed-control review), 35 include_core FI02 (Indian Pines/Pavia/KSC/SugarBeets/CWD), 38 include_core FI01 (Two-Season-WeedDet8 introduced), 39 include_core FI01 (Bean Soy UAV dataset), 41 include_core FI01 (3D Rice WBPH Damage, request-only)
+- Full-text screening: **95 decisions** (63 core, 25 supporting, 7 unresolved, 0 excluded)
+- Docling MAX_PATH bug fixed (rank 28, `biosystemseng`): docling image exports hit 261-char paths > Windows MAX_PATH (260), surfacing as FileNotFoundError inside `docling_core`. Fix in `_run_docling` (`processing.py`): on win32, pass a `\\?\`-prefixed `--output` when the worst-case `source_artifacts/image_000000_<64hex>.png` path exceeds 240 chars; added `_longpath_isfile` so asset traversal/copy preserves those files. Fixed rank 28: `FTP_20260802T135700Z`, docling=success, qa=manual_review (33 visual assets, 126 chunks, 6 tables). Run `process --ranks 28` with `--no-grobid`; all 41 tests pass.
+- CLI bug: `finalize-review` crashes on trailing-comma CSV (AttributeError at `reviewing.py:104`); workaround: strip trailing comma before finalizing
+- Method-gap matrix: re-extracted — **87 papers** across 6 dimensions (up from 67); all 87 tagged, 0 empty cells. Summary: calibration absent 79/87 (90.8%), same-sensor eval 59/87 (67.8%), no code 50/87 (57.5%), ≥4 gaps 63/87 (72%)
+- **Batch 6 complete**: 15/20 finalized as include; 5 paywalled ranks (13,23,26,32,40) recorded unresolved (FU1_FULLTEXT_UNAVAILABLE, empty extraction_id) via `_record_unresolved_5.py` after lawful acquisition attempts failed (13 Wiley 403; 23/26/32/40 IEEE no_candidate). FTS ids: `FTS_e8200c33a81dc42e4871`, `FTS_bf07ae30c5200c6c691d`, `FTS_2a62de017b4600a595b8`, `FTS_ed7c527d334232cf6fc2`, `FTS_f9493c5bc599494ab095`
+- Evidence synthesis (initial pass): dataset registry (30 introduced datasets), opportunity scores (5 dims × 30 datasets), claim-ledger (9 entries)
+  - Top datasets: AgroVG (22), PhenoBench (21), AgroTools (20.5), CropNet (20), LAST-Straw (20)
+
+### Active
+- **Dataset registry**: 46 datasets (+5 batch-6 introduced: Pheno4D, AgriAdapt, Two-Season-WeedDet8, Bean Soy, 3D Rice WBPH Damage); TomatoWUR already present
+- **Opportunity scores**: 46 scored; MuST-C tops at 24.5/25, Pheno4D 21.0 (rank 3), PhenoBench 21.0 (rank 4), Two-Season-WeedDet8 20.5 (rank 6), AgriAdapt 18.5 (rank 15), 3D Rice WBPH Damage 18.0 (rank 19), Bean Soy 15.5 (rank 29)
+- **Claim ledger**: 20 entries (+7 batch-6: DSO-006..DSO-010, MGA-008, DT-004)
+- **Batch 6 (20/20 reviewed)**: all batch-6 ranks finalized or recorded unresolved; manual resolution queue `outputs/fulltext/acquisition/FTA_20260731T121706Z/manual_resolution_queue.csv` reflects the 5 unfillable ranks
+- 166 TA-included papers await full-text acquisition/extraction
+- All claim-ledger entries need human validation
+
 ## Stop conditions
 
 Stop and report when:
