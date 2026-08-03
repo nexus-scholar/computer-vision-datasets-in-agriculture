@@ -14,3 +14,5 @@ FTERR_d7d76fa07bea05af3ff4,FTA_20260729T182651Z,doi:10.48550/arxiv.2407.21150,cr
 FTERR_84f467594911e63b7775,FTA_20260729T183300Z,doi:10.60507/fk2/ox9xtm,crossref,HTTPError: 404 Client Error: Not Found for url: https://api.crossref.org/works/10.60507%2Ffk2%2Fox9xtm,2026-07-29T18:35:53Z
 FTERR_d4cd6331403ad491181b,FTA_20260729T183300Z,doi:10.48550/arxiv.2503.05568,crossref,HTTPError: 404 Client Error: Not Found for url: https://api.crossref.org/works/10.48550%2Farxiv.2503.05568,2026-07-29T18:35:53Z
 FTERR_c718594ac3cee63e233b,FTA_20260729T183300Z,doi:10.18420/giljt2025_02,crossref,HTTPError: 404 Client Error: Not Found for url: https://api.crossref.org/works/10.18420%2Fgiljt2025_02,2026-07-29T18:35:53Z
+FTERR_ed1932c0135d160d90c7,FTA_20260803T005806Z,doi:10.6084/m9.figshare.29222462,crossref,HTTPError: 404 Client Error: Not Found for url: https://api.crossref.org/works/10.6084%2Fm9.figshare.29222462,2026-08-03T01:05:24Z
+FTERR_12430b3968bfb8c19183,FTA_20260803T005806Z,doi:10.5447/ipk/2025/14,crossref,HTTPError: 404 Client Error: Not Found for url: https://api.crossref.org/works/10.5447%2Fipk%2F2025%2F14,2026-08-03T01:05:24Z
