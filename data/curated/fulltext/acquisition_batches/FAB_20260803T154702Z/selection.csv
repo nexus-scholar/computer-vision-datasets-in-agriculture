@@ -1,0 +1,6 @@
+acquisition_batch_id,ranking_position,candidate_id,original_screening_rank,title,priority_score,ranking_run_id
+FAB_20260803T154702Z,1,doi:10.1016/j.compag.2022.107345,471,An improved YOLOv5-based vegetable disease detection method,4.1,
+FAB_20260803T154702Z,2,doi:10.1007/s00138-020-01081-6,516,Detection of tomato organs based on convolutional neural network under the overlap and occlusion backgrounds,3.623,
+FAB_20260803T154702Z,3,doi:10.1007/978-981-10-6430-2_15,526,Shape-based Fruit Recognition and Classification,2.544,
+FAB_20260803T154702Z,4,doi:10.1007/978-981-96-4008-9_24,263,Smart Farming Solutions: Advanced Techniques in Classification of Weeds Using Image Processing and Machine Learning,9.0,
+FAB_20260803T154702Z,5,doi:10.1016/0034-4257(95)00186-7,496,Optimization of soil-adjusted vegetation indices,4.0,

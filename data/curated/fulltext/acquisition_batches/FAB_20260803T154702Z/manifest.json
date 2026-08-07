@@ -1,0 +1,25 @@
+{
+  "acquisition_batch_id": "FAB_20260803T154702Z",
+  "created_at": "2026-08-03T15:47:02Z",
+  "effective_limit": 5,
+  "ordered_candidate_ids": [
+    "doi:10.1016/j.compag.2022.107345",
+    "doi:10.1007/s00138-020-01081-6",
+    "doi:10.1007/978-981-10-6430-2_15",
+    "doi:10.1007/978-981-96-4008-9_24",
+    "doi:10.1016/0034-4257(95)00186-7"
+  ],
+  "queue_path": "outputs/fulltext/acquisition/queue_20260803T154702Z/fulltext_queue.csv",
+  "queue_sha256": "738920eb1b046f004652e0161ce3b9e65639d47d85f41865646602fb2faa77a2",
+  "ranking_source": "outputs\\fulltext_ranking\\pending_retry_3_of_3.csv",
+  "ranking_source_sha256": "9cd11927d11b7bd7b471294731602236fec67168e5915cc172d0a5e480f84a59",
+  "requested_limit": 5,
+  "selected_count": 5,
+  "selection_policy": "exact-top-n",
+  "skip_complete": false,
+  "source_active_scores_sha256": "7d99035efd7c0524929780a459ffe8cb727db3b6b0d49700be627bb3a1da4aaf",
+  "source_decisions_sha256": "d62d110e847d72c4ecf83db9c75d016e90531a793d57cebef9000445837c732a",
+  "source_row_count": 5,
+  "source_screening_queue_sha256": "feb7c8a80978b97f3bdcffd7291708e8ac5282301ce06c793247227bc43712be",
+  "validation_status": "passed"
+}
