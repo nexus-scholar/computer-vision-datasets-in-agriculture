@@ -278,7 +278,16 @@ def _run_docling(settings: Settings, pdf_path: Path, output_dir: Path, preflight
         _append_docling_ocr_flags(command, preflight)
     else:
         raise ValueError(f"Unknown Docling mode: {settings.docling_mode}")
-    completed = subprocess.run(command, text=True, capture_output=True, timeout=settings.docling_timeout_seconds + 120)
+    # text=True uses the locale encoding (cp1252 on Windows), which chokes on
+    # docling's UTF-8 progress output and can surface as UnicodeDecodeError or a
+    # None stdout. Decode explicitly as UTF-8 with replacement for robustness.
+    completed = subprocess.run(
+        command,
+        capture_output=True,
+        timeout=settings.docling_timeout_seconds + 120,
+        encoding="utf-8",
+        errors="replace",
+    )
     (output_dir / "docling_stdout.log").write_text(completed.stdout, encoding="utf-8")
     (output_dir / "docling_stderr.log").write_text(completed.stderr, encoding="utf-8")
     if completed.returncode != 0:

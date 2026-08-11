@@ -120,8 +120,8 @@ def main():
         }
 
         for dim, patterns in DIMENSION_PATTERNS.items():
-            ctx_key = f"{dim.split('_')[0] if dim.startswith('cross') else dim}_evidence"
-            sec_key = f"{dim.split('_')[0] if dim.startswith('cross') else dim}_section"
+            ctx_key = f"{dim.split('_')[0]}_evidence"
+            sec_key = f"{dim.split('_')[0]}_section"
 
             # Handle naming: cross_sensor_test -> sensor_evidence, dataset_role -> role_evidence
             if dim == "cross_sensor_test":

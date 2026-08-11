@@ -2,35 +2,20 @@
   "$schema": "https://opencode.ai/config.json",
   "permission": {
     "read": "allow",
+    "edit": "allow",
     "glob": "allow",
     "grep": "allow",
     "list": "allow",
-    "skill": "allow",
+    "bash": "allow",
     "task": "allow",
-    "edit": "allow",
-    "external_directory": "deny",
-    "websearch": "allow",
+    "external_directory": "allow",
+    "todowrite": "allow",
+    "question": "deny",
     "webfetch": "allow",
-    "bash": {
-      "*": "allow",
-      "git status*": "allow",
-      "git diff*": "allow",
-      "git log*": "allow",
-      "git show*": "allow",
-      "python scripts/research/audit_snowball_run.py*": "allow",
-      "python scripts/research/prepare_screening_queue.py*": "allow",
-      "uv run pytest*": "allow",
-      "python -m pytest*": "allow",
-      "git push*": "allow",
-      "git reset --hard*": "allow",
-      "git clean*": "allow",
-      "rm -rf*": "allow",
-      "Remove-Item * -Recurse*": "allow",
-      "python scripts/research/screening_state.py*": "allow",
-      "python scripts/research/prepare_screening_batch.py*": "allow",
-      "python scripts/research/finalize_screening_batch.py*": "allow",
-      "python scripts/research/check_research_repo.py*": "allow"
-    }
+    "websearch": "allow",
+    "lsp": "allow",
+    "doom_loop": "allow",
+    "skill": "allow"
   },
   "compaction": {
     "auto": true,
@@ -49,28 +34,312 @@
       "data/raw/api_archives/**"
     ]
   },
+  "experimental": {
+    "continue_loop_on_deny": true
+  },
   "agent": {
     "plan": {
       "permission": {
+        "read": "allow",
         "edit": "allow",
-        "bash": {
-          "*": "allow",
-          "git status*": "allow",
-          "git diff*": "allow",
-          "git log*": "allow",
-          "python scripts/research/audit_snowball_run.py*": "allow"
-        }
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
       }
     },
     "build": {
       "permission": {
+        "read": "allow",
         "edit": "allow",
-        "bash": {
-          "*": "allow",
-          "git push*": "allow",
-          "git reset --hard*": "allow",
-          "git clean*": "allow"
-        }
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "general": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "explore": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "bibliography-auditor": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "corpus-curator": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "document-processor": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "evidence-ranker": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "evidence-synthesizer": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "fulltext-acquirer": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "fulltext-reviewer": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "methodology-strategist": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "paper-screener": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "repo-auditor": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "reproducibility-reviewer": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
+      }
+    },
+    "workflow-maintainer": {
+      "permission": {
+        "read": "allow",
+        "edit": "allow",
+        "glob": "allow",
+        "grep": "allow",
+        "list": "allow",
+        "bash": "allow",
+        "task": "allow",
+        "external_directory": "allow",
+        "todowrite": "allow",
+        "question": "deny",
+        "webfetch": "allow",
+        "websearch": "allow",
+        "lsp": "allow",
+        "doom_loop": "allow",
+        "skill": "allow"
       }
     }
   }

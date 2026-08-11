@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-50">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agricultural CV Research Dashboard</title>
+  <script type="module" src="/src/main.js"></script>
+  <style>
+    .tab-btn { border-bottom: 2px solid transparent; }
+    .tab-btn.active { color: #15803d; border-bottom-color: #16a34a; }
+    #drawer-overlay { transition: opacity 0.2s; }
+    #drawer-panel { transition: transform 0.25s ease-out; }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-800">
+  <header class="bg-brand-800 text-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div>
+        <h1 class="text-xl font-bold tracking-tight">Agricultural CV Research Dashboard</h1>
+        <p class="text-brand-200 text-sm">Computer Vision Datasets in Agriculture — Screening &amp; Evidence Explorer</p>
+      </div>
+      <div class="text-xs text-brand-200">
+        <span>Data snapshot: </span>
+        <span id="data-timestamp">loading...</span>
+      </div>
+    </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-4 py-6 space-y-6">
+    <section id="overview" hx-get="/api/overview" hx-trigger="load" hx-swap="innerHTML">
+      <div class="animate-pulse bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+        <p class="text-gray-400">Loading overview...</p>
+      </div>
+    </section>
+
+    <div class="flex gap-4 border-b border-gray-200 pb-0" role="tablist">
+      <button class="tab-btn active px-1 py-2 text-sm font-medium text-gray-500 hover:text-gray-700"
+              hx-get="/api/screening" hx-target="#tab-content" hx-trigger="load, click">Papers</button>
+      <button class="tab-btn px-1 py-2 text-sm font-medium text-gray-500 hover:text-gray-700"
+              hx-get="/api/ranking" hx-target="#tab-content" hx-trigger="click">Priority Scores</button>
+      <button class="tab-btn px-1 py-2 text-sm font-medium text-gray-500 hover:text-gray-700"
+              hx-get="/api/batches" hx-target="#tab-content" hx-trigger="click">Batches</button>
+      <button class="tab-btn px-1 py-2 text-sm font-medium text-gray-500 hover:text-gray-700"
+              hx-get="/api/extractions" hx-target="#tab-content" hx-trigger="click">Full-Text</button>
+    </div>
+
+    <div id="tab-content" class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+      <div class="text-center py-12 text-gray-400">
+        <p class="text-lg">Loading dashboard data...</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-gray-200 mt-12 py-4 text-center text-xs text-gray-400">
+    Agricultural CV Research Project &mdash; Screening queue v1 &mdash; OpenCode-managed
+  </footer>
+
+  <div id="drawer-overlay" class="fixed inset-0 bg-black/20 hidden" onclick="closeDrawer()"></div>
+  <div id="drawer-panel" class="fixed top-0 right-0 h-full w-[42rem] max-w-full bg-white shadow-2xl translate-x-full z-50 flex flex-col">
+    <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 shrink-0">
+      <h3 class="text-sm font-semibold text-gray-700 uppercase tracking-wide">Paper Detail</h3>
+      <button onclick="closeDrawer()" class="text-gray-400 hover:text-gray-600 text-xl leading-none">&times;</button>
+    </div>
+    <div id="drawer-content" class="flex-1 overflow-y-auto"></div>
+  </div>
+</body>
+</html>
